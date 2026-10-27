@@ -1,0 +1,37 @@
+[
+ {
+  "rating": "Solid D",
+  "seats": 186,
+  "cook_order": 1
+ },
+ {
+  "rating": "Likely D",
+  "seats": 18,
+  "cook_order": 2
+ },
+ {
+  "rating": "Lean D",
+  "seats": 16,
+  "cook_order": 3
+ },
+ {
+  "rating": "Toss Up",
+  "seats": 17,
+  "cook_order": 4
+ },
+ {
+  "rating": "Lean R",
+  "seats": 17,
+  "cook_order": 5
+ },
+ {
+  "rating": "Likely R",
+  "seats": 13,
+  "cook_order": 6
+ },
+ {
+  "rating": "Solid R",
+  "seats": 168,
+  "cook_order": 7
+ }
+]

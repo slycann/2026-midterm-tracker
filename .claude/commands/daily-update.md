@@ -1,0 +1,1 @@
+Run the daily update described in CLAUDE.md for today's date. Research first, edit the files in data/, run python3 scripts/validate.py, then stop and show me a summary of the changes with sources and `git diff --stat`. Don't commit or push until I approve.

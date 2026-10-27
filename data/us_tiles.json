@@ -1,0 +1,302 @@
+[
+ {
+  "state": "AK",
+  "name": "Alaska",
+  "col": 0,
+  "row": 0
+ },
+ {
+  "state": "ME",
+  "name": "Maine",
+  "col": 10,
+  "row": 0
+ },
+ {
+  "state": "VT",
+  "name": "Vermont",
+  "col": 9,
+  "row": 1
+ },
+ {
+  "state": "NH",
+  "name": "New Hampshire",
+  "col": 10,
+  "row": 1
+ },
+ {
+  "state": "WA",
+  "name": "Washington",
+  "col": 0,
+  "row": 2
+ },
+ {
+  "state": "ID",
+  "name": "Idaho",
+  "col": 1,
+  "row": 2
+ },
+ {
+  "state": "MT",
+  "name": "Montana",
+  "col": 2,
+  "row": 2
+ },
+ {
+  "state": "ND",
+  "name": "North Dakota",
+  "col": 3,
+  "row": 2
+ },
+ {
+  "state": "MN",
+  "name": "Minnesota",
+  "col": 4,
+  "row": 2
+ },
+ {
+  "state": "IL",
+  "name": "Illinois",
+  "col": 5,
+  "row": 2
+ },
+ {
+  "state": "WI",
+  "name": "Wisconsin",
+  "col": 6,
+  "row": 2
+ },
+ {
+  "state": "MI",
+  "name": "Michigan",
+  "col": 7,
+  "row": 2
+ },
+ {
+  "state": "NY",
+  "name": "New York",
+  "col": 8,
+  "row": 2
+ },
+ {
+  "state": "RI",
+  "name": "Rhode Island",
+  "col": 9,
+  "row": 2
+ },
+ {
+  "state": "MA",
+  "name": "Massachusetts",
+  "col": 10,
+  "row": 2
+ },
+ {
+  "state": "OR",
+  "name": "Oregon",
+  "col": 0,
+  "row": 3
+ },
+ {
+  "state": "NV",
+  "name": "Nevada",
+  "col": 1,
+  "row": 3
+ },
+ {
+  "state": "WY",
+  "name": "Wyoming",
+  "col": 2,
+  "row": 3
+ },
+ {
+  "state": "SD",
+  "name": "South Dakota",
+  "col": 3,
+  "row": 3
+ },
+ {
+  "state": "IA",
+  "name": "Iowa",
+  "col": 4,
+  "row": 3
+ },
+ {
+  "state": "IN",
+  "name": "Indiana",
+  "col": 5,
+  "row": 3
+ },
+ {
+  "state": "OH",
+  "name": "Ohio",
+  "col": 6,
+  "row": 3
+ },
+ {
+  "state": "PA",
+  "name": "Pennsylvania",
+  "col": 7,
+  "row": 3
+ },
+ {
+  "state": "NJ",
+  "name": "New Jersey",
+  "col": 8,
+  "row": 3
+ },
+ {
+  "state": "CT",
+  "name": "Connecticut",
+  "col": 9,
+  "row": 3
+ },
+ {
+  "state": "CA",
+  "name": "California",
+  "col": 0,
+  "row": 4
+ },
+ {
+  "state": "UT",
+  "name": "Utah",
+  "col": 1,
+  "row": 4
+ },
+ {
+  "state": "CO",
+  "name": "Colorado",
+  "col": 2,
+  "row": 4
+ },
+ {
+  "state": "NE",
+  "name": "Nebraska",
+  "col": 3,
+  "row": 4
+ },
+ {
+  "state": "MO",
+  "name": "Missouri",
+  "col": 4,
+  "row": 4
+ },
+ {
+  "state": "KY",
+  "name": "Kentucky",
+  "col": 5,
+  "row": 4
+ },
+ {
+  "state": "WV",
+  "name": "West Virginia",
+  "col": 6,
+  "row": 4
+ },
+ {
+  "state": "VA",
+  "name": "Virginia",
+  "col": 7,
+  "row": 4
+ },
+ {
+  "state": "MD",
+  "name": "Maryland",
+  "col": 8,
+  "row": 4
+ },
+ {
+  "state": "DE",
+  "name": "Delaware",
+  "col": 9,
+  "row": 4
+ },
+ {
+  "state": "AZ",
+  "name": "Arizona",
+  "col": 1,
+  "row": 5
+ },
+ {
+  "state": "NM",
+  "name": "New Mexico",
+  "col": 2,
+  "row": 5
+ },
+ {
+  "state": "KS",
+  "name": "Kansas",
+  "col": 3,
+  "row": 5
+ },
+ {
+  "state": "AR",
+  "name": "Arkansas",
+  "col": 4,
+  "row": 5
+ },
+ {
+  "state": "TN",
+  "name": "Tennessee",
+  "col": 5,
+  "row": 5
+ },
+ {
+  "state": "NC",
+  "name": "North Carolina",
+  "col": 6,
+  "row": 5
+ },
+ {
+  "state": "SC",
+  "name": "South Carolina",
+  "col": 7,
+  "row": 5
+ },
+ {
+  "state": "OK",
+  "name": "Oklahoma",
+  "col": 3,
+  "row": 6
+ },
+ {
+  "state": "LA",
+  "name": "Louisiana",
+  "col": 4,
+  "row": 6
+ },
+ {
+  "state": "MS",
+  "name": "Mississippi",
+  "col": 5,
+  "row": 6
+ },
+ {
+  "state": "AL",
+  "name": "Alabama",
+  "col": 6,
+  "row": 6
+ },
+ {
+  "state": "GA",
+  "name": "Georgia",
+  "col": 7,
+  "row": 6
+ },
+ {
+  "state": "HI",
+  "name": "Hawaii",
+  "col": 0,
+  "row": 7
+ },
+ {
+  "state": "TX",
+  "name": "Texas",
+  "col": 3,
+  "row": 7
+ },
+ {
+  "state": "FL",
+  "name": "Florida",
+  "col": 8,
+  "row": 7
+ }
+]

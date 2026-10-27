@@ -1,0 +1,42 @@
+[
+ {
+  "id": "n1",
+  "pollster": "New York Times/Siena",
+  "dates": "Oct 12–19",
+  "measure": "Generic ballot",
+  "result": "D 52, R 41",
+  "margin_label": "D +11"
+ },
+ {
+  "id": "n2",
+  "pollster": "YouGov",
+  "dates": "Oct 19–20",
+  "measure": "Generic ballot",
+  "result": "Strict likely voters",
+  "margin_label": "D +11"
+ },
+ {
+  "id": "n3",
+  "pollster": "Echelon Insights",
+  "dates": "Oct 15–19",
+  "measure": "Generic ballot",
+  "result": "D 50, R 45",
+  "margin_label": "D +5"
+ },
+ {
+  "id": "n4",
+  "pollster": "New York Times/Siena",
+  "dates": "Oct 12–19",
+  "measure": "Trump approval",
+  "result": "34% approve, 60% disapprove",
+  "margin_label": "−26"
+ },
+ {
+  "id": "n5",
+  "pollster": "YouGov",
+  "dates": "Oct 19–20",
+  "measure": "Trump approval",
+  "result": "40% approve, 59% disapprove",
+  "margin_label": "−19"
+ }
+]

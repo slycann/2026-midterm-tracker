@@ -1,0 +1,26 @@
+[
+ {
+  "id": "us",
+  "place": "Nationwide",
+  "ballots": 30000000,
+  "qualifier": "more than",
+  "as_of": "Oct 26",
+  "source": "University of Florida Election Lab"
+ },
+ {
+  "id": "tx",
+  "place": "Texas",
+  "ballots": 4000000,
+  "qualifier": "more than",
+  "as_of": "Oct 26 (first week)",
+  "source": "ABC13 Houston"
+ },
+ {
+  "id": "fl",
+  "place": "Florida",
+  "ballots": 2800000,
+  "qualifier": "nearly",
+  "as_of": "Oct 26",
+  "source": "WUSF"
+ }
+]

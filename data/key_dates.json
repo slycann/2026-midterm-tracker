@@ -1,0 +1,44 @@
+[
+ {
+  "id": "k1",
+  "date": "2026-10-27",
+  "label": "Trump in Texas",
+  "detail": "Scheduled stops in Nueces and Lubbock counties."
+ },
+ {
+  "id": "k2",
+  "date": "2026-10-28",
+  "label": "Obama in Atlanta",
+  "detail": "Campaigns for Ossoff and Keisha Lance Bottoms."
+ },
+ {
+  "id": "k3",
+  "date": "2026-10-30",
+  "label": "Texas early voting ends",
+  "detail": ""
+ },
+ {
+  "id": "k4",
+  "date": "2026-10-31",
+  "label": "Early voting ends in NC and SC",
+  "detail": ""
+ },
+ {
+  "id": "k5",
+  "date": "2026-11-01",
+  "label": "Trump rally in Iowa",
+  "detail": "For Ashley Hinson."
+ },
+ {
+  "id": "k6",
+  "date": "2026-11-02",
+  "label": "Iowa early voting ends",
+  "detail": ""
+ },
+ {
+  "id": "k7",
+  "date": "2026-11-03",
+  "label": "Election Day",
+  "detail": "Alaska’s ranked-choice count may run past election night."
+ }
+]

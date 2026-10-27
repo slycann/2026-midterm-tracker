@@ -1,0 +1,65 @@
+[
+ {
+  "id": "b1",
+  "date": "2026-10-27",
+  "order": 1,
+  "category": "House",
+  "headline": "Cook moves 19 House races toward Democrats, none toward Republicans",
+  "detail": "Six seats went from Toss Up to Lean D (AZ-06, CO-08, NC-11, TX-34, VA-02, WI-03) and KY-06 and TX-35 became toss-ups. Cook now projects a Democratic gain of 12 to 22 seats.",
+  "source": "The Hill, Newsweek (Oct 23)"
+ },
+ {
+  "id": "b2",
+  "date": "2026-10-27",
+  "order": 2,
+  "category": "Senate",
+  "headline": "Raters shift South Carolina, Nebraska and Texas toward toss-up",
+  "detail": "RealClearPolitics moved SC and NE to Toss Up and GA to Likely Dem on Oct 25; Inside Elections moved Texas to Toss-up on Oct 23. Cook still rates SC Lean R and NE Likely R.",
+  "source": "RealClearPolling, 270toWin"
+ },
+ {
+  "id": "b3",
+  "date": "2026-10-27",
+  "order": 3,
+  "category": "Senate",
+  "headline": "Final Maine and Alaska debates turn personal",
+  "detail": "Collins and Jackson sparred after a protester interrupted; Sullivan and Peltola clashed over the Iran war and energy prices.",
+  "source": "Straight Arrow News (Oct 23)"
+ },
+ {
+  "id": "b4",
+  "date": "2026-10-27",
+  "order": 4,
+  "category": "Turnout",
+  "headline": "More than 30 million ballots already cast",
+  "detail": "Texas passed 4 million in its first week of early voting, which ends Oct 30. Turnout counts show who is voting, not how.",
+  "source": "UF Election Lab via TNND, ABC13"
+ },
+ {
+  "id": "b5",
+  "date": "2026-10-27",
+  "order": 5,
+  "category": "Senate",
+  "headline": "Texas stays within the margin of error",
+  "detail": "A University of Houston poll (Oct 10–14) has Talarico 48, Paxton 46. Trump is scheduled in Nueces and Lubbock counties today.",
+  "source": "FOX 7 Austin, Axios"
+ },
+ {
+  "id": "b6",
+  "date": "2026-10-27",
+  "order": 6,
+  "category": "National",
+  "headline": "Generic ballot leads range from D +5 to D +11",
+  "detail": "NYT/Siena and YouGov show Democrats up 11, Echelon Insights up 5. Polls overstated Democrats in some recent cycles.",
+  "source": "Newsweek (Oct 24)"
+ },
+ {
+  "id": "b7",
+  "date": "2026-10-27",
+  "order": 7,
+  "category": "Campaign trail",
+  "headline": "Obama to Atlanta Wednesday; Trump back to Iowa Sunday",
+  "detail": "Obama was scheduled to campaign with El-Sayed in Detroit on Oct 24 and joins Ossoff on Oct 28. Trump returns to Iowa for Hinson on Nov 1.",
+  "source": "Newsweek, WRDW"
+ }
+]

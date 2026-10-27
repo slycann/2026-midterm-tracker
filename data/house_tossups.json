@@ -1,0 +1,155 @@
+[
+ {
+  "district": "CA-22",
+  "state": "CA",
+  "held_by": "R",
+  "holder": "David Valadao (R)",
+  "dem": "Randy Villegas",
+  "rep": "David Valadao",
+  "note": ""
+ },
+ {
+  "district": "FL-14",
+  "state": "FL",
+  "held_by": "D",
+  "holder": "Kathy Castor (D)",
+  "dem": "Kathy Castor",
+  "rep": "Mike Beltran",
+  "note": ""
+ },
+ {
+  "district": "FL-22",
+  "state": "FL",
+  "held_by": "D",
+  "holder": "Open (Frankel; redrawn)",
+  "dem": "Pia Dandiya",
+  "rep": "Casey Askar",
+  "note": ""
+ },
+ {
+  "district": "IA-02",
+  "state": "IA",
+  "held_by": "R",
+  "holder": "Open (Hinson)",
+  "dem": "Lindsay James",
+  "rep": "Joe Mitchell",
+  "note": "Moved from Lean R on Oct 9."
+ },
+ {
+  "district": "KY-06",
+  "state": "KY",
+  "held_by": "R",
+  "holder": "Open (Barr)",
+  "dem": "Zach Dembo",
+  "rep": "Ralph Alvarado",
+  "note": "Moved from Lean R on Oct 23; Trump won it by 16 in 2024."
+ },
+ {
+  "district": "MI-04",
+  "state": "MI",
+  "held_by": "R",
+  "holder": "Bill Huizenga (R)",
+  "dem": "Sean McCann",
+  "rep": "Bill Huizenga",
+  "note": "Moved from Lean R on Oct 9."
+ },
+ {
+  "district": "MI-07",
+  "state": "MI",
+  "held_by": "R",
+  "holder": "Tom Barrett (R)",
+  "dem": "William Lawrence",
+  "rep": "Tom Barrett",
+  "note": ""
+ },
+ {
+  "district": "MI-10",
+  "state": "MI",
+  "held_by": "R",
+  "holder": "Open (James)",
+  "dem": "Christina Hines",
+  "rep": "Michael Bouchard",
+  "note": ""
+ },
+ {
+  "district": "MT-01",
+  "state": "MT",
+  "held_by": "R",
+  "holder": "Open (Zinke)",
+  "dem": "Sam Forstag",
+  "rep": "Aaron Flint",
+  "note": ""
+ },
+ {
+  "district": "NC-01",
+  "state": "NC",
+  "held_by": "D",
+  "holder": "Don Davis (D)",
+  "dem": "Don Davis",
+  "rep": "Laurie Buckhout",
+  "note": "Moved from Lean R on Oct 9."
+ },
+ {
+  "district": "NY-17",
+  "state": "NY",
+  "held_by": "R",
+  "holder": "Mike Lawler (R)",
+  "dem": "Cait Conley",
+  "rep": "Mike Lawler",
+  "note": ""
+ },
+ {
+  "district": "OH-07",
+  "state": "OH",
+  "held_by": "R",
+  "holder": "Max Miller (R)",
+  "dem": "Brian Poindexter",
+  "rep": "Max Miller",
+  "note": ""
+ },
+ {
+  "district": "OH-09",
+  "state": "OH",
+  "held_by": "D",
+  "holder": "Marcy Kaptur (D)",
+  "dem": "Marcy Kaptur",
+  "rep": "Derek Merrin",
+  "note": ""
+ },
+ {
+  "district": "PA-08",
+  "state": "PA",
+  "held_by": "R",
+  "holder": "Rob Bresnahan (R)",
+  "dem": "Paige Cognetti",
+  "rep": "Rob Bresnahan",
+  "note": ""
+ },
+ {
+  "district": "TX-15",
+  "state": "TX",
+  "held_by": "R",
+  "holder": "Monica De La Cruz (R)",
+  "dem": "Bobby Pulido",
+  "rep": "Monica De La Cruz",
+  "note": ""
+ },
+ {
+  "district": "TX-35",
+  "state": "TX",
+  "held_by": "D",
+  "holder": "Open (Casar; redrawn)",
+  "dem": "Johnny Garcia",
+  "rep": "Carlos De La Cruz",
+  "note": "Moved from Lean R on Oct 23."
+ },
+ {
+  "district": "VA-01",
+  "state": "VA",
+  "held_by": "R",
+  "holder": "Rob Wittman (R)",
+  "dem": "Shannon Taylor",
+  "rep": "Rob Wittman",
+  "note": "Moved from Lean R on Oct 9."
+ }
+]
