@@ -61,6 +61,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .mt-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); }
 .mt-tab:focus-visible, .mt-seg button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
 .mt-page[hidden] { display: none; }
+.mt-page { scroll-margin-top: 3.5rem; }
 .mt-stack { display: grid; gap: var(--gap-md); }
 .mt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--gap-md); }
 .mt-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--radius); padding: var(--pad-lg); min-width: 0; }
@@ -622,11 +623,19 @@ const T = (() => {
       row.append('line').attr('x1', left).attr('x2', W - right).attr('y1', cy).attr('y2', cy).style('stroke', 'var(--chart-grid)');
       row.append('text').attr('class', 'mt-lab').attr('x', left - 10).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').text(r.name);
       const ps = pollsOf(r.state);
+      // Nudge polls up or down when they'd sit on another poll or under the average's diamond, so each stays visible.
+      const placed = r.avg_margin != null && r.avg_margin !== '' ? [{ x: x(Number(r.avg_margin)), dy: 0 }] : [];
+      const dyOf = new Map();
+      ps.slice().sort((a, b) => Number(a.margin) - Number(b.margin)).forEach((p) => {
+        const px = x(Number(p.margin));
+        const dy = [0, -7, 7].find((o) => placed.every((q) => Math.abs(q.x - px) >= 9 || Math.abs(q.dy - o) >= 7)) ?? 0;
+        placed.push({ x: px, dy }); dyOf.set(p, dy);
+      });
       row.selectAll('circle').data(ps).join('circle').attr('class', 'mt-pt')
-        .attr('cx', (p) => x(Number(p.margin))).attr('cy', cy).attr('r', 5.5)
+        .attr('cx', (p) => x(Number(p.margin))).attr('cy', (p) => cy + dyOf.get(p)).attr('r', 5.5)
         .style('fill', (p) => sideColor(Number(p.margin), r.dem_side_party)).style('fill-opacity', 0.85)
         .style('stroke', 'var(--color-panel)').style('stroke-width', 1.5)
-        .on('pointerenter click', (event, p) => tip.show([p.pollster + ', ' + p.dates, lastName(r.dem_side) + ' ' + p.dem_side_pct + ', ' + lastName(r.rep) + ' ' + p.rep_pct], x(Number(p.margin)), cy))
+        .on('pointerenter click', (event, p) => tip.show([p.pollster + ', ' + p.dates, lastName(r.dem_side) + ' ' + p.dem_side_pct + ', ' + lastName(r.rep) + ' ' + p.rep_pct], x(Number(p.margin)), cy + dyOf.get(p)))
         .on('pointerleave', () => tip.hide());
       if (r.avg_margin != null && r.avg_margin !== '') {
         row.append('path').attr('class', 'mt-pt').attr('d', d3.symbol(d3.symbolDiamond, 110)())
