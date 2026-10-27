@@ -50,11 +50,31 @@
   "margin": 6
  },
  {
+  "id": "p26",
+  "state": "ME",
+  "pollster": "Fox News",
+  "dates": "Oct 16–20",
+  "sample": "LV",
+  "dem_side_pct": 49,
+  "rep_pct": 49,
+  "margin": 0
+ },
+ {
+  "id": "p25",
+  "state": "ME",
+  "pollster": "Suffolk University",
+  "dates": "Oct 8–11",
+  "sample": "LV",
+  "dem_side_pct": 49,
+  "rep_pct": 47,
+  "margin": 2
+ },
+ {
   "id": "p6",
   "state": "ME",
   "pollster": "Marist",
-  "dates": "Released early Oct",
-  "sample": "",
+  "dates": "Oct 1–4",
+  "sample": "RV",
   "dem_side_pct": 51,
   "rep_pct": 47,
   "margin": 4
@@ -68,16 +88,6 @@
   "dem_side_pct": 50,
   "rep_pct": 50,
   "margin": 0
- },
- {
-  "id": "p8",
-  "state": "ME",
-  "pollster": "New York Times/Siena",
-  "dates": "Sep 15–22",
-  "sample": "LV",
-  "dem_side_pct": 46,
-  "rep_pct": 49,
-  "margin": -3
  },
  {
   "id": "p9",
