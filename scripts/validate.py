@@ -139,6 +139,35 @@ for k in kd:
     if not DAY.match(str(k.get("date", ""))):
         err(f"key_dates.json {k.get('id')}: date must look like 2026-11-03")
 
+ROOT = DATA.parent
+cands = load("candidates")
+need("candidates", cands, ["id", "chamber", "race", "party", "name", "photo", "photo_credit", "photo_source", "fact", "fact_source", "fact_url"])
+unique("candidates", cands, "id")
+for c in cands:
+    cid = c.get("id")
+    if c.get("chamber") not in ("Senate", "House"):
+        err(f"candidates.json {cid}: chamber must be 'Senate' or 'House'")
+    if c.get("party") not in ("D", "R", "I"):
+        err(f"candidates.json {cid}: party must be 'D', 'R' or 'I'")
+    if c.get("photo"):
+        if not (ROOT / c["photo"]).is_file():
+            err(f"candidates.json {cid}: photo file {c['photo']} is missing")
+        if not c.get("photo_credit") or not c.get("photo_source"):
+            err(f"candidates.json {cid}: a photo needs photo_credit and photo_source")
+    if not str(c.get("fact", "")).strip() or not c.get("fact_url"):
+        err(f"candidates.json {cid}: needs a fact and its fact_url")
+have = {(c.get("chamber"), c.get("race"), c.get("party"), c.get("name")) for c in cands}
+def want(chamber, race, party, name):
+    if name and (chamber, race, party, name) not in have:
+        err(f"candidates.json: no row for {name} ({party}) in the {race} {chamber} toss-up; add one (photo optional)")
+for r in races:
+    if r.get("cook") == "Toss Up":
+        want("Senate", r.get("state"), r.get("dem_side_party"), r.get("dem_side"))
+        want("Senate", r.get("state"), "R", r.get("rep"))
+for t in tu:
+    want("House", t.get("district"), "D", t.get("dem"))
+    want("House", t.get("district"), "R", t.get("rep"))
+
 if errors:
     print(f"{len(errors)} problem(s) found:")
     for e in errors:

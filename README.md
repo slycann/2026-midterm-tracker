@@ -6,6 +6,7 @@ A one-page tracker for the key 2026 Senate and House races: a state map, race ra
 index.html            the page
 data/*.json           everything the page shows (edit these to update it)
 vendor/               d3 and the fonts, bundled so the site has no outside dependencies
+img/candidates/       headshots of the toss-up candidates (credits in data/candidates.json and on the page)
 scripts/validate.py   checks the data files before you publish
 CLAUDE.md             instructions Claude Code follows for the daily update
 ```

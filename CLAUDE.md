@@ -21,6 +21,7 @@ When asked to "run the daily update" (or `/daily-update`):
    - `senate_polls.json`: add new polls with new ids; keep the three or four most recent per race.
    - `national_polls.json`, `early_vote.json`, `key_dates.json`: replace stale entries; keep past key dates (the page dims them).
    - When a rating or average changes, say when in that race's note (for example "moved to Toss Up on Oct 30").
+   - `candidates.json`: every candidate in a Senate or House toss-up needs a row (the validator lists any that are missing). When a race becomes a toss-up or a nominee changes, add the candidates as described under "Candidate photos" below.
 4. **Run `python3 scripts/validate.py`** and fix every problem it reports.
 5. **Stop before committing.** Show a short summary of what changed and why, with sources, plus the Odds tab number before and after, and `git diff --stat`. Commit (`Daily update YYYY-MM-DD`) and push only after the user approves.
 
@@ -48,10 +49,20 @@ When asked to "run the daily update" (or `/daily-update`):
 | `daily_brief.json` | News item | `id`, `date`, `order`, `category`, `headline`, `detail`, `source` |
 | `key_dates.json` | Event | `id`, `date`, `label`, `detail` |
 | `us_tiles.json` | State | Map layout only (`col`, `row`). Don't edit. |
+| `candidates.json` | Toss-up candidate | `id` (slug, also the photo's file name), `chamber` (Senate/House), `race` (state code for Senate, district for House), `party` (D/R/I), `name` (must match the race files exactly), `photo` (`img/candidates/<id>.jpg` or ""), `photo_credit` ("Artist (license)"), `photo_source` (Commons file page), `fact`, `fact_source`, `fact_url` |
 
 Seat math on the page is computed from `senate_races.json`, `house_ratings.json` and `chamber_baseline.json`; don't hard-code totals anywhere.
 
 The Odds tab (chance Democrats win both the House and the Senate) is also computed in `index.html` from those three files: Cook ratings become expected margins, Senate RCP averages are blended in half and half, and a nationwide error shared by both chambers ties the races together. The method is explained on the tab. Never type a probability into a data file; keeping the ratings and averages current is what keeps the number current.
+
+## Candidate photos
+
+The Senate and House tabs show toss-up matchups with a headshot and one short fact for each candidate.
+
+- **Photos:** only freely licensed images from Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA, or "copyrighted free use"). Check the license on the file page, and check it's the right person: same-name traps are common (Mike Rogers of Michigan vs. Alabama; Michael Bouchard Jr. vs. his father, the sheriff). Prefer plain front-facing portraits.
+- **Cropping:** download each original into its own new, empty folder under /tmp, then crop it to the standard 240×300 face-centered headshot with `swiftc -O scripts/headshot.swift -o /tmp/headshot` and `/tmp/headshot <original> img/candidates/<id>.jpg`. Look at the result before using it.
+- **No free photo:** leave `photo`, `photo_credit` and `photo_source` empty; the page shows the candidate's initials.
+- **Facts:** one true, interesting fact of 110 characters or less, with a link to the source (usually the person's Wikipedia article, or the district's section of the 2026 House elections article when they have no article).
 
 ## Preview
 
