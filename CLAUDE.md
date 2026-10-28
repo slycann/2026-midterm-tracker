@@ -25,6 +25,7 @@ When asked to "run the daily update" (or `/daily-update`):
    - When a rating or average changes, say when in that race's note (for example "moved to Toss Up on Oct 30").
    - `candidates.json`: every candidate in a Senate or House toss-up needs a row (the validator lists any that are missing). When a race becomes a toss-up or a nominee changes, add the candidates as described under "Candidate photos" below.
 4. **Run `python3 scripts/validate.py`** and fix every problem it reports.
+   Then **record today's odds** with `python3 scripts/odds.py --record YYYY-MM-DD` (today's date). It adds today's row to `data/odds_history.json`, which the Odds tab charts day by day; rerunning it the same day replaces that day's row.
 5. **Stop before committing.** Show a short summary of what changed and why, with sources, plus the Odds tab number before and after, and `git diff --stat`. Commit (`Daily update YYYY-MM-DD`) and push only after the user approves.
 
 ## Editorial rules
@@ -51,11 +52,12 @@ When asked to "run the daily update" (or `/daily-update`):
 | `daily_brief.json` | News item | `id`, `date`, `order`, `category`, `headline`, `detail`, `source` |
 | `key_dates.json` | Event | `id`, `date`, `label`, `detail` |
 | `us_tiles.json` | State | Map layout only (`col`, `row`). Don't edit. |
+| `odds_history.json` | Day | `date`, `both`, `senate`, `house` (chances from 0 to 1), `note`. Written by `scripts/odds.py --record`; don't edit by hand. |
 | `candidates.json` | Toss-up candidate | `id` (slug, also the photo's file name), `chamber` (Senate/House), `race` (state code for Senate, district for House), `party` (D/R/I), `name` (must match the race files exactly), `photo` (`img/candidates/<id>.jpg` or ""), `photo_credit` ("Artist (license)"), `photo_source` (Commons file page), `fact`, `fact_source`, `fact_url` |
 
 Seat math on the page is computed from `senate_races.json`, `house_ratings.json` and `chamber_baseline.json`; don't hard-code totals anywhere.
 
-The Odds tab (chance Democrats win both the House and the Senate) is also computed in `index.html` from those three files: Cook ratings become expected margins, Senate RCP averages are blended in half and half, and a nationwide error shared by both chambers ties the races together. The method is explained on the tab. Never type a probability into a data file; keeping the ratings and averages current is what keeps the number current.
+The Odds tab (chance Democrats win both the House and the Senate) is also computed in `index.html` from those three files: Cook ratings become expected margins, Senate RCP averages are blended in half and half, and a nationwide error shared by both chambers ties the races together. The method is explained on the tab. `scripts/odds.py` runs the same model in Python to record each day's number; if you change the model, change both and check they give the same result. Never type a probability into a data file; keeping the ratings and averages current is what keeps the number current.
 
 ## Candidate photos
 

@@ -144,6 +144,18 @@ for k in kd:
     if not DAY.match(str(k.get("date", ""))):
         err(f"key_dates.json {k.get('id')}: date must look like 2026-11-03")
 
+oh = load("odds_history")
+need("odds_history", oh, ["date", "both", "senate", "house", "note"])
+unique("odds_history", oh, "date")
+for r in oh:
+    if not DAY.match(str(r.get("date", ""))):
+        err(f"odds_history.json {r.get('date')}: date must look like 2026-10-27")
+    for f in ("both", "senate", "house"):
+        if not isinstance(r.get(f), (int, float)) or not 0 <= r[f] <= 1:
+            err(f"odds_history.json {r.get('date')}: {f} must be a number from 0 to 1")
+if [r.get("date") for r in oh] != sorted(r.get("date") for r in oh):
+    err("odds_history.json: rows must be in date order (scripts/odds.py --record keeps them sorted)")
+
 ROOT = DATA.parent
 cands = load("candidates")
 need("candidates", cands, ["id", "chamber", "race", "party", "name", "photo", "photo_credit", "photo_source", "fact", "fact_source", "fact_url"])

@@ -180,6 +180,11 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .mt-inc-tag { display: block; font-size: 11px; font-weight: 400; color: var(--color-fg-muted); }
 .mt-latest { min-width: 14rem; max-width: 24rem; }
 .mt-latest-src { display: block; margin-top: 2px; color: var(--color-fg-muted); }
+.mt-odds-delta { margin: var(--gap-xs) 0 0; font-size: var(--fs-body); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.mt-odds-arrow[data-dir="up"] { color: var(--odds-dem); }
+.mt-odds-arrow[data-dir="down"] { color: var(--odds-rep); }
+.mt-oddshist { min-height: 0; margin-bottom: var(--gap-md); }
+.mt-oddshist-note { color: var(--color-fg-muted); font-weight: 400 !important; white-space: normal !important; }
 .mt-vs-latest { display: block; margin-top: var(--gap-xs); color: var(--color-fg); }
 </style>
 </head>
@@ -302,6 +307,17 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
   <section class="mt-page mt-stack" id="odds" hidden>
     <p class="mt-note">The tracker’s own estimate, worked out from the Cook ratings and polling averages on the other tabs, so it changes whenever they do. It’s a simple model, not a professional forecast.</p>
     <div class="mt-card mt-odds-card" id="odds-card" aria-live="polite"></div>
+    <div class="mt-card" id="oddshist-card">
+      <h2>Day by day</h2>
+      <p class="mt-note">The chance Democrats win both chambers, as recorded at each daily update.</p>
+      <div class="mt-strip mt-oddshist" id="oddshist-box"></div>
+      <div class="mt-tablewrap">
+        <table class="mt-table" id="oddshist-table" data-source="odds_history" data-row-key="date">
+          <thead><tr><th data-field="date">Date</th><th data-field="both">Chance</th><th>Change</th><th data-field="note"></th></tr></thead>
+          <tbody id="oddshist-body"></tbody>
+        </table>
+      </div>
+    </div>
     <div class="mt-card mt-method" id="method-card">
       <h2>How this is calculated</h2>
       <p class="mt-note">Every input comes from the data on the other tabs; nothing is entered by hand.</p>
@@ -1032,6 +1048,68 @@ const T = (() => {
     const tag = el('p', 'mt-odds-tag');
     tag.append(el('span', 'mt-odds-dot'), b.label);
     box.append(el('h2', null, 'Chance Democrats win both the House and the Senate'), num, tag);
+    const prev = previousOdds();
+    if (prev) {
+      const d = (p - prev.both) * 100, line = el('p', 'mt-odds-delta');
+      const arrow = el('span', 'mt-odds-arrow', Math.abs(d) < 0.05 ? '–' : d > 0 ? '▲' : '▼');
+      arrow.dataset.dir = Math.abs(d) < 0.05 ? 'flat' : d > 0 ? 'up' : 'down';
+      line.append(arrow, ' ' + (Math.abs(d) < 0.05 ? 'No change' : Math.abs(d).toFixed(1) + (Math.abs(d) >= 0.95 && Math.abs(d) < 1.05 ? ' point' : ' points')) + ' since ', mark(el('span', null, dayFmt(parseDay(prev.date))), 'odds_history', 'date', 'date=' + prev.date));
+      box.append(line);
+    }
+  }
+
+  // The last recorded day before the tracker's current update day (the latest brief date).
+  function previousOdds() {
+    const hist = rows('odds_history'), br = rows('daily_brief');
+    if (!hist || !hist.length) return null;
+    const today = br && br.length ? br.reduce((m, r) => (r.date > m ? r.date : m), '') : localDay();
+    return hist.filter((r) => r.date < today).sort((a, b) => (a.date < b.date ? -1 : 1)).pop() || null;
+  }
+
+  function renderOddsHistory() {
+    const hist = rows('odds_history'), box = $('#oddshist-box'), body = $('#oddshist-body');
+    body.replaceChildren();
+    if (!hist) { box.replaceChildren(); if (anyFailed('odds_history')) box.append(failLine()); else box.classList.add('is-loading'); return; }
+    box.classList.remove('is-loading');
+    const days = hist.slice().sort((a, b) => (a.date < b.date ? -1 : 1));
+    const pct = (v) => Math.round(Number(v) * 100) + '%';
+    days.slice().reverse().forEach((r, i, arr) => {
+      const w = 'date=' + r.date, tr = el('tr'), older = arr[i + 1];
+      tr.append(el('td', null, dayFmt(parseDay(r.date))), mark(el('td', null, pct(r.both)), 'odds_history', 'both', w));
+      const ch = el('td');
+      if (older) {
+        const d = (r.both - older.both) * 100, a = el('span', 'mt-odds-arrow', Math.abs(d) < 0.05 ? '–' : d > 0 ? '▲' : '▼');
+        a.dataset.dir = Math.abs(d) < 0.05 ? 'flat' : d > 0 ? 'up' : 'down';
+        ch.append(a, ' ' + (Math.abs(d) < 0.05 ? '0.0' : Math.abs(d).toFixed(1)));
+      } else ch.textContent = '—';
+      tr.append(ch, mark(el('td', 'mt-oddshist-note', r.note || ''), 'odds_history', 'note', w));
+      body.append(tr);
+    });
+    // Line of the daily chance on a fixed 0–100% scale, with a 50% reference line.
+    const W = box.clientWidth || 320, H = 170, m = { t: 10, r: 16, b: 24, l: 40 };
+    const x = d3.scaleUtc(d3.extent(days, (r) => parseDay(r.date)), [m.l, W - m.r]);
+    if (days.length === 1) x.domain([d3.utcDay.offset(parseDay(days[0].date), -1), d3.utcDay.offset(parseDay(days[0].date), 1)]);
+    const y = d3.scaleLinear([0, 100], [H - m.b, m.t]);
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H)
+      .attr('role', 'img').attr('aria-label', 'Daily chance Democrats win both chambers');
+    svg.append('g').selectAll('line').data([0, 25, 50, 75, 100]).join('line')
+      .attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y)
+      .style('stroke', (v) => (v === 50 ? 'var(--chart-reference)' : 'var(--chart-grid)')).style('stroke-width', (v) => (v === 50 ? 1.5 : 1));
+    svg.append('g').selectAll('text').data([0, 25, 50, 75, 100]).join('text').attr('class', 'mt-tick')
+      .attr('x', m.l - 8).attr('y', y).attr('dy', '0.35em').attr('text-anchor', 'end').text((v) => v + '%');
+    const ticks = days.length <= 7 ? days.map((r) => parseDay(r.date)) : x.ticks(6);
+    svg.append('g').selectAll('text').data(ticks).join('text').attr('class', 'mt-tick')
+      .attr('x', x).attr('y', H - 6).attr('text-anchor', 'middle').text(d3.utcFormat('%b %-d'));
+    const pts = days.map((r) => ({ r, px: x(parseDay(r.date)), py: y(Number(r.both) * 100) }));
+    svg.append('path').attr('d', d3.line((d) => d.px, (d) => d.py)(pts))
+      .style('fill', 'none').style('stroke', 'var(--color-fg-muted)').style('stroke-width', 2);
+    box.replaceChildren(svg.node());
+    const tip = tipIn(box);
+    svg.append('g').selectAll('circle').data(pts).join('circle').attr('class', 'mt-pt')
+      .attr('cx', (d) => d.px).attr('cy', (d) => d.py).attr('r', 5)
+      .style('fill', (d) => (Number(d.r.both) >= 0.5 ? 'var(--odds-dem)' : 'var(--odds-rep)')).style('stroke', 'var(--color-panel)').style('stroke-width', 2)
+      .on('pointerenter click', (event, d) => tip.show([dayFmt(parseDay(d.r.date)), pct(d.r.both) + ' chance of both'], d.px, d.py))
+      .on('pointerleave', () => tip.hide());
   }
 
   const PAGES = ['today', 'senate', 'house', 'national', 'odds'];
@@ -1042,7 +1120,7 @@ const T = (() => {
     if (current === 'senate') { renderSenateTossups(); renderSeatMath(); renderStrip(); renderRaces(); renderSafe(); }
     if (current === 'house') { renderHouseTossups(); renderHouseBar(); renderTossups(); }
     if (current === 'national') { renderNational(); renderEarly(); }
-    if (current === 'odds') renderOdds();
+    if (current === 'odds') { renderOdds(); renderOddsHistory(); }
     renderCredits();
     fillStatic();
   }
@@ -1059,7 +1137,7 @@ const T = (() => {
   const named = location.hash.slice(1);
   if (PAGES.includes(named)) show(named);
 })();
-T.load(['senate_races', 'senate_polls', 'us_tiles', 'chamber_baseline', 'house_ratings', 'house_tossups', 'national_polls', 'early_vote', 'daily_brief', 'key_dates', 'candidates']);
+T.load(['senate_races', 'senate_polls', 'us_tiles', 'chamber_baseline', 'house_ratings', 'house_tossups', 'national_polls', 'early_vote', 'daily_brief', 'key_dates', 'candidates', 'odds_history']);
 </script>
 </body>
 </html>
