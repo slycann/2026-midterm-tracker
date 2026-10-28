@@ -1085,18 +1085,26 @@ const T = (() => {
       tr.append(ch, mark(el('td', 'mt-oddshist-note', r.note || ''), 'odds_history', 'note', w));
       body.append(tr);
     });
-    // Line of the daily chance on a fixed 0–100% scale, with a 50% reference line.
-    const W = box.clientWidth || 320, H = 170, m = { t: 10, r: 16, b: 24, l: 40 };
+    // Line of the daily chance on a scale fitted to the data (at least 4 points tall) so day-to-day moves show;
+    // the 50% line is drawn when it falls inside that range.
+    const W = box.clientWidth || 320, H = 170, m = { t: 22, r: 28, b: 24, l: 40 };
     const x = d3.scaleUtc(d3.extent(days, (r) => parseDay(r.date)), [m.l, W - m.r]);
     if (days.length === 1) x.domain([d3.utcDay.offset(parseDay(days[0].date), -1), d3.utcDay.offset(parseDay(days[0].date), 1)]);
-    const y = d3.scaleLinear([0, 100], [H - m.b, m.t]);
+    const vals = days.map((r) => Number(r.both) * 100), mid = (d3.min(vals) + d3.max(vals)) / 2;
+    const half = Math.max(2, (d3.max(vals) - d3.min(vals)) / 2 + 1);
+    const y = d3.scaleLinear([Math.max(0, mid - half), Math.min(100, mid + half)], [H - m.b, m.t]).nice(4);
+    const yTicks = y.ticks(4), yFmt = (v) => d3.format(yTicks.some((v2) => v2 % 1) ? '.1f' : '.0f')(v) + '%';
     const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H)
       .attr('role', 'img').attr('aria-label', 'Daily chance Democrats win both chambers');
-    svg.append('g').selectAll('line').data([0, 25, 50, 75, 100]).join('line')
-      .attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y)
-      .style('stroke', (v) => (v === 50 ? 'var(--chart-reference)' : 'var(--chart-grid)')).style('stroke-width', (v) => (v === 50 ? 1.5 : 1));
-    svg.append('g').selectAll('text').data([0, 25, 50, 75, 100]).join('text').attr('class', 'mt-tick')
-      .attr('x', m.l - 8).attr('y', y).attr('dy', '0.35em').attr('text-anchor', 'end').text((v) => v + '%');
+    svg.append('g').selectAll('line').data(yTicks).join('line')
+      .attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).style('stroke', 'var(--chart-grid)');
+    const [lo, hi] = y.domain();
+    if (lo < 50 && hi > 50) {
+      svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(50)).attr('y2', y(50)).style('stroke', 'var(--chart-reference)').style('stroke-width', 1.5);
+      svg.append('text').attr('class', 'mt-tick').attr('x', W - m.r).attr('y', y(50) - 4).attr('text-anchor', 'end').text('50%');
+    }
+    svg.append('g').selectAll('text').data(yTicks).join('text').attr('class', 'mt-tick')
+      .attr('x', m.l - 8).attr('y', y).attr('dy', '0.35em').attr('text-anchor', 'end').text(yFmt);
     const ticks = days.length <= 7 ? days.map((r) => parseDay(r.date)) : x.ticks(6);
     svg.append('g').selectAll('text').data(ticks).join('text').attr('class', 'mt-tick')
       .attr('x', x).attr('y', H - 6).attr('text-anchor', 'middle').text(d3.utcFormat('%b %-d'));
@@ -1108,8 +1116,12 @@ const T = (() => {
     svg.append('g').selectAll('circle').data(pts).join('circle').attr('class', 'mt-pt')
       .attr('cx', (d) => d.px).attr('cy', (d) => d.py).attr('r', 5)
       .style('fill', (d) => (Number(d.r.both) >= 0.5 ? 'var(--odds-dem)' : 'var(--odds-rep)')).style('stroke', 'var(--color-panel)').style('stroke-width', 2)
-      .on('pointerenter click', (event, d) => tip.show([dayFmt(parseDay(d.r.date)), pct(d.r.both) + ' chance of both'], d.px, d.py))
+      .on('pointerenter click', (event, d) => tip.show([dayFmt(parseDay(d.r.date)), (Number(d.r.both) * 100).toFixed(1) + '% chance of both'], d.px, d.py))
       .on('pointerleave', () => tip.hide());
+    // Value labels on each point while there are few enough days to read them; otherwise just the latest.
+    svg.append('g').selectAll('text').data(pts.length <= 10 ? pts : pts.slice(-1)).join('text').attr('class', 'mt-lab')
+      .attr('x', (d) => d.px).attr('y', (d) => d.py - 10).attr('text-anchor', (d, i, all) => (d.px > W - m.r - 20 ? 'end' : d.px < m.l + 20 ? 'start' : 'middle'))
+      .style('pointer-events', 'none').text((d) => (Number(d.r.both) * 100).toFixed(1) + '%');
   }
 
   const PAGES = ['today', 'senate', 'house', 'national', 'odds'];
