@@ -29,7 +29,7 @@
   --chart-grid: #e8ebef; --chart-reference: #8a93a0; --chart-muted: #a6adb8;
   --surface-popover: #ffffff; --border: #d3d8df; --shadow-popover: 0 6px 20px rgba(16, 24, 40, .12);
   --text-secondary: #5a6474; --skeleton: #e6e9ee; --dur-slow: 300ms;
-  --odds-good: #0a7d0a; --odds-even: #9a6400; --odds-bad: #c0392b;
+  --odds-dem: #2a63b8; --odds-rep: #b8322a;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -37,7 +37,7 @@
     --color-border-line: #283039; --chart-grid: #232a33; --chart-reference: #6f7885; --chart-muted: #5c6470;
     --surface-popover: #1d222a; --border: #343c47; --shadow-popover: 0 8px 24px rgba(0, 0, 0, .5);
     --text-secondary: #9aa3b1; --skeleton: #222831;
-    --odds-good: #2fbf2f; --odds-even: #fab219; --odds-bad: #e05a5a;
+    --odds-dem: #5b8ee0; --odds-rep: #e5675c;
   }
 }
 * { box-sizing: border-box; }
@@ -139,9 +139,8 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .mt-seatfigs .mt-fig-k { font-size: var(--fs-caption); color: var(--color-fg-muted); }
 .mt-odds-card { display: grid; justify-items: center; text-align: center; gap: var(--gap-xs); padding-block: var(--gap-xl); }
 .mt-odds-card h2 { margin: 0; max-width: 24rem; }
-.mt-odds-card[data-band="good"] { --band: var(--odds-good); }
-.mt-odds-card[data-band="even"] { --band: var(--odds-even); }
-.mt-odds-card[data-band="bad"] { --band: var(--odds-bad); }
+.mt-odds-card[data-band="dem"] { --band: var(--odds-dem); }
+.mt-odds-card[data-band="rep"] { --band: var(--odds-rep); }
 .mt-odds-num { font-family: var(--font-sans); font-weight: var(--fw-medium); font-size: clamp(6rem, 30vw, 12rem); line-height: 1; letter-spacing: -0.03em; color: var(--band); margin: var(--gap-sm) 0; }
 .mt-odds-pct { font-size: 0.5em; letter-spacing: 0; margin-left: 0.03em; }
 .mt-odds-tag { margin: 0; display: inline-flex; align-items: center; gap: var(--gap-sm); font-size: var(--fs-body); font-weight: var(--fw-medium); }
@@ -816,9 +815,10 @@ const T = (() => {
   }
 
   const ODDS_BANDS = [
-    { min: 60, band: 'good', label: 'Democrats favored' },
-    { min: 41, band: 'even', label: 'Toss-up' },
-    { min: 0, band: 'bad', label: 'Democrats unlikely' },
+    { min: 60, band: 'dem', label: 'Democrats favored' },
+    { min: 50, band: 'dem', label: 'Toss-up, edge Democrats' },
+    { min: 41, band: 'rep', label: 'Toss-up, edge Republicans' },
+    { min: 0, band: 'rep', label: 'Democrats unlikely' },
   ];
   function renderOdds() {
     const co = rows('control_odds'), box = $('#odds-card');

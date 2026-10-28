@@ -28,7 +28,8 @@ When asked to "run the daily update" (or `/daily-update`):
 
 - Every figure needs a named source. If you can't find a source for something, leave it out.
 - Summarize news in your own words. Never copy more than a few words from an article.
-- Stay neutral: report what raters, polls and campaigns said and did. No predictions, opinions or loaded adjectives in anything you write; the Odds tab's number is the only forecast on the page, and it comes from the model, not from you. Give both parties' good and bad news the same treatment.
+- The site is openly pro-Democratic: the owner is a Democrat and wants Democrats to win, so it doesn't need to read as neutral. The facts still have to be right, because the tracker is only useful if it's accurate: use reputable sources from across the spectrum (including Republican-leaning pollsters with a solid record), and don't leave out news or polls that are bad for Democrats.
+- Don't put your own predictions in the text; the Odds tab's number is the page's forecast, and it comes from the model.
 - When sources disagree (for example Cook vs. RealClearPolitics ratings), say so instead of picking one silently.
 - Verify candidate names and spellings against a current source; don't rely on memory.
 - Formatting: dates in data as `YYYY-MM-DD`; date ranges in text as `Oct 10–14` with an en dash; typographic apostrophes (’) in text people read.
