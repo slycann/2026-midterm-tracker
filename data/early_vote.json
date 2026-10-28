@@ -2,10 +2,10 @@
  {
   "id": "us",
   "place": "Nationwide",
-  "ballots": 30000000,
-  "qualifier": "more than",
-  "as_of": "Oct 26",
-  "source": "University of Florida Election Lab"
+  "ballots": 33000000,
+  "qualifier": "nearly",
+  "as_of": "Oct 27",
+  "source": "University of Florida Election Lab (via TIME)"
  },
  {
   "id": "tx",

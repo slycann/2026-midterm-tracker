@@ -61,5 +61,50 @@
   "headline": "Obama to Atlanta Wednesday; Trump back to Iowa Sunday",
   "detail": "Obama was scheduled to campaign with El-Sayed in Detroit on Oct 24 and joins Ossoff on Oct 28. Trump returns to Iowa for Hinson on Nov 1.",
   "source": "Newsweek, WRDW"
+ },
+ {
+  "id": "b8",
+  "date": "2026-10-28",
+  "order": 1,
+  "category": "Senate",
+  "headline": "Polling averages move toward Democrats in five Senate races",
+  "detail": "RealClearPolitics now has Peltola +1.2 in Alaska, El-Sayed +2.5 in Michigan, Talarico +1.8 in Texas and Flanagan +5.1 in Minnesota, and Graham’s South Carolina lead is down to 2.4. RCP now rates Minnesota Leans Democratic; Cook moved it from Likely D to Lean D on Oct 20.",
+  "source": "Election Central (Oct 28), Washington Post (Oct 20)"
+ },
+ {
+  "id": "b9",
+  "date": "2026-10-28",
+  "order": 2,
+  "category": "National",
+  "headline": "PBS/NPR/Marist poll has Democrats up 8 among likely voters",
+  "detail": "Likely voters back Democrats 52–44 on the generic ballot (Oct 19–20); 40% approve of Trump’s job performance and 59% disapprove. About one in five likely voters said they had already voted.",
+  "source": "PBS News (Oct 27)"
+ },
+ {
+  "id": "b10",
+  "date": "2026-10-28",
+  "order": 3,
+  "category": "Turnout",
+  "headline": "Nearly 33 million ballots cast",
+  "detail": "The University of Florida Election Lab count reached nearly 33 million by Tuesday afternoon, about half by mail and half in person. Turnout counts show who is voting, not how.",
+  "source": "TIME (Oct 27)"
+ },
+ {
+  "id": "b11",
+  "date": "2026-10-28",
+  "order": 4,
+  "category": "Campaign trail",
+  "headline": "Trump and Talarico both rally in Lubbock",
+  "detail": "Trump campaigned with Paxton in Lubbock on Tuesday; Talarico stopped in Midland and Amarillo before his own Lubbock rally that evening.",
+  "source": "CNN, FOX 26 Houston"
+ },
+ {
+  "id": "b12",
+  "date": "2026-10-28",
+  "order": 5,
+  "category": "Campaign trail",
+  "headline": "Obama rallies in Atlanta today",
+  "detail": "Obama joins Ossoff and gubernatorial nominee Keisha Lance Bottoms at a “United for Georgia” rally, 4–7 p.m. Eastern.",
+  "source": "Axios Atlanta, AJC"
  }
 ]

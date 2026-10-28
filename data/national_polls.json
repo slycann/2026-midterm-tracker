@@ -24,6 +24,14 @@
   "margin_label": "D +5"
  },
  {
+  "id": "n6",
+  "pollster": "PBS News/NPR/Marist",
+  "dates": "Oct 19–20",
+  "measure": "Generic ballot",
+  "result": "D 52, R 44 (likely voters)",
+  "margin_label": "D +8"
+ },
+ {
   "id": "n4",
   "pollster": "New York Times/Siena",
   "dates": "Oct 12–19",
@@ -37,6 +45,14 @@
   "dates": "Oct 19–20",
   "measure": "Trump approval",
   "result": "40% approve, 59% disapprove",
+  "margin_label": "−19"
+ },
+ {
+  "id": "n7",
+  "pollster": "PBS News/NPR/Marist",
+  "dates": "Oct 19–20",
+  "measure": "Trump approval",
+  "result": "40% approve, 59% disapprove (likely voters)",
   "margin_label": "−19"
  }
 ]
