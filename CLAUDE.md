@@ -12,12 +12,14 @@ When asked to "run the daily update" (or `/daily-update`):
    - RealClearPolitics polling averages for the Senate toss-ups (Election Central republishes them).
    - New public polls in competitive Senate races from the last week.
    - The most important news in each competitive Senate race and in the House battle.
+   - The latest report on each House toss-up district (for its "Latest" headline).
    - Early-vote totals (University of Florida Election Lab) and big-state counts.
    - New national generic-ballot and presidential-approval polls.
    - Newly scheduled campaign events and voting deadlines.
 3. **Update the files** (schemas below):
    - `daily_brief.json`: add 4–7 items dated today. Continue the id sequence (`b8`, `b9`, …). Never delete earlier days; the page folds them under "Earlier updates".
    - `senate_races.json` / `house_ratings.json` / `house_tossups.json`: change ratings, averages, notes and districts in place when a source says they changed.
+   - `house_tossups.json` headlines: for every toss-up district, replace `headline`, `headline_source` and `headline_date` whenever there's a newer report than the one shown. One line in your own words, 125 characters or less, about what's happening in the race (a poll, money, ads, a debate, an endorsement, a scandal), not a rating change. Keep the old headline if nothing newer turned up. The House tab shows it in the table's "Latest" column and in the map's matchup view.
    - `senate_polls.json`: add new polls with new ids; keep the three or four most recent per race.
    - `national_polls.json`, `early_vote.json`, `key_dates.json`: replace stale entries; keep past key dates (the page dims them).
    - When a rating or average changes, say when in that race's note (for example "moved to Toss Up on Oct 30").
@@ -42,7 +44,7 @@ When asked to "run the daily update" (or `/daily-update`):
 | `senate_races.json` | Senate seat on the ballot (35) | `state`, `name`, `held_by` (D/R), `seat` (Regular/Special), `status` (Open/Incumbent), `incumbent`, `dem_side` (Democrat, or independent in NE), `dem_side_party` (D/I), `rep`, `cook` (Solid D … Solid R), `cook_order` (1–7), `avg_margin` (+ means dem_side leads; null if none), `avg_label`, `avg_source`, `other_ratings`, `watch` |
 | `senate_polls.json` | Poll | `id`, `state`, `pollster`, `dates`, `sample` (LV/RV/""), `dem_side_pct`, `rep_pct`, `margin` (= dem_side_pct − rep_pct) |
 | `house_ratings.json` | Cook rating (7) | `rating`, `seats` (must total 435), `cook_order` |
-| `house_tossups.json` | Toss-up district | `district` (e.g. `CA-22`), `state`, `held_by`, `holder`, `dem`, `rep`, `note` |
+| `house_tossups.json` | Toss-up district | `district` (e.g. `CA-22`), `state`, `held_by` (party holding the seat now), `holder` ("Name (R)" or "Open (Name)"; the incumbent's name must match `dem` or `rep` exactly so the page can shade it), `dem`, `rep`, `note` (rating history; not shown on the page), `headline`, `headline_source`, `headline_date` |
 | `chamber_baseline.json` | Chamber | `total`, `d_current`, `r_current`, `d_not_up`, `r_not_up`, `d_control`, `r_control` |
 | `national_polls.json` | Poll | `id`, `pollster`, `dates`, `measure`, `result`, `margin_label` |
 | `early_vote.json` | Place | `id`, `place`, `ballots` (number), `qualifier` (`more than`/`nearly`/""), `as_of`, `source` |

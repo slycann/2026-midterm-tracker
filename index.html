@@ -172,6 +172,15 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .mt-credits summary { cursor: pointer; color: var(--color-fg); }
 .mt-credits ul { margin: var(--gap-sm) 0 0; padding-left: 1.1rem; display: grid; gap: 2px; }
 .mt-credits a { color: inherit; }
+.mt-table [data-party="D"] { --party: var(--odds-dem); }
+.mt-table [data-party="R"] { --party: var(--odds-rep); }
+.mt-held { display: inline-block; min-width: 1.5em; margin-right: 6px; padding: 0 4px; border: 1.5px solid var(--party); border-radius: 4px; background: var(--party); color: var(--color-panel); font-size: 11px; font-weight: var(--fw-medium); line-height: 1.45; text-align: center; vertical-align: 1px; }
+.mt-held.is-open { background: transparent; color: var(--party); border-style: dashed; }
+.mt-table td.mt-inc { background: color-mix(in srgb, var(--party) 13%, transparent); box-shadow: inset 3px 0 0 var(--party); padding-left: var(--pad-sm); font-weight: var(--fw-medium); }
+.mt-inc-tag { display: block; font-size: 11px; font-weight: 400; color: var(--color-fg-muted); }
+.mt-latest { min-width: 14rem; max-width: 24rem; }
+.mt-latest-src { display: block; margin-top: 2px; color: var(--color-fg-muted); }
+.mt-vs-latest { display: block; margin-top: var(--gap-xs); color: var(--color-fg); }
 </style>
 </head>
 <body>
@@ -262,10 +271,10 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     </div>
     <div class="mt-card" id="tossup-card">
       <h2>House toss-ups</h2>
-      <p class="mt-note">Cook rates <span class="f" data-source="control_math" data-field="tossups" data-where="chamber=House">—</span> districts as pure toss-ups.</p>
+      <p class="mt-note">Cook rates <span class="f" data-source="control_math" data-field="tossups" data-where="chamber=House">—</span> districts as pure toss-ups. The badge shows which party holds the seat now: filled when the incumbent is running, outlined for an open seat; incumbents’ names are shaded.</p>
       <div class="mt-tablewrap">
         <table class="mt-table mt-hide5" id="tossup-table" data-source="house_tossups" data-row-key="district">
-          <thead><tr><th data-field="district">District</th><th data-field="holder">Held by</th><th data-field="dem">Democrat</th><th data-field="rep">Republican</th><th data-field="note">Note</th></tr></thead>
+          <thead><tr><th data-field="district">District</th><th data-field="holder">Held by</th><th data-field="dem">Democrat</th><th data-field="rep">Republican</th><th data-field="headline">Latest</th></tr></thead>
           <tbody id="tossup-body"></tbody>
         </table>
       </div>
@@ -693,7 +702,8 @@ const T = (() => {
     tu.filter((t) => t.state === pick).sort((a, b) => String(a.district).localeCompare(String(b.district))).forEach((t) => {
       const sub = el('p', 'mt-vs-sub');
       const open = /^Open\b/.test(t.holder);
-      sub.append(open ? '' : 'Held by ', mark(el('span', null, open ? t.holder.replace(/^Open\b/, 'Open seat') : t.holder), 'house_tossups', 'holder', 'district=' + t.district), t.note ? '. ' + t.note : '.');
+      sub.append(open ? '' : 'Held by ', mark(el('span', null, open ? t.holder.replace(/^Open\b/, 'Open seat') : t.holder), 'house_tossups', 'holder', 'district=' + t.district), '.');
+      if (t.headline) { const hl = el('span', 'mt-vs-latest'); hl.append(mark(el('span', null, t.headline), 'house_tossups', 'headline', 'district=' + t.district), ' (' + t.headline_source + ', ' + shortDay(parseDay(t.headline_date)) + ')'); sub.append(hl); }
       detail.append(versus(t.district, sub,
         { chamber: 'House', race: t.district, party: 'D', name: t.dem },
         { chamber: 'House', race: t.district, party: 'R', name: t.rep }, cands));
@@ -939,13 +949,36 @@ const T = (() => {
     });
   }
 
+  const shortDay = d3.utcFormat('%b %-d');
   function renderTossups() {
     const tu = rows('house_tossups'); const body = $('#tossup-body');
     body.replaceChildren();
     if (!tu) { const tr = el('tr'); const td = el('td', anyFailed('house_tossups') ? null : 'is-loading', anyFailed('house_tossups') ? 'Failed to load' : '—'); td.colSpan = 5; tr.append(td); body.append(tr); return; }
     tu.slice().sort((a, b) => String(a.district).localeCompare(String(b.district))).forEach((r) => {
-      const tr = el('tr');
-      [r.district, r.holder, r.dem, r.rep, r.note].forEach((v) => tr.append(el('td', null, v == null ? '' : String(v))));
+      const w = 'district=' + r.district, tr = el('tr');
+      const open = /^Open\b/.test(r.holder);
+      const incumbent = open ? null : String(r.holder).replace(/\s*\([DRI]\)\s*$/, '');
+      tr.append(el('td', null, r.district));
+      // Badge in the holding party's color: filled when the incumbent is running, outlined for an open seat.
+      const held = el('td'), badge = el('span', 'mt-held' + (open ? ' is-open' : ''), r.held_by);
+      badge.dataset.party = r.held_by;
+      badge.title = (r.held_by === 'D' ? 'Democratic' : 'Republican') + (open ? ' seat, open' : ' incumbent');
+      held.append(badge, mark(el('span', null, open ? String(r.holder).replace(/^Open\b/, 'Open seat') : incumbent), 'house_tossups', 'holder', w));
+      tr.append(held);
+      [['dem', 'D'], ['rep', 'R']].forEach(([field, party]) => {
+        const td = el('td');
+        td.append(mark(el('span', null, r[field]), 'house_tossups', field, w));
+        if (r[field] === incumbent) { td.className = 'mt-inc'; td.dataset.party = party; td.append(el('span', 'mt-inc-tag', 'Incumbent')); }
+        tr.append(td);
+      });
+      const latest = el('td', 'mt-latest');
+      if (r.headline) {
+        latest.append(mark(el('span', null, r.headline), 'house_tossups', 'headline', w));
+        const src = el('span', 'mt-latest-src');
+        src.append(mark(el('span', null, r.headline_source), 'house_tossups', 'headline_source', w), ', ', shortDay(parseDay(r.headline_date)));
+        latest.append(src);
+      }
+      tr.append(latest);
       body.append(tr);
     });
   }

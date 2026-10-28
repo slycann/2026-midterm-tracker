@@ -104,7 +104,12 @@ if hr:
         err(f"house_ratings.json: seats add up to {total}, not 435")
 
 tu = load("house_tossups")
-need("house_tossups", tu, ["district", "state", "held_by", "holder", "dem", "rep", "note"])
+need("house_tossups", tu, ["district", "state", "held_by", "holder", "dem", "rep", "note", "headline", "headline_source", "headline_date"])
+for t in tu:
+    if not DAY.match(str(t.get("headline_date", ""))):
+        err(f"house_tossups.json {t.get('district')}: headline_date must look like 2026-10-27")
+    if not str(t.get("headline", "")).strip() or not str(t.get("headline_source", "")).strip():
+        err(f"house_tossups.json {t.get('district')}: needs a headline and its source")
 unique("house_tossups", tu, "district")
 for t in tu:
     d = t.get("district", "")
