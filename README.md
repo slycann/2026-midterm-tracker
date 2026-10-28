@@ -1,6 +1,6 @@
 # 2026 Midterms Tracker
 
-A one-page tracker for the key 2026 Senate and House races: a state map, race ratings, recent polls, a daily news brief and upcoming dates. It's a static site, so any static host can serve it.
+A one-page tracker for the key 2026 Senate and House races: a state map, race ratings, recent polls, a daily news brief, upcoming dates, and an Odds tab with the chance Democrats win both chambers (computed from the ratings and polling averages; the tab explains how). It's a static site, so any static host can serve it.
 
 ```
 index.html            the page

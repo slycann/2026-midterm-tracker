@@ -22,13 +22,13 @@ When asked to "run the daily update" (or `/daily-update`):
    - `national_polls.json`, `early_vote.json`, `key_dates.json`: replace stale entries; keep past key dates (the page dims them).
    - When a rating or average changes, say when in that race's note (for example "moved to Toss Up on Oct 30").
 4. **Run `python3 scripts/validate.py`** and fix every problem it reports.
-5. **Stop before committing.** Show a short summary of what changed and why, with sources, plus `git diff --stat`. Commit (`Daily update YYYY-MM-DD`) and push only after the user approves.
+5. **Stop before committing.** Show a short summary of what changed and why, with sources, plus the Odds tab number before and after, and `git diff --stat`. Commit (`Daily update YYYY-MM-DD`) and push only after the user approves.
 
 ## Editorial rules
 
 - Every figure needs a named source. If you can't find a source for something, leave it out.
 - Summarize news in your own words. Never copy more than a few words from an article.
-- Stay neutral: report what raters, polls and campaigns said and did. No predictions, opinions or loaded adjectives. Give both parties' good and bad news the same treatment.
+- Stay neutral: report what raters, polls and campaigns said and did. No predictions, opinions or loaded adjectives in anything you write; the Odds tab's number is the only forecast on the page, and it comes from the model, not from you. Give both parties' good and bad news the same treatment.
 - When sources disagree (for example Cook vs. RealClearPolitics ratings), say so instead of picking one silently.
 - Verify candidate names and spellings against a current source; don't rely on memory.
 - Formatting: dates in data as `YYYY-MM-DD`; date ranges in text as `Oct 10–14` with an en dash; typographic apostrophes (’) in text people read.
@@ -49,6 +49,8 @@ When asked to "run the daily update" (or `/daily-update`):
 | `us_tiles.json` | State | Map layout only (`col`, `row`). Don't edit. |
 
 Seat math on the page is computed from `senate_races.json`, `house_ratings.json` and `chamber_baseline.json`; don't hard-code totals anywhere.
+
+The Odds tab (chance Democrats win both the House and the Senate) is also computed in `index.html` from those three files: Cook ratings become expected margins, Senate RCP averages are blended in half and half, and a nationwide error shared by both chambers ties the races together. The method is explained on the tab. Never type a probability into a data file; keeping the ratings and averages current is what keeps the number current.
 
 ## Preview
 

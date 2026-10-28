@@ -29,6 +29,7 @@
   --chart-grid: #e8ebef; --chart-reference: #8a93a0; --chart-muted: #a6adb8;
   --surface-popover: #ffffff; --border: #d3d8df; --shadow-popover: 0 6px 20px rgba(16, 24, 40, .12);
   --text-secondary: #5a6474; --skeleton: #e6e9ee; --dur-slow: 300ms;
+  --odds-good: #0a7d0a; --odds-even: #9a6400; --odds-bad: #c0392b;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -36,6 +37,7 @@
     --color-border-line: #283039; --chart-grid: #232a33; --chart-reference: #6f7885; --chart-muted: #5c6470;
     --surface-popover: #1d222a; --border: #343c47; --shadow-popover: 0 8px 24px rgba(0, 0, 0, .5);
     --text-secondary: #9aa3b1; --skeleton: #222831;
+    --odds-good: #2fbf2f; --odds-even: #fab219; --odds-bad: #e05a5a;
   }
 }
 * { box-sizing: border-box; }
@@ -135,6 +137,18 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .mt-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); display: inline-block; }
 .mt-seatfigs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap-sm); }
 .mt-seatfigs .mt-fig-k { font-size: var(--fs-caption); color: var(--color-fg-muted); }
+.mt-odds-card { display: grid; justify-items: center; text-align: center; gap: var(--gap-xs); padding-block: var(--gap-xl); }
+.mt-odds-card h2 { margin: 0; max-width: 24rem; }
+.mt-odds-card[data-band="good"] { --band: var(--odds-good); }
+.mt-odds-card[data-band="even"] { --band: var(--odds-even); }
+.mt-odds-card[data-band="bad"] { --band: var(--odds-bad); }
+.mt-odds-num { font-family: var(--font-sans); font-weight: var(--fw-medium); font-size: clamp(6rem, 30vw, 12rem); line-height: 1; letter-spacing: -0.03em; color: var(--band); margin: var(--gap-sm) 0; }
+.mt-odds-pct { font-size: 0.5em; letter-spacing: 0; margin-left: 0.03em; }
+.mt-odds-tag { margin: 0; display: inline-flex; align-items: center; gap: var(--gap-sm); font-size: var(--fs-body); font-weight: var(--fw-medium); }
+.mt-odds-dot { width: .75rem; height: .75rem; border-radius: 50%; background: var(--band); flex: none; }
+.mt-method ol { margin: 0; padding-left: 1.25rem; display: grid; gap: var(--gap-sm); max-width: 46rem; font-size: var(--fs-caption); line-height: 1.55; }
+.mt-method p { margin: var(--gap-md) 0 0; max-width: 46rem; font-size: var(--fs-caption); line-height: 1.55; color: var(--color-fg-muted); }
+.mt-method a { color: inherit; }
 </style>
 </head>
 <body>
@@ -150,6 +164,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <button class="mt-tab" role="tab" data-tab="senate" aria-selected="false">Senate</button>
     <button class="mt-tab" role="tab" data-tab="house" aria-selected="false">House</button>
     <button class="mt-tab" role="tab" data-tab="national" aria-selected="false">National</button>
+    <button class="mt-tab" role="tab" data-tab="odds" aria-selected="false">Odds</button>
   </nav>
 
   <section class="mt-page mt-stack" id="today">
@@ -239,9 +254,26 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     </div>
   </section>
 
+  <section class="mt-page mt-stack" id="odds" hidden>
+    <p class="mt-note">The tracker’s own estimate, worked out from the Cook ratings and polling averages on the other tabs, so it changes whenever they do. It’s a simple model, not a professional forecast.</p>
+    <div class="mt-card mt-odds-card" id="odds-card" aria-live="polite"></div>
+    <div class="mt-card mt-method" id="method-card">
+      <h2>How this is calculated</h2>
+      <p class="mt-note">Every input comes from the data on the other tabs; nothing is entered by hand.</p>
+      <ol>
+        <li><strong>Each race starts from an expected margin.</strong> Cook’s rating becomes a margin: Toss Up 0 points, Lean 7, Likely 10, Solid 17. Where RealClearPolitics publishes a Senate polling average, the expected margin is halfway between that average and the rating’s margin. House seats use the rating alone, since the tracker has no district polls.</li>
+        <li><strong>Races can miss together and separately.</strong> Each race gets its own error (standard deviation 4.5 points) plus one nationwide error shared by every race (3 points), because polls and ratings tend to miss in the same direction in a given year. Combined that is about ±5.4 points, so a 2-point lead is still close to a coin flip.</li>
+        <li><strong>The error sizes match the raters’ record.</strong> With them, the favorite wins about 90% of Lean races, 97% of Likely and 99.9% of Solid, and Toss Ups split evenly. A study of Cook’s August House ratings from 1984 to 2008 found 85.7%, 94.9% and 99.8%, with toss-ups splitting about evenly (<a href="https://www.acsu.buffalo.edu/~jcampbel/documents/CookAccuracySummary.pdf">Campbell, 2010</a>). Ratings this close to Election Day have a better record (<a href="https://www.cookpolitical.com/accuracy">Cook</a>), so the tracker sets them a little higher.</li>
+        <li><strong>Winning both.</strong> Democrats need <span class="f" data-source="chamber_baseline" data-field="d_control" data-where="chamber=Senate">—</span> Senate seats (the <span class="f" data-source="chamber_baseline" data-field="d_not_up" data-where="chamber=Senate">—</span> they hold that aren’t on the ballot plus the races they win; a win by independent Dan Osborn in Nebraska isn’t counted) and <span class="f" data-source="chamber_baseline" data-field="d_control" data-where="chamber=House">—</span> House seats. On their own the model gives Democrats <span class="f" data-source="control_odds" data-field="senate_pct">—</span> in the Senate and <span class="f" data-source="control_odds" data-field="house_pct">—</span> in the House. The two are worked out together rather than multiplied, because the same nationwide miss moves every race in both chambers: a year good enough for a Senate majority is usually good enough for the House too.</li>
+        <li><strong>Worked out exactly.</strong> The chance is summed over every size of nationwide miss instead of by random simulation, so it doesn’t change when you reload the page.</li>
+      </ol>
+      <p>A chance is not a call: at 70%, the other side still wins about 3 times in 10.</p>
+    </div>
+  </section>
+
   <footer class="mt-foot" id="about">
     <h2>About this tracker</h2>
-    <p>Race ratings come from the Cook Political Report unless a card says otherwise. Polling averages are RealClearPolitics averages as reported by Election Central, and every individual poll names its pollster. News items are summarized rather than quoted, and each names its source.</p>
+    <p>Race ratings come from the Cook Political Report unless a card says otherwise. Polling averages are RealClearPolitics averages as reported by Election Central, and every individual poll names its pollster. News items are summarized rather than quoted, and each names its source. The Odds tab is the tracker’s own estimate, calculated from those ratings and averages; that tab explains how.</p>
     <p>Compiled with help from Claude, an AI model, from public sources. It can contain errors, so check the original source before relying on a figure. Not affiliated with any campaign, party or rating organization.</p>
   </footer>
 </main>
@@ -304,6 +336,58 @@ const T = (() => {
         { chamber: 'Senate', d_favored: sD, tossups: sT, r_favored: sR, d_control: Number(s.d_control), r_control: Number(s.r_control), d_needs: Math.max(0, Number(s.d_control) - sD), r_needs: Math.max(0, Number(s.r_control) - sR), total: Number(s.total) },
         { chamber: 'House', d_favored: hD, tossups: hT, r_favored: hR, d_control: Number(h.d_control), r_control: Number(h.r_control), d_needs: Math.max(0, Number(h.d_control) - hD), r_needs: Math.max(0, Number(h.r_control) - hR), total: Number(h.total) },
       ];
+    },
+  });
+
+  // Chance Democrats win both chambers. A race's Democratic margin = expected margin + race error (sd 4.5)
+  // + a nationwide error shared by every race in both chambers (sd 3). Given the nationwide error, races
+  // are independent, so each chamber's chance is exact at every point of a grid of nationwide errors;
+  // multiplying the two there and averaging over the grid keeps the chambers' shared fate.
+  const RATING_MARGIN = { 'Solid D': 17, 'Likely D': 10, 'Lean D': 7, 'Toss Up': 0, 'Lean R': -7, 'Likely R': -10, 'Solid R': -17 };
+  const SD_RACE = 4.5, SD_NATION = 3;
+  const erf = (x) => {
+    const s = Math.sign(x), a = Math.abs(x), t = 1 / (1 + 0.3275911 * a);
+    return s * (1 - ((((1.061405429 * t - 1.453152027) * t + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t * Math.exp(-a * a));
+  };
+  const normCdf = (z) => 0.5 * (1 + erf(z / Math.SQRT2));
+  const GRID = d3.range(-4, 4.0001, 0.05).map((z) => ({ z, w: Math.exp(-z * z / 2) }));
+  const gridAverage = (vals) => d3.sum(GRID, (g, j) => g.w * vals[j]) / d3.sum(GRID, (g) => g.w);
+  // A chamber's chance of reaching `need` seats at each point of the nationwide-error grid.
+  function chanceByNation(means, base, need) {
+    const n = means.length;
+    return GRID.map(({ z }) => {
+      const pmf = new Float64Array(n + 1);
+      pmf[0] = 1;
+      means.forEach((m, i) => {
+        const p = normCdf((m + SD_NATION * z) / SD_RACE);
+        for (let k = i; k >= 0; k--) { pmf[k + 1] += pmf[k] * p; pmf[k] *= 1 - p; }
+      });
+      let c = 0;
+      for (let k = Math.max(0, need - base); k <= n; k++) c += pmf[k];
+      return c;
+    });
+  }
+  let oddsMemo = null;
+  T.calc('control_odds', {
+    inputs: ['senate_races', 'house_ratings', 'chamber_baseline'],
+    title: 'Chance Democrats win both chambers',
+    description: 'Ratings and RCP averages turned into win chances per race, with a nationwide error shared by both chambers; see the Odds tab.',
+    fn: (...ins) => {
+      if (oddsMemo && ins.every((d, i) => d === oddsMemo.ins[i])) return oddsMemo.out;
+      const [senate_races, house_ratings, chamber_baseline] = ins;
+      const s = chamber_baseline.find((r) => r.chamber === 'Senate');
+      const h = chamber_baseline.find((r) => r.chamber === 'House');
+      const senateMeans = senate_races.filter((r) => r.dem_side_party !== 'I').map((r) => {
+        const rm = RATING_MARGIN[r.cook];
+        return r.avg_margin != null && r.avg_margin !== '' ? (Number(r.avg_margin) + rm) / 2 : rm;
+      });
+      const houseMeans = house_ratings.flatMap((r) => Array(Number(r.seats)).fill(RATING_MARGIN[r.rating]));
+      const sen = chanceByNation(senateMeans, Number(s.d_not_up), Number(s.d_control));
+      const hou = chanceByNation(houseMeans, Number(h.d_not_up), Number(h.d_control));
+      const pct = (p) => Math.round(p * 100) + '%';
+      const out = [{ both: gridAverage(sen.map((p, j) => p * hou[j])), senate_pct: pct(gridAverage(sen)), house_pct: pct(gridAverage(hou)) }];
+      oddsMemo = { ins, out };
+      return out;
     },
   });
 
@@ -731,7 +815,28 @@ const T = (() => {
     });
   }
 
-  const PAGES = ['today', 'senate', 'house', 'national'];
+  const ODDS_BANDS = [
+    { min: 60, band: 'good', label: 'Democrats favored' },
+    { min: 41, band: 'even', label: 'Toss-up' },
+    { min: 0, band: 'bad', label: 'Democrats unlikely' },
+  ];
+  function renderOdds() {
+    const co = rows('control_odds'), box = $('#odds-card');
+    box.replaceChildren();
+    delete box.dataset.band;
+    if (!co) { if (anyFailed('senate_races', 'house_ratings', 'chamber_baseline')) box.append(failLine()); else box.classList.add('is-loading'); return; }
+    box.classList.remove('is-loading');
+    const p = co[0].both, pct = Math.round(p * 100);
+    const b = ODDS_BANDS.find((x) => pct >= x.min);
+    box.dataset.band = b.band;
+    const num = el('div', 'mt-odds-num');
+    num.append(mark(el('span', null, p > 0.99 ? '>99' : p < 0.01 ? '<1' : String(pct)), 'control_odds', 'both'), el('span', 'mt-odds-pct', '%'));
+    const tag = el('p', 'mt-odds-tag');
+    tag.append(el('span', 'mt-odds-dot'), b.label);
+    box.append(el('h2', null, 'Chance Democrats win both the House and the Senate'), num, tag);
+  }
+
+  const PAGES = ['today', 'senate', 'house', 'national', 'odds'];
   let current = 'today';
   function render() {
     renderHeader();
@@ -739,6 +844,7 @@ const T = (() => {
     if (current === 'senate') { renderSeatMath(); renderStrip(); renderRaces(); renderSafe(); }
     if (current === 'house') { renderHouseBar(); renderTossups(); }
     if (current === 'national') { renderNational(); renderEarly(); }
+    if (current === 'odds') renderOdds();
     fillStatic();
   }
   function show(id) {
