@@ -2,10 +2,10 @@
  {
   "id": "us",
   "place": "Nationwide",
-  "ballots": 33000000,
-  "qualifier": "nearly",
-  "as_of": "Oct 27",
-  "source": "University of Florida Election Lab (via TIME)"
+  "ballots": 39600000,
+  "qualifier": "more than",
+  "as_of": "Oct 29",
+  "source": "NBC News early-vote tracker"
  },
  {
   "id": "tx",

@@ -106,5 +106,59 @@
   "headline": "Obama rallies in Atlanta today",
   "detail": "Obama joins Ossoff and gubernatorial nominee Keisha Lance Bottoms at a “United for Georgia” rally, 4–7 p.m. Eastern.",
   "source": "Axios Atlanta, AJC"
+ },
+ {
+  "id": "b13",
+  "date": "2026-10-29",
+  "order": 1,
+  "category": "Senate",
+  "headline": "New York Times/Siena poll: South Carolina tied",
+  "detail": "Graham and Andrews are at 48% each. Cook rates it Lean R; RealClearPolitics calls it a toss-up.",
+  "source": "Fox News (Oct 28)"
+ },
+ {
+  "id": "b14",
+  "date": "2026-10-29",
+  "order": 2,
+  "category": "Senate",
+  "headline": "Alaska fight over a second Dan Sullivan on the ballot",
+  "detail": "The New York Times reported Democratic operatives discussed recruiting Daniel J. Sullivan Jr., whose name resembles the senator’s. Trump said Peltola should be removed from the ballot; her campaign says it had no involvement.",
+  "source": "Fox News (Oct 28), citing the New York Times"
+ },
+ {
+  "id": "b15",
+  "date": "2026-10-29",
+  "order": 3,
+  "category": "Senate",
+  "headline": "Hamilton edges ahead in Kansas average; El-Sayed’s Michigan lead grows",
+  "detail": "RealClearPolitics now has Hamilton +0.2, El-Sayed +3.2, Talarico +2.2 and Jackson +1.4. Brown’s Ohio average slipped to +2.6, though a new Suffolk poll has him up 47–44.",
+  "source": "Election Central (Oct 29), Fox News (Oct 28)"
+ },
+ {
+  "id": "b16",
+  "date": "2026-10-29",
+  "order": 4,
+  "category": "Senate",
+  "headline": "Detroit News poll has El-Sayed up 6",
+  "detail": "Glengariff’s survey of 600 likely voters (Oct 19–22) has El-Sayed 51, Rogers 45.",
+  "source": "WDIV/Detroit News (Oct 27)"
+ },
+ {
+  "id": "b17",
+  "date": "2026-10-29",
+  "order": 5,
+  "category": "Turnout",
+  "headline": "Nearly 40 million early votes",
+  "detail": "NBC News counts more than 39.6 million mail and in-person early votes as of this morning. Turnout counts show who is voting, not how.",
+  "source": "NBC News (Oct 29)"
+ },
+ {
+  "id": "b18",
+  "date": "2026-10-29",
+  "order": 6,
+  "category": "Campaign trail",
+  "headline": "Trump rallies for Husted; Speaker Johnson stumps for Merrin",
+  "detail": "Trump held his third Ohio rally this month in Chillicothe on Wednesday. Johnson campaigned in Lucas County for Derek Merrin’s rematch with Marcy Kaptur.",
+  "source": "Fox News, 13abc"
  }
 ]

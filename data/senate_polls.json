@@ -20,6 +20,16 @@
   "margin": 1
  },
  {
+  "id": "p29",
+  "state": "OH",
+  "pollster": "Suffolk University",
+  "dates": "Released Oct 28",
+  "sample": "",
+  "dem_side_pct": 47,
+  "rep_pct": 44,
+  "margin": 3
+ },
+ {
   "id": "p3",
   "state": "OH",
   "pollster": "Marist",
@@ -140,6 +150,16 @@
   "margin": -2
  },
  {
+  "id": "p27",
+  "state": "MI",
+  "pollster": "Glengariff Group for WDIV/Detroit News",
+  "dates": "Oct 19–22",
+  "sample": "LV",
+  "dem_side_pct": 51,
+  "rep_pct": 45,
+  "margin": 6
+ },
+ {
   "id": "p14",
   "state": "MI",
   "pollster": "Marist",
@@ -188,6 +208,16 @@
   "dem_side_pct": 48,
   "rep_pct": 47,
   "margin": 1
+ },
+ {
+  "id": "p28",
+  "state": "SC",
+  "pollster": "New York Times/Siena",
+  "dates": "Released Oct 28",
+  "sample": "",
+  "dem_side_pct": 48,
+  "rep_pct": 48,
+  "margin": 0
  },
  {
   "id": "p19",
