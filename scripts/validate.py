@@ -156,6 +156,22 @@ for r in oh:
 if [r.get("date") for r in oh] != sorted(r.get("date") for r in oh):
     err("odds_history.json: rows must be in date order (scripts/odds.py --record keeps them sorted)")
 
+hp = load("house_polls")
+need("house_polls", hp, ["id", "district", "pollster", "sponsor", "dates", "sample", "dem_pct", "rep_pct", "margin", "source", "source_url"])
+unique("house_polls", hp, "id")
+districts = {t.get("district") for t in tu}
+for p in hp:
+    pid = p.get("id")
+    if p.get("district") not in districts:
+        err(f"house_polls.json {pid}: district '{p.get('district')}' isn't a toss-up in house_tossups.json")
+    if p.get("sponsor") not in ("D", "R", ""):
+        err(f"house_polls.json {pid}: sponsor must be 'D', 'R' or '' (nonpartisan)")
+    try:
+        if p["margin"] != p["dem_pct"] - p["rep_pct"]:
+            err(f"house_polls.json {pid}: margin should be dem_pct - rep_pct = {p['dem_pct'] - p['rep_pct']}")
+    except (KeyError, TypeError):
+        err(f"house_polls.json {pid}: dem_pct, rep_pct and margin must be numbers")
+
 ROOT = DATA.parent
 cands = load("candidates")
 need("candidates", cands, ["id", "chamber", "race", "party", "name", "photo", "photo_credit", "photo_source", "fact", "fact_source", "fact_url"])
@@ -177,6 +193,12 @@ have = {(c.get("chamber"), c.get("race"), c.get("party"), c.get("name")) for c i
 def want(chamber, race, party, name):
     if name and (chamber, race, party, name) not in have:
         err(f"candidates.json: no row for {name} ({party}) in the {race} {chamber} toss-up; add one (photo optional)")
+money = {m.get("id"): m for m in load("money")}
+for c in cands:
+    if not c.get("fec_id"):
+        err(f"candidates.json {c.get('id')}: needs its FEC candidate ID in 'fec_id' (scripts/money.py uses it)")
+    elif c.get("id") not in money:
+        err(f"money.json: no row for {c.get('id')}; run python3 scripts/money.py")
 for r in races:
     if r.get("cook") == "Toss Up":
         want("Senate", r.get("state"), r.get("dem_side_party"), r.get("dem_side"))

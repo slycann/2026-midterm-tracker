@@ -10,7 +10,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:James_Talarico_Press_Conference_(cropped).jpg",
   "fact": "A former middle school English teacher who is also working on a Master of Divinity at a Presbyterian seminary.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/James_Talarico"
+  "fact_url": "https://en.wikipedia.org/wiki/James_Talarico",
+  "fec_id": "S6TX00479"
  },
  {
   "id": "paxton",
@@ -23,7 +24,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Ken_Paxton_-_55022425595_(cropped).jpg",
   "fact": "Texas attorney general since 2015. The Texas House impeached him in 2023; the state Senate acquitted him.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Ken_Paxton"
+  "fact_url": "https://en.wikipedia.org/wiki/Ken_Paxton",
+  "fec_id": "S6TX00388"
  },
  {
   "id": "brown-sherrod",
@@ -36,7 +38,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Sherrod_Brown_117th_Congress_(2).jpg",
   "fact": "Held Ohio’s other Senate seat for 18 years, lost it in 2024, and is now running for this one.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Sherrod_Brown"
+  "fact_url": "https://en.wikipedia.org/wiki/Sherrod_Brown",
+  "fec_id": "S6OH00163"
  },
  {
   "id": "husted",
@@ -49,7 +52,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Sen._Jon_Husted_official_portrait,_119th_Congress.jpg",
   "fact": "Has been Ohio House speaker, secretary of state and lieutenant governor; joined the U.S. Senate in 2025.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Jon_Husted"
+  "fact_url": "https://en.wikipedia.org/wiki/Jon_Husted",
+  "fec_id": "S6OH00304"
  },
  {
   "id": "jackson-troy",
@@ -62,7 +66,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Troy_Jackson_in_the_Senate_Chamber_(cropped).jpg",
   "fact": "A former logger who got into politics in 1998 by helping blockade Canadian logging crews at the border.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Troy_Jackson"
+  "fact_url": "https://en.wikipedia.org/wiki/Troy_Jackson",
+  "fec_id": "S6ME00464"
  },
  {
   "id": "collins-susan",
@@ -75,7 +80,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Senator_Susan_Collins_2014_official_portrait_(1).jpg",
   "fact": "Maine’s longest-serving member of Congress and the longest-serving Republican woman in the Senate.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Susan_Collins"
+  "fact_url": "https://en.wikipedia.org/wiki/Susan_Collins",
+  "fec_id": "S6ME00159"
  },
  {
   "id": "peltola",
@@ -88,7 +94,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Mary_Peltola_Congressional_Member_Portrait_(2).jpeg",
   "fact": "The first Alaska Native ever elected to Congress; she beat Sarah Palin to get there in 2022.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Mary_Peltola"
+  "fact_url": "https://en.wikipedia.org/wiki/Mary_Peltola",
+  "fec_id": "S6AK00276"
  },
  {
   "id": "sullivan-dan",
@@ -101,7 +108,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Senator_Dan_Sullivan_official.jpg",
   "fact": "A Marine Corps veteran who grew up in the Cleveland suburbs and went to Harvard and Georgetown.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Dan_Sullivan_(U.S._senator)"
+  "fact_url": "https://en.wikipedia.org/wiki/Dan_Sullivan_(U.S._senator)",
+  "fec_id": "S4AK00214"
  },
  {
   "id": "turek",
@@ -114,7 +122,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Joshua_Turek_(cropped_2).jpg",
   "fact": "Won Paralympic gold medals in wheelchair basketball at the 2016 and 2020 Games.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Josh_Turek"
+  "fact_url": "https://en.wikipedia.org/wiki/Josh_Turek",
+  "fec_id": "S6IA00298"
  },
  {
   "id": "hinson",
@@ -127,7 +136,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Congresswoman_Ashley_Hinson_Official_portrait.jpg",
   "fact": "Spent more than a decade as a TV reporter and anchor at KCRG in Cedar Rapids.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Ashley_Hinson"
+  "fact_url": "https://en.wikipedia.org/wiki/Ashley_Hinson",
+  "fec_id": "S6IA00314"
  },
  {
   "id": "el-sayed",
@@ -140,7 +150,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed_meet-and-greet_by_Conlan_Houston_5_(cropped).jpg",
   "fact": "A Rhodes Scholar and doctor who ran Detroit’s health department starting in 2015.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Abdul_El-Sayed"
+  "fact_url": "https://en.wikipedia.org/wiki/Abdul_El-Sayed",
+  "fec_id": "S6MI00418"
  },
  {
   "id": "rogers-mike",
@@ -153,7 +164,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Mike-Rogers-Head-Shot-2_(3x4_cropped).jpg",
   "fact": "A former FBI agent who chaired the House Intelligence Committee; narrowly lost Michigan’s 2024 Senate race.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Mike_Rogers_(Michigan_politician)"
+  "fact_url": "https://en.wikipedia.org/wiki/Mike_Rogers_(Michigan_politician)",
+  "fec_id": "S4MI00595"
  },
  {
   "id": "hamilton-adam",
@@ -166,7 +178,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Adam_Hamilton_on_the_Courage_to_Preach_(cropped).png",
   "fact": "Senior pastor of the largest United Methodist church in the country, and the author of 30-plus books.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Adam_Hamilton_(pastor)"
+  "fact_url": "https://en.wikipedia.org/wiki/Adam_Hamilton_(pastor)",
+  "fec_id": "S6KS00312"
  },
  {
   "id": "marshall-roger",
@@ -179,7 +192,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Roger_Marshall_117th_Congress_portrait.jpg",
   "fact": "Worked as an obstetrician for more than 25 years before going to Congress.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Roger_Marshall"
+  "fact_url": "https://en.wikipedia.org/wiki/Roger_Marshall",
+  "fec_id": "S0KS00315"
  },
  {
   "id": "villegas",
@@ -192,7 +206,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Randy_Villegas_at_Vota_Palooza_in_2024_(cropped).jpg",
   "fact": "A Visalia school board trustee endorsed by both Bernie Sanders and Alexandria Ocasio-Cortez.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_California_(districts_1–26)#District_22"
+  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_California_(districts_1–26)#District_22",
+  "fec_id": "H6CA22190"
  },
  {
   "id": "valadao",
@@ -205,7 +220,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:David_Valadao_117th_U.S_Congress.jpg",
   "fact": "A former dairy farmer and one of ten House Republicans who voted to impeach Trump in 2021.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/David_Valadao"
+  "fact_url": "https://en.wikipedia.org/wiki/David_Valadao",
+  "fec_id": "H2CA20094"
  },
  {
   "id": "castor",
@@ -218,7 +234,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Kathy_Castor.jpg",
   "fact": "Has represented Tampa in Congress since 2007, after four years on the Hillsborough County Commission.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Kathy_Castor"
+  "fact_url": "https://en.wikipedia.org/wiki/Kathy_Castor",
+  "fec_id": "H6FL11126"
  },
  {
   "id": "beltran",
@@ -231,7 +248,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Mike_Beltran.jpg",
   "fact": "An attorney who represented part of Hillsborough County in the Florida House.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Mike_Beltran"
+  "fact_url": "https://en.wikipedia.org/wiki/Mike_Beltran",
+  "fec_id": "H6FL14237"
  },
  {
   "id": "dandiya",
@@ -244,7 +262,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Pia_Dandiya_WHF_(cropped).png",
   "fact": "Runs Apple’s Strategic Innovations Group; she ran in Florida’s 21st district before this.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Florida#District_22"
+  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Florida#District_22",
+  "fec_id": "H6FL21059"
  },
  {
   "id": "askar",
@@ -257,7 +276,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Casey_Askar.jpg",
   "fact": "A businessman and Marine veteran who also ran for Congress in Florida’s 19th district in 2020.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Florida#District_22"
+  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Florida#District_22",
+  "fec_id": "H6FL22248"
  },
  {
   "id": "james-lindsay",
@@ -270,7 +290,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Member_of_the_Iowa_House_of_Representatives_Lindsay_James.jpg",
   "fact": "A Presbyterian minister who is also the minority whip in the Iowa House.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Lindsay_James_(politician)"
+  "fact_url": "https://en.wikipedia.org/wiki/Lindsay_James_(politician)",
+  "fec_id": "H6IA02211"
  },
  {
   "id": "mitchell-joe",
@@ -283,7 +304,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Joe_Mitchell.jpg",
   "fact": "Sworn in at 21, the youngest person ever elected to the Iowa House.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Joe_Mitchell_(politician)"
+  "fact_url": "https://en.wikipedia.org/wiki/Joe_Mitchell_(politician)",
+  "fec_id": "H6IA02237"
  },
  {
   "id": "dembo",
@@ -296,7 +318,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Zach_Dembo.jpg",
   "fact": "A former federal prosecutor and U.S. Navy veteran.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Kentucky#District_6"
+  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Kentucky#District_6",
+  "fec_id": "H6KY06184"
  },
  {
   "id": "alvarado",
@@ -309,7 +332,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Ralph_Alvarado_by_Gage_Skidmore.jpg",
   "fact": "A physician who ran Tennessee’s health department after eight years in the Kentucky Senate.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Ralph_Alvarado"
+  "fact_url": "https://en.wikipedia.org/wiki/Ralph_Alvarado",
+  "fec_id": "H6KY06192"
  },
  {
   "id": "mccann",
@@ -317,12 +341,13 @@
   "race": "MI-04",
   "party": "D",
   "name": "Sean McCann",
-  "photo": "",
-  "photo_credit": "",
-  "photo_source": "",
+  "photo": "img/candidates/mccann.jpg",
+  "photo_credit": "Campaign photo",
+  "photo_source": "https://seanmccannforcongress.com/about/",
   "fact": "A Michigan state senator who served in the state House before that.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Sean_McCann_(politician)"
+  "fact_url": "https://en.wikipedia.org/wiki/Sean_McCann_(politician)",
+  "fec_id": "H6MI04204"
  },
  {
   "id": "huizenga",
@@ -335,7 +360,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Rep._Bill_Huizenga_-_118th_Congress_(portrait_crop).jpg",
   "fact": "Pronounced HY-zing-gə. In Congress since 2011, representing Kalamazoo, Battle Creek and Holland.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Bill_Huizenga"
+  "fact_url": "https://en.wikipedia.org/wiki/Bill_Huizenga",
+  "fec_id": "H0MI02094"
  },
  {
   "id": "lawrence-william",
@@ -348,7 +374,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:William_Lawrence_2026.jpg",
   "fact": "Co-founded the Sunrise Movement, the youth climate group behind the Green New Deal push.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/William_Lawrence_(activist)"
+  "fact_url": "https://en.wikipedia.org/wiki/William_Lawrence_(activist)",
+  "fec_id": "H6MI07298"
  },
  {
   "id": "barrett-tom",
@@ -361,7 +388,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Tom_Barrett,_official_portrait_(119th_Congress).jpg",
   "fact": "A former Army officer who lost this race in 2022, then won it in 2024.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Tom_Barrett_(Michigan_politician)"
+  "fact_url": "https://en.wikipedia.org/wiki/Tom_Barrett_(Michigan_politician)",
+  "fec_id": "H2MI07123"
  },
  {
   "id": "hines",
@@ -369,12 +397,13 @@
   "race": "MI-10",
   "party": "D",
   "name": "Christina Hines",
-  "photo": "",
-  "photo_credit": "",
-  "photo_source": "",
+  "photo": "img/candidates/hines.jpg",
+  "photo_credit": "Campaign photo",
+  "photo_source": "https://www.christinahinesforcongress.com/",
   "fact": "A prosecutor running for the open seat John James left to run for governor.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Michigan#District_10"
+  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Michigan#District_10",
+  "fec_id": "H6MI10276"
  },
  {
   "id": "bouchard-jr",
@@ -382,12 +411,13 @@
   "race": "MI-10",
   "party": "R",
   "name": "Michael Bouchard Jr.",
-  "photo": "",
-  "photo_credit": "",
-  "photo_source": "",
+  "photo": "img/candidates/bouchard-jr.jpg",
+  "photo_credit": "Campaign photo",
+  "photo_source": "https://www.bouchardforcongress.com/",
   "fact": "An Army National Guard captain and son of longtime Oakland County Sheriff Mike Bouchard.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Michigan#District_10"
+  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Michigan#District_10",
+  "fec_id": "H6MI10359"
  },
  {
   "id": "forstag",
@@ -400,7 +430,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Sam_Forstag_Portrait_(cropped).jpg",
   "fact": "A former smokejumper, one of the firefighters who parachute into wildfires.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Sam_Forstag"
+  "fact_url": "https://en.wikipedia.org/wiki/Sam_Forstag",
+  "fec_id": "H6MT01137"
  },
  {
   "id": "flint",
@@ -408,12 +439,13 @@
   "race": "MT-01",
   "party": "R",
   "name": "Aaron Flint",
-  "photo": "",
-  "photo_credit": "",
-  "photo_source": "",
+  "photo": "img/candidates/flint.jpg",
+  "photo_credit": "Campaign photo",
+  "photo_source": "https://flintformontana.com/",
   "fact": "A veteran and radio host who got Trump’s endorsement after Ryan Zinke dropped out.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Montana#District_1"
+  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Montana#District_1",
+  "fec_id": "H6MT01152"
  },
  {
   "id": "davis-don",
@@ -426,7 +458,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Congressman_Don_Davis.jpg",
   "fact": "An Air Force Academy graduate who was once mayor of his hometown, Snow Hill.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Don_Davis_(North_Carolina_politician)"
+  "fact_url": "https://en.wikipedia.org/wiki/Don_Davis_(North_Carolina_politician)",
+  "fec_id": "H2NC02287"
  },
  {
   "id": "buckhout",
@@ -439,7 +472,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Laurie_Buckhout.jpg",
   "fact": "A retired military officer and the Pentagon’s top cyber policy official in 2025; her second run here.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Laurie_Buckhout"
+  "fact_url": "https://en.wikipedia.org/wiki/Laurie_Buckhout",
+  "fec_id": "H4NC01137"
  },
  {
   "id": "conley",
@@ -452,7 +486,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Cait_Conley.jpg",
   "fact": "Served 16 years as an Army officer, then led CISA’s election security work in 2024.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Cait_Conley"
+  "fact_url": "https://en.wikipedia.org/wiki/Cait_Conley",
+  "fec_id": "H6NY17171"
  },
  {
   "id": "lawler",
@@ -465,7 +500,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Rep._Mike_Lawler_official_photo.jpg",
   "fact": "Won this seat in 2022 by beating the chair of the House Democrats’ campaign committee.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Mike_Lawler"
+  "fact_url": "https://en.wikipedia.org/wiki/Mike_Lawler",
+  "fec_id": "H2NY17162"
  },
  {
   "id": "poindexter",
@@ -473,12 +509,13 @@
   "race": "OH-07",
   "party": "D",
   "name": "Brian Poindexter",
-  "photo": "",
-  "photo_credit": "",
-  "photo_source": "",
+  "photo": "img/candidates/poindexter.jpg",
+  "photo_credit": "Campaign photo",
+  "photo_source": "https://poindexterforcongress.com/",
   "fact": "An ironworker and Brook Park city councilman.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Ohio#District_7"
+  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Ohio#District_7",
+  "fec_id": "H6OH07168"
  },
  {
   "id": "miller-max",
@@ -491,7 +528,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Max_Miller,_official_portrait_(119th_Congress).jpg",
   "fact": "Worked in Trump’s first White House before winning this seat in 2022.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Max_Miller_(politician)"
+  "fact_url": "https://en.wikipedia.org/wiki/Max_Miller_(politician)",
+  "fec_id": "H2OH16051"
  },
  {
   "id": "kaptur",
@@ -504,7 +542,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Marcy_Kaptur_Wikipedia.jpg",
   "fact": "In Congress since 1983, she is the longest-serving woman in congressional history.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Marcy_Kaptur"
+  "fact_url": "https://en.wikipedia.org/wiki/Marcy_Kaptur",
+  "fec_id": "H2OH09031"
  },
  {
   "id": "merrin",
@@ -517,7 +556,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Derek_Merrin_jpeg_(cropped).jpg",
   "fact": "Came within a hair of beating Kaptur in 2024. This is the rematch.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Derek_Merrin"
+  "fact_url": "https://en.wikipedia.org/wiki/Derek_Merrin",
+  "fec_id": "H4OH09169"
  },
  {
   "id": "cognetti",
@@ -530,7 +570,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Paige_Cognetti_(52165104986)_(3x4a).jpg",
   "fact": "Mayor of Scranton (yes, that Scranton) and the first woman to hold the job.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Paige_Cognetti"
+  "fact_url": "https://en.wikipedia.org/wiki/Paige_Cognetti",
+  "fec_id": "H6PA08293"
  },
  {
   "id": "bresnahan",
@@ -543,7 +584,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Rep._Rob_Bresnahan_official_photo,_119th_Congress.jpg",
   "fact": "A businessman who unseated Democrat Matt Cartwright in 2024, at 34.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Rob_Bresnahan"
+  "fact_url": "https://en.wikipedia.org/wiki/Rob_Bresnahan",
+  "fec_id": "H4PA08124"
  },
  {
   "id": "pulido",
@@ -556,7 +598,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Bobby_Pulido_(CROPPED).jpg",
   "fact": "A Tejano music star who was a teen idol in the 1990s.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Bobby_Pulido"
+  "fact_url": "https://en.wikipedia.org/wiki/Bobby_Pulido",
+  "fec_id": "H6TX15246"
  },
  {
   "id": "de-la-cruz-monica",
@@ -569,7 +612,8 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:MDLC_Official_Portrait_2025.jpg",
   "fact": "An insurance agent; her brother Carlos is the Republican nominee in TX-35, another toss-up.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Monica_De_La_Cruz"
+  "fact_url": "https://en.wikipedia.org/wiki/Monica_De_La_Cruz",
+  "fec_id": "H0TX15124"
  },
  {
   "id": "garcia-johnny",
@@ -577,12 +621,13 @@
   "race": "TX-35",
   "party": "D",
   "name": "Johnny Garcia",
-  "photo": "",
-  "photo_credit": "",
-  "photo_source": "",
+  "photo": "img/candidates/garcia-johnny.jpg",
+  "photo_credit": "Campaign photo",
+  "photo_source": "https://www.votejohnnygarcia.com/",
   "fact": "A Bexar County sheriff’s deputy.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Texas#District_35"
+  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Texas#District_35",
+  "fec_id": "H6TX35095"
  },
  {
   "id": "de-la-cruz-carlos",
@@ -590,12 +635,13 @@
   "race": "TX-35",
   "party": "R",
   "name": "Carlos De La Cruz",
-  "photo": "",
-  "photo_credit": "",
-  "photo_source": "",
+  "photo": "img/candidates/de-la-cruz-carlos.jpg",
+  "photo_credit": "Campaign photo",
+  "photo_source": "https://www.carlosforcongress.com/",
   "fact": "A gym owner and the brother of Rep. Monica De La Cruz, who is in the TX-15 toss-up.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Texas#District_35"
+  "fact_url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Texas#District_35",
+  "fec_id": "H6TX35087"
  },
  {
   "id": "taylor-shannon",
@@ -603,12 +649,13 @@
   "race": "VA-01",
   "party": "D",
   "name": "Shannon Taylor",
-  "photo": "",
-  "photo_credit": "",
-  "photo_source": "",
+  "photo": "img/candidates/taylor-shannon.jpg",
+  "photo_credit": "Campaign photo",
+  "photo_source": "https://shannontaylorva.com/",
   "fact": "Henrico County’s top prosecutor since 2012; ran for Virginia attorney general in 2025.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Shannon_Taylor_(attorney)"
+  "fact_url": "https://en.wikipedia.org/wiki/Shannon_Taylor_(attorney)",
+  "fec_id": "H6VA01299"
  },
  {
   "id": "wittman",
@@ -621,6 +668,7 @@
   "photo_source": "https://commons.wikimedia.org/wiki/File:Rob_Wittman_official_portrait,_118th_Congress_(cropped).jpg",
   "fact": "An environmental health specialist who has represented this district since 2007.",
   "fact_source": "Wikipedia",
-  "fact_url": "https://en.wikipedia.org/wiki/Rob_Wittman"
+  "fact_url": "https://en.wikipedia.org/wiki/Rob_Wittman",
+  "fec_id": "H8VA01147"
  }
 ]

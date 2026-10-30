@@ -129,7 +129,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .mt-table td { padding: var(--pad-sm) var(--pad-sm) var(--pad-sm) 0; border-bottom: 1px solid var(--color-border-line); vertical-align: top; line-height: 1.4; }
 .mt-table tbody tr:last-child td { border-bottom: 0; }
 .mt-table td:first-child { white-space: nowrap; font-weight: var(--fw-medium); }
-@media (max-width: 560px) { .mt-hide5 th:nth-child(5), .mt-hide5 td:nth-child(5) { display: none; } }
+@media (max-width: 560px) { .mt-hide5 th:nth-child(5), .mt-hide5 td:nth-child(5), .mt-hide6 th:nth-child(6), .mt-hide6 td:nth-child(6) { display: none; } }
 .mt-tip { position: absolute; pointer-events: none; background: var(--surface-popover); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-popover); padding: var(--pad-xs) var(--pad-sm); font-size: var(--fs-caption); max-width: 15rem; z-index: 2; line-height: 1.4; }
 .mt-tip[hidden] { display: none; }
 .mt-tip-k { color: var(--text-secondary); }
@@ -185,6 +185,35 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .mt-odds-arrow[data-dir="down"] { color: var(--odds-rep); }
 .mt-oddshist { min-height: 0; margin-bottom: var(--gap-md); }
 .mt-oddshist-note { color: var(--color-fg-muted); font-weight: 400 !important; white-space: normal !important; }
+.mt-pollcell { white-space: nowrap; }
+.mt-pollcell .mt-latest-src { white-space: normal; max-width: 12rem; }
+.mt-money td { vertical-align: middle; }
+.mt-money td:first-child { white-space: normal; }
+.mt-money-row.is-picked td { background: color-mix(in srgb, var(--color-fg) 5%, transparent); }
+.mt-linkbtn { appearance: none; border: 0; background: none; padding: 0; font: inherit; font-weight: var(--fw-medium); color: var(--color-fg); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; text-align: left; }
+.mt-linkbtn:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.mt-split { display: grid; grid-template-columns: 4.2rem minmax(4rem, 1fr) 4.2rem; align-items: center; gap: 6px; min-width: 14rem; font-variant-numeric: tabular-nums; }
+.mt-split-bar { display: flex; height: 10px; gap: 2px; }
+.mt-split-d, .mt-split-r { display: block; min-width: 2px; border-radius: 3px; }
+.mt-split-d { background: #3d73c4; }
+.mt-split-r { background: #cf5243; }
+.mt-split-nd { text-align: right; }
+.mt-money-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: var(--gap-lg); margin-top: var(--gap-md); }
+.mt-money-col { border-top: 4px solid var(--party); padding-top: var(--gap-sm); }
+.mt-money-col[data-party="D"] { --party: #3d73c4; }
+.mt-money-col[data-party="I"] { --party: #7b5ea7; }
+.mt-money-col[data-party="R"] { --party: #cf5243; }
+.mt-money-head { display: flex; align-items: center; gap: var(--gap-sm); margin-bottom: var(--gap-sm); }
+.mt-money-head > div { display: grid; }
+.mt-money-photo { width: 48px; height: 60px; object-fit: cover; border-radius: 6px; }
+.mt-money-facts { display: grid; grid-template-columns: 1fr auto; gap: 4px var(--gap-md); margin: 0; font-size: var(--fs-caption); font-variant-numeric: tabular-nums; }
+.mt-money-facts dt { color: var(--color-fg-muted); }
+.mt-money-facts dd { margin: 0; text-align: right; font-weight: var(--fw-medium); }
+.mt-money-sub { font-size: var(--fs-body); font-weight: var(--fw-medium); margin: var(--gap-md) 0 var(--gap-xs); }
+.mt-money-list { margin: 0; padding-left: 1.2rem; display: grid; gap: 3px; font-size: var(--fs-caption); }
+.mt-money-list li { display: flex; justify-content: space-between; gap: var(--gap-md); }
+.mt-money-list b { font-weight: var(--fw-medium); white-space: nowrap; }
+.mt-money-foot { margin: var(--gap-md) 0 0; }
 .mt-vs-latest { display: block; margin-top: var(--gap-xs); color: var(--color-fg); }
 </style>
 </head>
@@ -201,6 +230,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <button class="mt-tab" role="tab" data-tab="senate" aria-selected="false">Senate</button>
     <button class="mt-tab" role="tab" data-tab="house" aria-selected="false">House</button>
     <button class="mt-tab" role="tab" data-tab="national" aria-selected="false">National</button>
+    <button class="mt-tab" role="tab" data-tab="money" aria-selected="false">Money</button>
     <button class="mt-tab" role="tab" data-tab="odds" aria-selected="false">Odds</button>
   </nav>
 
@@ -276,10 +306,10 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     </div>
     <div class="mt-card" id="tossup-card">
       <h2>House toss-ups</h2>
-      <p class="mt-note">Cook rates <span class="f" data-source="control_math" data-field="tossups" data-where="chamber=House">—</span> districts as pure toss-ups. The badge shows which party holds the seat now: filled when the incumbent is running, outlined for an open seat; incumbents’ names are shaded.</p>
+      <p class="mt-note">Cook rates <span class="f" data-source="control_math" data-field="tossups" data-where="chamber=House">—</span> districts as pure toss-ups. District polls are scarce and many are paid for by a party or campaign; those are marked (D) or (R). The badge shows which party holds the seat now: filled when the incumbent is running, outlined for an open seat; incumbents’ names are shaded.</p>
       <div class="mt-tablewrap">
-        <table class="mt-table mt-hide5" id="tossup-table" data-source="house_tossups" data-row-key="district">
-          <thead><tr><th data-field="district">District</th><th data-field="holder">Held by</th><th data-field="dem">Democrat</th><th data-field="rep">Republican</th><th data-field="headline">Latest</th></tr></thead>
+        <table class="mt-table mt-hide6" id="tossup-table" data-source="house_tossups" data-row-key="district">
+          <thead><tr><th data-field="district">District</th><th data-field="holder">Held by</th><th data-field="dem">Democrat</th><th data-field="rep">Republican</th><th>Latest poll</th><th data-field="headline">Latest</th></tr></thead>
           <tbody id="tossup-body"></tbody>
         </table>
       </div>
@@ -302,6 +332,21 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
       <p class="mt-note">Ballots already cast. Turnout shows who is voting, not how they voted.</p>
       <div class="mt-figs" id="ev-figs"></div>
     </div>
+  </section>
+
+  <section class="mt-page mt-stack" id="money" hidden>
+    <p class="mt-note">Money in every toss-up race, from Federal Election Commission filings: what each campaign has raised and has left, the PACs and party committees that gave the most, and what outside groups have spent for and against each candidate this cycle, primaries included. Tap a race for the details.</p>
+    <div class="mt-card" id="money-card">
+      <h2>Who has the money</h2>
+      <p class="mt-note" id="money-asof"></p>
+      <div class="mt-tablewrap">
+        <table class="mt-table mt-money" id="money-table" data-source="money" data-row-key="id">
+          <thead><tr><th>Race</th><th>Raised by each campaign</th><th>Outside money spent against each</th></tr></thead>
+          <tbody id="money-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mt-card" id="money-detail" aria-live="polite"></div>
   </section>
 
   <section class="mt-page mt-stack" id="odds" hidden>
@@ -338,7 +383,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <p>Compiled with help from Claude, an AI model, from public sources. It can contain errors, so check the original source before relying on a figure. Not affiliated with any campaign, party or rating organization.</p>
     <details class="mt-credits">
       <summary>Candidate photos and facts</summary>
-      <p>Photos are freely licensed images from Wikimedia Commons, cropped to the same size; Creative Commons photos are shared here under their original licenses. Candidates without a freely licensed photo show their initials. Facts come from Wikipedia.</p>
+      <p>Photos are freely licensed images from Wikimedia Commons, or, where none exists, the candidate’s own campaign photo; all are cropped to the same size, and Creative Commons photos are shared here under their original licenses. Facts come from Wikipedia.</p>
       <ul id="credits-list"></ul>
     </details>
   </footer>
@@ -480,6 +525,21 @@ const T = (() => {
   const key = (color, label, cls) => { const k = el('span', 'mt-key'); const sw = el('span', 'mt-sw' + (cls ? ' ' + cls : '')); if (color) sw.style.background = color; k.append(sw, label); return k; };
   const failLine = () => { const d = el('div', 'mt-fail'); d.append(el('span', 'mt-dot'), 'Failed to load'); return d; };
   const lastName = (n) => String(n || '').trim().split(/\s+/).pop();
+  // Surname, keeping particles ("De La Cruz") and dropping suffixes ("Jr.").
+  const surname = (n) => {
+    const w = String(n || '').replace(/,?\s+(Jr|Sr|II|III)\.?$/, '').trim().split(/\s+/), rest = w.slice(1);
+    const i = rest.findIndex((x) => /^(de|del|la|le|van|von|da|di)$/i.test(x));
+    return i >= 0 ? rest.slice(i).join(' ') : w[w.length - 1];
+  };
+  // Who leads the most recent House poll for a district (polls are listed newest first).
+  function housePollLead(t) {
+    const p = (rows('house_polls') || []).find((x) => x.district === t.district);
+    if (!p) return null;
+    const m = Number(p.margin);
+    const text = m > 0 ? surname(t.dem) + ' +' + m : m < 0 ? surname(t.rep) + ' +' + Math.abs(m) : 'Tied';
+    const by = p.pollster + (p.sponsor ? ' (' + p.sponsor + ')' : '') + ', ' + p.dates;
+    return { p, m, text, by };
+  }
   const parseDay = (s) => new Date(String(s).slice(0, 10) + 'T12:00:00Z');
   const dayFmt = d3.utcFormat('%a, %b %-d');
   const longFmt = d3.utcFormat('%A, %B %-d');
@@ -719,6 +779,13 @@ const T = (() => {
       const sub = el('p', 'mt-vs-sub');
       const open = /^Open\b/.test(t.holder);
       sub.append(open ? '' : 'Held by ', mark(el('span', null, open ? t.holder.replace(/^Open\b/, 'Open seat') : t.holder), 'house_tossups', 'holder', 'district=' + t.district), '.');
+      const pl = housePollLead(t);
+      if (pl) {
+        const pp = el('span', 'mt-vs-latest'), lead = el('b', 'mt-avg', pl.text);
+        lead.style.color = sideColor(pl.m, 'D');
+        pp.append('Latest poll: ', lead, ' (' + pl.by + ')');
+        sub.append(pp);
+      }
       if (t.headline) { const hl = el('span', 'mt-vs-latest'); hl.append(mark(el('span', null, t.headline), 'house_tossups', 'headline', 'district=' + t.district), ' (' + t.headline_source + ', ' + shortDay(parseDay(t.headline_date)) + ')'); sub.append(hl); }
       detail.append(versus(t.district, sub,
         { chamber: 'House', race: t.district, party: 'D', name: t.dem },
@@ -987,6 +1054,13 @@ const T = (() => {
         if (r[field] === incumbent) { td.className = 'mt-inc'; td.dataset.party = party; td.append(el('span', 'mt-inc-tag', 'Incumbent')); }
         tr.append(td);
       });
+      const pl = housePollLead(r), pc = el('td', 'mt-pollcell');
+      if (pl) {
+        const lead = mark(el('b', 'mt-avg', pl.text), 'house_polls', 'margin', 'id=' + pl.p.id);
+        lead.style.color = sideColor(pl.m, 'D');
+        pc.append(lead, mark(el('span', 'mt-latest-src', pl.by), 'house_polls', 'pollster', 'id=' + pl.p.id));
+      } else pc.append(el('span', 'mt-latest-src', 'No reliable public poll'));
+      tr.append(pc);
       const latest = el('td', 'mt-latest');
       if (r.headline) {
         latest.append(mark(el('span', null, r.headline), 'house_tossups', 'headline', w));
@@ -1124,7 +1198,88 @@ const T = (() => {
       .style('pointer-events', 'none').text((d) => (Number(d.r.both) * 100).toFixed(1) + '%');
   }
 
-  const PAGES = ['today', 'senate', 'house', 'national', 'odds'];
+  const usd = (v) => (v == null ? '—' : v >= 1e6 ? '$' + (v / 1e6).toFixed(v >= 1e8 ? 0 : 1) + 'M' : v >= 1e3 ? '$' + Math.round(v / 1e3) + 'K' : '$' + Math.round(v));
+  // FEC names come in capitals; make them readable while keeping short acronyms.
+  const orgName = (s) => (/[a-z]/.test(s) ? s : String(s).toLowerCase().replace(/\b([a-z])/g, (c) => c.toUpperCase())
+    .replace(/\b(Pac|Llc|Usa|Us|Afl-Cio|Hmp|Slf|Dccc|Nrcc|Dscc|Nrsc|Uaw|Ibew|Jeff|Seal)\b/g, (w) => w.toUpperCase()));
+
+  // The toss-up races with both candidates' money rows: Senate first, then House districts.
+  function moneyRaces() {
+    const races = rows('senate_races'), tu = rows('house_tossups'), cands = rows('candidates'), money = rows('money');
+    if (!races || !tu || !cands || !money) return null;
+    const byId = new Map(money.map((m) => [m.id, m]));
+    const side = (chamber, race, party, name) => {
+      const c = cands.find((x) => x.chamber === chamber && x.race === race && x.party === party && x.name === name);
+      return { chamber, race, party, name, c, m: c ? byId.get(c.id) : null };
+    };
+    return races.filter((r) => r.cook === 'Toss Up').sort((a, b) => a.name.localeCompare(b.name))
+      .map((r) => ({ key: 'S-' + r.state, title: r.name, chamber: 'Senate', dem: side('Senate', r.state, r.dem_side_party, r.dem_side), rep: side('Senate', r.state, 'R', r.rep) }))
+      .concat(tu.slice().sort((a, b) => a.district.localeCompare(b.district))
+        .map((t) => ({ key: 'H-' + t.district, title: t.district, chamber: 'House', dem: side('House', t.district, 'D', t.dem), rep: side('House', t.district, 'R', t.rep) })));
+  }
+
+  // Two amounts with a bar split in proportion to them: Democrat on the left, Republican on the right.
+  function splitBar(d, r, label) {
+    const wrap = el('div', 'mt-split'), total = (d || 0) + (r || 0);
+    const bar = el('div', 'mt-split-bar');
+    bar.setAttribute('role', 'img');
+    bar.setAttribute('aria-label', label + ': Democrat ' + usd(d) + ', Republican ' + usd(r));
+    const a = el('span', 'mt-split-d'), b = el('span', 'mt-split-r');
+    a.style.flexGrow = total ? d / total : 1; b.style.flexGrow = total ? r / total : 1;
+    bar.append(a, b);
+    wrap.append(el('span', 'mt-split-n mt-split-nd', usd(d)), bar, el('span', 'mt-split-n mt-split-nr', usd(r)));
+    return wrap;
+  }
+
+  function renderMoney() {
+    const list = moneyRaces(), body = $('#money-body'), detail = $('#money-detail'), asof = $('#money-asof');
+    body.replaceChildren(); detail.replaceChildren(); asof.replaceChildren();
+    if (!list) { const tr = el('tr'), td = el('td', anyFailed('money', 'candidates') ? null : 'is-loading', anyFailed('money', 'candidates') ? 'Failed to load' : '—'); td.colSpan = 3; tr.append(td); body.append(tr); return; }
+    const m0 = rows('money')[0];
+    asof.append('Campaign totals through the latest FEC report (', dayFmt(parseDay(m0.through || m0.outside_through)), ' for most); outside spending filed through ', dayFmt(parseDay(m0.outside_through)), '. Senate totals cover 2025–26 only, so a senator’s earlier fundraising isn’t included.');
+    const pick = list.find((x) => x.key === T.params().money_pick) || list[0];
+    list.forEach((x) => {
+      const tr = el('tr', 'mt-money-row' + (x === pick ? ' is-picked' : ''));
+      const name = el('button', 'mt-linkbtn', x.title);
+      name.addEventListener('click', () => T.setParams({ money_pick: x.key }));
+      const rc = el('td'); rc.append(name, el('span', 'mt-latest-src', surname(x.dem.name) + ' vs ' + surname(x.rep.name)));
+      const raised = el('td'), against = el('td');
+      raised.append(splitBar(x.dem.m && x.dem.m.raised, x.rep.m && x.rep.m.raised, 'Raised'));
+      against.append(splitBar(x.dem.m && x.dem.m.outside_against, x.rep.m && x.rep.m.outside_against, 'Outside spending against'));
+      tr.append(rc, raised, against);
+      body.append(tr);
+    });
+    // Detail for the picked race: both candidates side by side.
+    detail.append(el('h2', null, pick.title + (pick.chamber === 'Senate' ? ' Senate race' : '')));
+    const grid = el('div', 'mt-money-grid');
+    [pick.dem, pick.rep].forEach((s) => {
+      const col = el('div', 'mt-money-col'), m = s.m || {};
+      col.dataset.party = s.party;
+      const head = el('div', 'mt-money-head');
+      if (s.c && s.c.photo) { const img = el('img', 'mt-money-photo'); Object.assign(img, { src: s.c.photo, alt: '', width: 48, height: 60, loading: 'lazy' }); head.append(img); }
+      const nm = el('div'); nm.append(el('strong', 'mt-person-name', s.name), el('span', 'mt-person-party', PARTY_NAME[s.party] || ''));
+      head.append(nm); col.append(head);
+      const dl = el('dl', 'mt-money-facts');
+      [['Raised', m.raised], ['Spent', m.spent], ['Cash on hand', m.cash], ['From PACs and parties', m.pac_total],
+       ['Outside money for', m.outside_for], ['Outside money against', m.outside_against]].forEach(([k, v]) => {
+        dl.append(el('dt', null, k), mark(el('dd', null, usd(v)), 'money', k, 'id=' + (s.c ? s.c.id : '')));
+      });
+      col.append(dl);
+      const lst = (title, items) => {
+        col.append(el('h3', 'mt-money-sub', title));
+        if (!items || !items.length) { col.append(el('p', 'mt-hint', 'None reported')); return; }
+        const ol = el('ol', 'mt-money-list');
+        items.forEach((i) => { const li = el('li'); li.append(el('span', null, orgName(i.name)), el('b', 'mt-num', usd(i.amount))); ol.append(li); });
+        col.append(ol);
+      };
+      lst('Biggest PAC and party donors', m.top_pacs);
+      lst('Biggest spenders against', m.top_against);
+      grid.append(col);
+    });
+    detail.append(grid, el('p', 'mt-note mt-money-foot', 'Individuals can give a campaign at most $3,500 per election, so the largest single donors are PACs and party committees; outside groups have no limit.'));
+  }
+
+  const PAGES = ['today', 'senate', 'house', 'national', 'money', 'odds'];
   let current = 'today';
   function render() {
     renderHeader();
@@ -1133,6 +1288,7 @@ const T = (() => {
     if (current === 'house') { renderHouseTossups(); renderHouseBar(); renderTossups(); }
     if (current === 'national') { renderNational(); renderEarly(); }
     if (current === 'odds') { renderOdds(); renderOddsHistory(); }
+    if (current === 'money') renderMoney();
     renderCredits();
     fillStatic();
   }
@@ -1149,7 +1305,7 @@ const T = (() => {
   const named = location.hash.slice(1);
   if (PAGES.includes(named)) show(named);
 })();
-T.load(['senate_races', 'senate_polls', 'us_tiles', 'chamber_baseline', 'house_ratings', 'house_tossups', 'national_polls', 'early_vote', 'daily_brief', 'key_dates', 'candidates', 'odds_history']);
+T.load(['senate_races', 'senate_polls', 'us_tiles', 'chamber_baseline', 'house_ratings', 'house_tossups', 'national_polls', 'early_vote', 'daily_brief', 'key_dates', 'candidates', 'odds_history', 'house_polls', 'money']);
 </script>
 </body>
 </html>

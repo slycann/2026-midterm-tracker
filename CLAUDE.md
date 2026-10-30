@@ -12,7 +12,7 @@ When asked to "run the daily update" (or `/daily-update`):
    - RealClearPolitics polling averages for the Senate toss-ups (Election Central republishes them).
    - New public polls in competitive Senate races from the last week.
    - The most important news in each competitive Senate race and in the House battle.
-   - The latest report on each House toss-up district (for its "Latest" headline).
+   - The latest report on each House toss-up district (for its "Latest" headline), and any new public poll of those districts.
    - Early-vote totals (University of Florida Election Lab) and big-state counts.
    - New national generic-ballot and presidential-approval polls.
    - Newly scheduled campaign events and voting deadlines.
@@ -23,10 +23,13 @@ When asked to "run the daily update" (or `/daily-update`):
    - `senate_polls.json`: add new polls with new ids; keep the three or four most recent per race.
    - `national_polls.json`, `early_vote.json`, `key_dates.json`: replace stale entries; keep past key dates (the page dims them).
    - When a rating or average changes, say when in that race's note (for example "moved to Toss Up on Oct 30").
+   - `house_polls.json`: add new House toss-up polls with new ids, newest first within each district (the page shows the first one per district as "Latest poll"). Mark who paid for it: `sponsor` "D" or "R" for party, campaign or allied-group polls, "" for independent pollsters.
+   - Money: run `python3 scripts/money.py` to rebuild `data/money.json` from the FEC's bulk files (it downloads them fresh each day). Mention big changes in outside spending in the brief if they're news.
    - `candidates.json`: every candidate in a Senate or House toss-up needs a row (the validator lists any that are missing). When a race becomes a toss-up or a nominee changes, add the candidates as described under "Candidate photos" below.
 4. **Run `python3 scripts/validate.py`** and fix every problem it reports.
    Then **record today's odds** with `python3 scripts/odds.py --record YYYY-MM-DD` (today's date). It adds today's row to `data/odds_history.json`, which the Odds tab charts day by day; rerunning it the same day replaces that day's row.
-5. **Stop before committing.** Show a short summary of what changed and why, with sources, plus the Odds tab number before and after, and `git diff --stat`. Commit (`Daily update YYYY-MM-DD`) and push only after the user approves.
+5. **Publish without waiting for approval.** Once the validator passes and the page renders correctly, commit (`Daily update YYYY-MM-DD`) and push to `main`. Then post a short summary of what changed and why, with sources, what you left out and why, the Odds tab number before and after, and `git diff --stat`, and send the user a push notification that the update is live. If validation fails or something looks wrong that you can't fix, don't publish; notify the user instead.
+6. **The daily updates end after Nov 5, 2026.** If the date is Nov 6 or later, make no changes, turn off the scheduled task, and tell the user.
 
 ## Editorial rules
 
@@ -53,7 +56,9 @@ When asked to "run the daily update" (or `/daily-update`):
 | `key_dates.json` | Event | `id`, `date`, `label`, `detail` |
 | `us_tiles.json` | State | Map layout only (`col`, `row`). Don't edit. |
 | `odds_history.json` | Day | `date`, `both`, `senate`, `house` (chances from 0 to 1), `note`. Written by `scripts/odds.py --record`; don't edit by hand. |
-| `candidates.json` | Toss-up candidate | `id` (slug, also the photo's file name), `chamber` (Senate/House), `race` (state code for Senate, district for House), `party` (D/R/I), `name` (must match the race files exactly), `photo` (`img/candidates/<id>.jpg` or ""), `photo_credit` ("Artist (license)"), `photo_source` (Commons file page), `fact`, `fact_source`, `fact_url` |
+| `house_polls.json` | House toss-up poll | `id`, `district`, `pollster`, `sponsor` (D/R/""), `dates`, `sample`, `dem_pct`, `rep_pct`, `margin` (= dem_pct − rep_pct), `source`, `source_url` |
+| `money.json` | Toss-up candidate | Written by `scripts/money.py` from FEC bulk data; don't edit by hand. `raised`, `spent`, `cash`, `through`, `pac_total`, `top_pacs`, `outside_for`, `outside_against`, `top_against`, `outside_through` |
+| `candidates.json` | Toss-up candidate | `id` (slug, also the photo's file name), `chamber` (Senate/House), `race` (state code for Senate, district for House), `party` (D/R/I), `name` (must match the race files exactly), `photo` (`img/candidates/<id>.jpg` or ""), `photo_credit` ("Artist (license)"), `photo_source` (Commons file page), `fact`, `fact_source`, `fact_url`, `fec_id` (FEC candidate ID; find it at fec.gov/data) |
 
 Seat math on the page is computed from `senate_races.json`, `house_ratings.json` and `chamber_baseline.json`; don't hard-code totals anywhere.
 
@@ -65,7 +70,7 @@ The Senate and House tabs show toss-up matchups with a headshot and one short fa
 
 - **Photos:** only freely licensed images from Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA, or "copyrighted free use"). Check the license on the file page, and check it's the right person: same-name traps are common (Mike Rogers of Michigan vs. Alabama; Michael Bouchard Jr. vs. his father, the sheriff). Prefer plain front-facing portraits.
 - **Cropping:** download each original into its own new, empty folder under /tmp, then crop it to the standard 240×300 face-centered headshot with `swiftc -O scripts/headshot.swift -o /tmp/headshot` and `/tmp/headshot <original> img/candidates/<id>.jpg`. Look at the result before using it.
-- **No free photo:** leave `photo`, `photo_credit` and `photo_source` empty; the page shows the candidate's initials.
+- **No free photo:** use a portrait from the candidate's campaign website (the owner approved this): `photo_credit` "Campaign photo", `photo_source` the page it came from. Only if there's none, leave the photo fields empty; the page shows initials.
 - **Facts:** one true, interesting fact of 110 characters or less, with a link to the source (usually the person's Wikipedia article, or the district's section of the 2026 House elections article when they have no article).
 
 ## Preview

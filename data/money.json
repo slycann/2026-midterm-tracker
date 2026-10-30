@@ -1,0 +1,1918 @@
+[
+ {
+  "id": "talarico",
+  "fec_id": "S6TX00479",
+  "raised": 146349912,
+  "spent": 136427055,
+  "cash": 9922857,
+  "through": "2026-10-14",
+  "pac_total": 389115,
+  "top_pacs": [
+   {
+    "name": "ADVANCING DEMOCRACY AND MOBILIZATION PAC",
+    "amount": 12000
+   },
+   {
+    "name": "LOBO PAC",
+    "amount": 10000
+   },
+   {
+    "name": "SD PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 36076745,
+  "outside_against": 219682571,
+  "top_against": [
+   {
+    "name": "TEXAS PAC",
+    "amount": 112153742
+   },
+   {
+    "name": "America PAC",
+    "amount": 40489593
+   },
+   {
+    "name": "MAGA INC.",
+    "amount": 30117991
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "paxton",
+  "fec_id": "S6TX00388",
+  "raised": 22327474,
+  "spent": 17543066,
+  "cash": 4784408,
+  "through": "2026-10-14",
+  "pac_total": 386532,
+  "top_pacs": [
+   {
+    "name": "NRSC",
+    "amount": 62000
+   },
+   {
+    "name": "U.S. ANESTHESIA PARTNERS, INC. PAC D/B/A/ USAP PAC",
+    "amount": 10000
+   },
+   {
+    "name": "NATIONAL ASSOCIATION FOR GUN RIGHTS INC PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 96767147,
+  "outside_against": 100020729,
+  "top_against": [
+   {
+    "name": "Lone Star Rising PAC",
+    "amount": 31162241
+   },
+   {
+    "name": "TEXANS FOR A CONSERVATIVE MAJORITY",
+    "amount": 24960684
+   },
+   {
+    "name": "Texas Forever",
+    "amount": 19428285
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "brown-sherrod",
+  "fec_id": "S6OH00163",
+  "raised": 68409200,
+  "spent": 63956397,
+  "cash": 4452803,
+  "through": "2026-10-14",
+  "pac_total": 221637,
+  "top_pacs": [
+   {
+    "name": "ADVANCING DEMOCRACY AND MOBILIZATION PAC",
+    "amount": 13000
+   },
+   {
+    "name": "INTERNATIONAL UNION OF PAINTERS AND ALLIED TRADES POLITICAL ACTION TOGETHER POLITICAL COMMITTEE",
+    "amount": 10000
+   },
+   {
+    "name": "ALL FOR OUR COUNTRY LEADERSHIP PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 24298926,
+  "outside_against": 187059346,
+  "top_against": [
+   {
+    "name": "SLF PAC",
+    "amount": 92565640
+   },
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 20797571
+   },
+   {
+    "name": "DEFEND AMERICAN JOBS",
+    "amount": 19706265
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "husted",
+  "fec_id": "S6OH00304",
+  "raised": 19894786,
+  "spent": 15655689,
+  "cash": 4239097,
+  "through": "2026-10-22",
+  "pac_total": 2710844,
+  "top_pacs": [
+   {
+    "name": "NRSC",
+    "amount": 62000
+   },
+   {
+    "name": "CARDINAL HEALTH INC. PAC",
+    "amount": 11200
+   },
+   {
+    "name": "CHEVRON EMPLOYEES POLITICAL ACTION COMMITTEE - CHEVRON CORPORATION",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 69902086,
+  "outside_against": 128327334,
+  "top_against": [
+   {
+    "name": "WinSenate",
+    "amount": 77812005
+   },
+   {
+    "name": "Duty and Country",
+    "amount": 13914744
+   },
+   {
+    "name": "Lower Costs Now",
+    "amount": 8778686
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "jackson-troy",
+  "fec_id": "S6ME00464",
+  "raised": 26872874,
+  "spent": 25276003,
+  "cash": 1596871,
+  "through": "2026-10-14",
+  "pac_total": 243625,
+  "top_pacs": [
+   {
+    "name": "AMERICAN ASSOCIATION FOR JUSTICE POLITICAL ACTION COMMITTEE (AAJ PAC)",
+    "amount": 10000
+   },
+   {
+    "name": "MACHINISTS NON PARTISAN POLITICAL LEAGUE OF THE INTERNATIONAL ASSOCIATION OF MACHINISTS & AEROSPACE WORKERS",
+    "amount": 10000
+   },
+   {
+    "name": "AMERICAN FEDERATION OF TEACHERS, AFL-CIO COMMITTEE ON POLITICAL EDUCATION",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 11354966,
+  "outside_against": 74828812,
+  "top_against": [
+   {
+    "name": "SLF PAC",
+    "amount": 36840846
+   },
+   {
+    "name": "PINE TREE RESULTS PAC",
+    "amount": 22424134
+   },
+   {
+    "name": "THE MAINE STANDARD",
+    "amount": 9910757
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "collins-susan",
+  "fec_id": "S6ME00159",
+  "raised": 22465218,
+  "spent": 22351644,
+  "cash": 2689883,
+  "through": "2026-10-14",
+  "pac_total": 2530879,
+  "top_pacs": [
+   {
+    "name": "NRSC",
+    "amount": 62000
+   },
+   {
+    "name": "REPUBLICAN JEWISH COALITION POLITICAL ACTION COMMITTEE (RJC-PAC)",
+    "amount": 14372
+   },
+   {
+    "name": "NATIONAL ASSOCIATION OF BROADCASTERS POLITICAL ACTION COMMITTEE (NABPAC)",
+    "amount": 12000
+   }
+  ],
+  "outside_for": 8092966,
+  "outside_against": 37827676,
+  "top_against": [
+   {
+    "name": "WinSenate",
+    "amount": 32153793
+   },
+   {
+    "name": "Planned Parenthood Votes",
+    "amount": 1274077
+   },
+   {
+    "name": "End Citizens United Action Fund",
+    "amount": 1019470
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "peltola",
+  "fec_id": "S6AK00276",
+  "raised": 36887509,
+  "spent": 32785383,
+  "cash": 4102126,
+  "through": "2026-10-14",
+  "pac_total": 678075,
+  "top_pacs": [
+   {
+    "name": "EMILYS LIST",
+    "amount": 39775
+   },
+   {
+    "name": "ADVANCING DEMOCRACY AND MOBILIZATION PAC",
+    "amount": 24000
+   },
+   {
+    "name": "TRI-STATE MAXED-OUT WOMEN",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 10783479,
+  "outside_against": 41787014,
+  "top_against": [
+   {
+    "name": "SLF PAC",
+    "amount": 17602215
+   },
+   {
+    "name": "LAST FRONTIER PAC",
+    "amount": 10283218
+   },
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 5600832
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "sullivan-dan",
+  "fec_id": "S4AK00214",
+  "raised": 11508274,
+  "spent": 10759421,
+  "cash": 2839758,
+  "through": "2026-10-14",
+  "pac_total": 2271224,
+  "top_pacs": [
+   {
+    "name": "NRSC",
+    "amount": 62000
+   },
+   {
+    "name": "NATIONAL ASSOCIATION OF BROADCASTERS POLITICAL ACTION COMMITTEE (NABPAC)",
+    "amount": 10500
+   },
+   {
+    "name": "CHEVRON EMPLOYEES POLITICAL ACTION COMMITTEE - CHEVRON CORPORATION",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 11372885,
+  "outside_against": 38882096,
+  "top_against": [
+   {
+    "name": "North Star",
+    "amount": 16054336
+   },
+   {
+    "name": "Women Vote",
+    "amount": 5548161
+   },
+   {
+    "name": "WinSenate",
+    "amount": 4704372
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "turek",
+  "fec_id": "S6IA00298",
+  "raised": 24290521,
+  "spent": 21217670,
+  "cash": 3072851,
+  "through": "2026-10-14",
+  "pac_total": 498981,
+  "top_pacs": [
+   {
+    "name": "DSCC",
+    "amount": 62000
+   },
+   {
+    "name": "SMART SOLUTIONS PAC",
+    "amount": 10000
+   },
+   {
+    "name": "ALL FOR OUR COUNTRY LEADERSHIP PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 42103977,
+  "outside_against": 76337947,
+  "top_against": [
+   {
+    "name": "SLF PAC",
+    "amount": 47855393
+   },
+   {
+    "name": "FIGHT ON IOWA",
+    "amount": 10100473
+   },
+   {
+    "name": "Americans for Prosperity Action, Inc. (AFP Action) DBA CVA Action and DBA LIBRE Action",
+    "amount": 6144712
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "hinson",
+  "fec_id": "S6IA00314",
+  "raised": 14147973,
+  "spent": 13903059,
+  "cash": 2172989,
+  "through": "2026-10-14",
+  "pac_total": 1550500,
+  "top_pacs": [
+   {
+    "name": "NRSC",
+    "amount": 62000
+   },
+   {
+    "name": "REPUBLICAN JEWISH COALITION POLITICAL ACTION COMMITTEE (RJC-PAC)",
+    "amount": 17000
+   },
+   {
+    "name": "NATIONAL PORK PRODUCERS COUNCIL PORK PAC",
+    "amount": 15000
+   }
+  ],
+  "outside_for": 18358890,
+  "outside_against": 65710778,
+  "top_against": [
+   {
+    "name": "WinSenate",
+    "amount": 39384815
+   },
+   {
+    "name": "VoteVets",
+    "amount": 9878609
+   },
+   {
+    "name": "AB PAC",
+    "amount": 4259746
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "el-sayed",
+  "fec_id": "S6MI00418",
+  "raised": 53830872,
+  "spent": 51096843,
+  "cash": 2734029,
+  "through": "2026-10-14",
+  "pac_total": 297242,
+  "top_pacs": [
+   {
+    "name": "DSCC",
+    "amount": 62000
+   },
+   {
+    "name": "A NEW POLICY PAC",
+    "amount": 25703
+   },
+   {
+    "name": "PROGRESSIVE VOTERS OF AMERICA",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 37206421,
+  "outside_against": 147437944,
+  "top_against": [
+   {
+    "name": "SLF PAC",
+    "amount": 46213086
+   },
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 27416821
+   },
+   {
+    "name": "UNITED DEMOCRACY PROJECT (UDP)",
+    "amount": 20829603
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "rogers-mike",
+  "fec_id": "S4MI00595",
+  "raised": 23016439,
+  "spent": 19369637,
+  "cash": 3902506,
+  "through": "2026-10-22",
+  "pac_total": 1110961,
+  "top_pacs": [
+   {
+    "name": "NRSC",
+    "amount": 62000
+   },
+   {
+    "name": "NORPAC",
+    "amount": 19590
+   },
+   {
+    "name": "REPUBLICAN JEWISH COALITION POLITICAL ACTION COMMITTEE (RJC-PAC)",
+    "amount": 11121
+   }
+  ],
+  "outside_for": 50135107,
+  "outside_against": 52862253,
+  "top_against": [
+   {
+    "name": "WinSenate",
+    "amount": 32722916
+   },
+   {
+    "name": "Lower Costs Now",
+    "amount": 5025059
+   },
+   {
+    "name": "Defend The Vote",
+    "amount": 4592976
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "hamilton-adam",
+  "fec_id": "S6KS00312",
+  "raised": 19175044,
+  "spent": 16300681,
+  "cash": 2874364,
+  "through": "2026-10-14",
+  "pac_total": 101050,
+  "top_pacs": [
+   {
+    "name": "COMMON GROUND PAC",
+    "amount": 10000
+   },
+   {
+    "name": "BLUE HEN FEDERAL PAC",
+    "amount": 10000
+   },
+   {
+    "name": "LOBO PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 10637472,
+  "outside_against": 30409580,
+  "top_against": [
+   {
+    "name": "SLF PAC",
+    "amount": 15229220
+   },
+   {
+    "name": "MAIN STREET FUND",
+    "amount": 4364123
+   },
+   {
+    "name": "Club for Growth Action",
+    "amount": 2456460
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "marshall-roger",
+  "fec_id": "S0KS00315",
+  "raised": 5350064,
+  "spent": 6245276,
+  "cash": 809806,
+  "through": "2026-10-14",
+  "pac_total": 1700044,
+  "top_pacs": [
+   {
+    "name": "NRSC",
+    "amount": 62000
+   },
+   {
+    "name": "NORPAC",
+    "amount": 24500
+   },
+   {
+    "name": "MERCK & CO., INC., EMPLOYEES POLITICAL ACTION COMMITTEE (MERCK PAC)",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 3113112,
+  "outside_against": 45787761,
+  "top_against": [
+   {
+    "name": "PEOPLE OVER POLITICS ACTION FUND",
+    "amount": 14731270
+   },
+   {
+    "name": "WinSenate",
+    "amount": 13994878
+   },
+   {
+    "name": "THE 1861 INITIATIVE",
+    "amount": 7851031
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "villegas",
+  "fec_id": "H6CA22190",
+  "raised": 5942030,
+  "spent": 4979678,
+  "cash": 962352,
+  "through": "2026-10-14",
+  "pac_total": 304122,
+  "top_pacs": [
+   {
+    "name": "ZINC COLLECTIVE PAC",
+    "amount": 22500
+   },
+   {
+    "name": "LEADERS WE DESERVE",
+    "amount": 10000
+   },
+   {
+    "name": "MEDICARE FOR ALL",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 4542701,
+  "outside_against": 2951693,
+  "top_against": [
+   {
+    "name": "New Democrat Majority",
+    "amount": 750946
+   },
+   {
+    "name": "The Governing Majority Fund",
+    "amount": 669445
+   },
+   {
+    "name": "BDA PAC",
+    "amount": 600000
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "valadao",
+  "fec_id": "H2CA20094",
+  "raised": 6325324,
+  "spent": 4659208,
+  "cash": 1711651,
+  "through": "2026-10-14",
+  "pac_total": 2066896,
+  "top_pacs": [
+   {
+    "name": "WATERPAC - NATIONAL RURAL WATER ASSOCIATION POLITICAL COMMITTEE",
+    "amount": 10000
+   },
+   {
+    "name": "NATIONAL CATTLEMEN'S BEEF ASSOCIATION POLITICAL ACTION COMMITTEE (NCBA-PAC)",
+    "amount": 10000
+   },
+   {
+    "name": "LOCKHEED MARTIN CORPORATION EMPLOYEES' POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 976114,
+  "outside_against": 14365582,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 8617135
+   },
+   {
+    "name": "Giffords PAC",
+    "amount": 1823376
+   },
+   {
+    "name": "LCV Victory Fund",
+    "amount": 1100738
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "castor",
+  "fec_id": "H6FL11126",
+  "raised": 4930537,
+  "spent": 4579832,
+  "cash": 577435,
+  "through": "2026-10-14",
+  "pac_total": 1091375,
+  "top_pacs": [
+   {
+    "name": "SWING LEFT",
+    "amount": 11000
+   },
+   {
+    "name": "NATIONAL ASSOCIATION OF BROADCASTERS POLITICAL ACTION COMMITTEE (NABPAC)",
+    "amount": 10500
+   },
+   {
+    "name": "NEW YORK LIFE INSURANCE COMPANY POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 4094128,
+  "outside_against": 13481346,
+  "top_against": [
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 12438489
+   },
+   {
+    "name": "Club for Growth Action",
+    "amount": 455986
+   },
+   {
+    "name": "FREEDOM CAUCUS FUND",
+    "amount": 257529
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "beltran",
+  "fec_id": "H6FL14237",
+  "raised": 2731428,
+  "spent": 999910,
+  "cash": 1731518,
+  "through": "2026-10-14",
+  "pac_total": 26000,
+  "top_pacs": [
+   {
+    "name": "SEAL PAC SUPPORTING ELECTING AMERICAN LEADERS PAC",
+    "amount": 5000
+   },
+   {
+    "name": "CONSERVATIVE OPPORTUNITY LEADERSHIP AND ENTERPRISE PAC",
+    "amount": 5000
+   },
+   {
+    "name": "HUCK PAC FOR AMERICA",
+    "amount": 5000
+   }
+  ],
+  "outside_for": 1305698,
+  "outside_against": 12348991,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 8785188
+   },
+   {
+    "name": "EDF Action Votes",
+    "amount": 1819062
+   },
+   {
+    "name": "Invest in Tomorrow Coalition PAC",
+    "amount": 500000
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "dandiya",
+  "fec_id": "H6FL21059",
+  "raised": 4619822,
+  "spent": 3884717,
+  "cash": 735105,
+  "through": "2026-10-14",
+  "pac_total": 145000,
+  "top_pacs": [
+   {
+    "name": "EMILYS LIST",
+    "amount": 10000
+   },
+   {
+    "name": "JOBS, EDUCATION, & FAMILIES FIRST  JEFF PAC",
+    "amount": 10000
+   },
+   {
+    "name": "ELECT EVERY DEMOCRAT PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 1227567,
+  "outside_against": 9648612,
+  "top_against": [
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 9118143
+   },
+   {
+    "name": "Stronger America Together",
+    "amount": 365469
+   },
+   {
+    "name": "CIVIC RENEWAL FUND INC.",
+    "amount": 87249
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "askar",
+  "fec_id": "H6FL22248",
+  "raised": 7418255,
+  "spent": 5527093,
+  "cash": 1891162,
+  "through": "2026-10-14",
+  "pac_total": 31500,
+  "top_pacs": [
+   {
+    "name": "SEAL PAC SUPPORTING ELECTING AMERICAN LEADERS PAC",
+    "amount": 5000
+   },
+   {
+    "name": "LETS GET TO WORK PAC",
+    "amount": 5000
+   },
+   {
+    "name": "CONSERVATIVE OPPORTUNITY LEADERSHIP AND ENTERPRISE PAC",
+    "amount": 5000
+   }
+  ],
+  "outside_for": 750090,
+  "outside_against": 758806,
+  "top_against": [
+   {
+    "name": "Club for Growth Action",
+    "amount": 704806
+   },
+   {
+    "name": "RISING TIDE COLLECTIVE",
+    "amount": 54000
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "james-lindsay",
+  "fec_id": "H6IA02211",
+  "raised": 3917994,
+  "spent": 3652041,
+  "cash": 265953,
+  "through": "2026-10-14",
+  "pac_total": 304391,
+  "top_pacs": [
+   {
+    "name": "SWING LEFT",
+    "amount": 11667
+   },
+   {
+    "name": "ZINC COLLECTIVE PAC",
+    "amount": 10500
+   },
+   {
+    "name": "EMILYS LIST",
+    "amount": 10108
+   }
+  ],
+  "outside_for": 3239193,
+  "outside_against": 5145358,
+  "top_against": [
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 3973519
+   },
+   {
+    "name": "CLF",
+    "amount": 887635
+   },
+   {
+    "name": "America PAC",
+    "amount": 255574
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "mitchell-joe",
+  "fec_id": "H6IA02237",
+  "raised": 2916069,
+  "spent": 2370535,
+  "cash": 545534,
+  "through": "2026-10-14",
+  "pac_total": 455350,
+  "top_pacs": [
+   {
+    "name": "ELECTING MAJORITY MAKING EFFECTIVE REPUBLICANS PAC",
+    "amount": 10000
+   },
+   {
+    "name": "BUCKEYE LIBERTY POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   },
+   {
+    "name": "NATIONAL ELECTRICAL CONTRACTORS ASSOCIATION POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 685110,
+  "outside_against": 7460183,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 3262642
+   },
+   {
+    "name": "YOUR COMMUNITY PAC",
+    "amount": 2134587
+   },
+   {
+    "name": "AB PAC",
+    "amount": 958083
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "dembo",
+  "fec_id": "H6KY06184",
+  "raised": 3205462,
+  "spent": 2585132,
+  "cash": 620330,
+  "through": "2026-10-14",
+  "pac_total": 119750,
+  "top_pacs": [
+   {
+    "name": "VOTEVETS",
+    "amount": 10000
+   },
+   {
+    "name": "IN THIS TOGETHER PAC",
+    "amount": 5000
+   },
+   {
+    "name": "FAIR SHOT PAC",
+    "amount": 5000
+   }
+  ],
+  "outside_for": 1737330,
+  "outside_against": 3352013,
+  "top_against": [
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 2489849
+   },
+   {
+    "name": "CONSERVATIVES FOR AMERICAN EXCELLENCE INC.",
+    "amount": 653612
+   },
+   {
+    "name": "CIVIC RENEWAL FUND INC.",
+    "amount": 78876
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "alvarado",
+  "fec_id": "H6KY06192",
+  "raised": 2307369,
+  "spent": 2126558,
+  "cash": 180812,
+  "through": "2026-10-14",
+  "pac_total": 359201,
+  "top_pacs": [
+   {
+    "name": "NORPAC",
+    "amount": 19160
+   },
+   {
+    "name": "LIFEPOINT HEALTH PAC - THE PAC OF LIFEPOINT CORPORATE SERVICES, GENERAL PARTNERSHIP (LCSGP) AND FACILITIES WHICH ARE SUBSIDIARIES OF LIFEPOINT HEALTH (COLLECTIVELY LIFEPOINT)",
+    "amount": 10000
+   },
+   {
+    "name": "AMERICAN MEDICAL ASSOCIATION POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 3974269,
+  "outside_against": 4489888,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 1638676
+   },
+   {
+    "name": "Kentuckians Not Corruption",
+    "amount": 1569495
+   },
+   {
+    "name": "In This Together PAC",
+    "amount": 600000
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "mccann",
+  "fec_id": "H6MI04204",
+  "raised": 4699153,
+  "spent": 3664711,
+  "cash": 1034442,
+  "through": "2026-10-14",
+  "pac_total": 394656,
+  "top_pacs": [
+   {
+    "name": "SWING LEFT",
+    "amount": 13077
+   },
+   {
+    "name": "GREAT LAKES PAC",
+    "amount": 10000
+   },
+   {
+    "name": "A PLEASANT PENINSULA PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 946689,
+  "outside_against": 7589891,
+  "top_against": [
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 4834386
+   },
+   {
+    "name": "MICHIGAN CONSERVATIVE ACTION",
+    "amount": 1749113
+   },
+   {
+    "name": "THANK YOU FOR YOUR ATTENTION TO THIS MATTER PAC",
+    "amount": 363000
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "huizenga",
+  "fec_id": "H0MI02094",
+  "raised": 5562775,
+  "spent": 5277593,
+  "cash": 394222,
+  "through": "2026-10-14",
+  "pac_total": 1727903,
+  "top_pacs": [
+   {
+    "name": "MORTGAGE BANKERS ASSOCIATION POLITICAL ACTION COMMITTEE (MORPAC)",
+    "amount": 28500
+   },
+   {
+    "name": "AMERICAN BANKERS ASSOCIATION PAC (BANKPAC)",
+    "amount": 10000
+   },
+   {
+    "name": "UNITED SERVICES AUTOMOBILE ASSOCIATION EMPLOYEE PAC - USAA EMPLOYEE PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 2329845,
+  "outside_against": 11495958,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 6190292
+   },
+   {
+    "name": "LCV Victory Fund",
+    "amount": 1836954
+   },
+   {
+    "name": "YOUR COMMUNITY PAC",
+    "amount": 843602
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "lawrence-william",
+  "fec_id": "H6MI07298",
+  "raised": 4160041,
+  "spent": 3531075,
+  "cash": 628966,
+  "through": "2026-10-14",
+  "pac_total": 110016,
+  "top_pacs": [
+   {
+    "name": "WORKING FAMILIES PARTY PAC",
+    "amount": 10000
+   },
+   {
+    "name": "MOVEON.ORG POLITICAL ACTION",
+    "amount": 10000
+   },
+   {
+    "name": "PROGRESSIVE VOTERS OF AMERICA",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 4204403,
+  "outside_against": 10991024,
+  "top_against": [
+   {
+    "name": "SAFETY & AFFORDABILITY PAC INC.",
+    "amount": 7221424
+   },
+   {
+    "name": "Rolling Sea Action Fund",
+    "amount": 1024952
+   },
+   {
+    "name": "Crush MAGA PAC",
+    "amount": 909204
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "barrett-tom",
+  "fec_id": "H2MI07123",
+  "raised": 8238468,
+  "spent": 7221105,
+  "cash": 1039763,
+  "through": "2026-10-14",
+  "pac_total": 1160848,
+  "top_pacs": [
+   {
+    "name": "DELTA AIR LINES PAC",
+    "amount": 10000
+   },
+   {
+    "name": "DTE ENERGY COMPANY POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   },
+   {
+    "name": "AMERICAN REVIVAL PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 2021591,
+  "outside_against": 15941851,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 13610302
+   },
+   {
+    "name": "TOMORROW TOGETHER",
+    "amount": 896250
+   },
+   {
+    "name": "LCV Victory Fund",
+    "amount": 525630
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "hines",
+  "fec_id": "H6MI10276",
+  "raised": 4159693,
+  "spent": 3152065,
+  "cash": 1007628,
+  "through": "2026-10-14",
+  "pac_total": 198427,
+  "top_pacs": [
+   {
+    "name": "SWING LEFT",
+    "amount": 13577
+   },
+   {
+    "name": "THE NEXT 50 PAC",
+    "amount": 10000
+   },
+   {
+    "name": "EMILYS LIST",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 3078563,
+  "outside_against": 1958123,
+  "top_against": [
+   {
+    "name": "RESTORATION OF AMERICA PAC",
+    "amount": 1059150
+   },
+   {
+    "name": "SAFETY & AFFORDABILITY PAC INC.",
+    "amount": 430000
+   },
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 215250
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "bouchard-jr",
+  "fec_id": "H6MI10359",
+  "raised": 2884259,
+  "spent": 1310790,
+  "cash": 1573470,
+  "through": "2026-10-14",
+  "pac_total": 187500,
+  "top_pacs": [
+   {
+    "name": "SEAL PAC SUPPORTING ELECTING AMERICAN LEADERS PAC",
+    "amount": 10000
+   },
+   {
+    "name": "THE EYE OF THE TIGER POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   },
+   {
+    "name": "MR. SOUTHERN MISSOURIAN IN THE HOUSE PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 958462,
+  "outside_against": 14304740,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 10977450
+   },
+   {
+    "name": "Ready for the Fight",
+    "amount": 839212
+   },
+   {
+    "name": "LCV Victory Fund",
+    "amount": 587985
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "forstag",
+  "fec_id": "H6MT01137",
+  "raised": 4312110,
+  "spent": 3585985,
+  "cash": 726126,
+  "through": "2026-10-14",
+  "pac_total": 237825,
+  "top_pacs": [
+   {
+    "name": "ZINC COLLECTIVE PAC",
+    "amount": 22500
+   },
+   {
+    "name": "MACHINISTS NON PARTISAN POLITICAL LEAGUE OF THE INTERNATIONAL ASSOCIATION OF MACHINISTS & AEROSPACE WORKERS",
+    "amount": 10000
+   },
+   {
+    "name": "AMERICAN FEDERATION OF TEACHERS, AFL-CIO COMMITTEE ON POLITICAL EDUCATION",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 1768579,
+  "outside_against": 7997216,
+  "top_against": [
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 7586177
+   },
+   {
+    "name": "Americans for Prosperity Action, Inc. (AFP Action) DBA CVA Action and DBA LIBRE Action",
+    "amount": 293815
+   },
+   {
+    "name": "CIVIC RENEWAL FUND INC.",
+    "amount": 91462
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "flint",
+  "fec_id": "H6MT01152",
+  "raised": 2856139,
+  "spent": 2447986,
+  "cash": 408153,
+  "through": "2026-10-14",
+  "pac_total": 427710,
+  "top_pacs": [
+   {
+    "name": "SEND IN THE SEAL PAC",
+    "amount": 10000
+   },
+   {
+    "name": "THE GUARDIAN FUND",
+    "amount": 10000
+   },
+   {
+    "name": "SPACE EXPLORATION TECHNOLOGIES CORP. PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 4256578,
+  "outside_against": 8636874,
+  "top_against": [
+   {
+    "name": "MONTANA VOTERS PAC",
+    "amount": 3715923
+   },
+   {
+    "name": "HMP",
+    "amount": 3027786
+   },
+   {
+    "name": "Guardrails Alliance",
+    "amount": 793390
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "davis-don",
+  "fec_id": "H2NC02287",
+  "raised": 5805482,
+  "spent": 5250506,
+  "cash": 825818,
+  "through": "2026-10-14",
+  "pac_total": 1660580,
+  "top_pacs": [
+   {
+    "name": "PATRIOT PAC",
+    "amount": 12000
+   },
+   {
+    "name": "NOVARTIS CORPORATION POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   },
+   {
+    "name": "SWEDISH MATCH NORTH AMERICA LLC PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 5075210,
+  "outside_against": 7235679,
+  "top_against": [
+   {
+    "name": "SAFETY & AFFORDABILITY PAC INC.",
+    "amount": 5971911
+   },
+   {
+    "name": "RESTORATION OF AMERICA PAC",
+    "amount": 672287
+   },
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 280118
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "buckhout",
+  "fec_id": "H4NC01137",
+  "raised": 4787737,
+  "spent": 3376140,
+  "cash": 1437901,
+  "through": "2026-10-14",
+  "pac_total": 422845,
+  "top_pacs": [
+   {
+    "name": "BUCKEYE LIBERTY POLITICAL ACTION COMMITTEE",
+    "amount": 15000
+   },
+   {
+    "name": "VALUE IN ELECTING WOMEN POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   },
+   {
+    "name": "FIRST IN FREEDOM PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 2586473,
+  "outside_against": 17748013,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 11093465
+   },
+   {
+    "name": "DMFI PAC",
+    "amount": 4950000
+   },
+   {
+    "name": "CENTER FORWARD COMMITTEE",
+    "amount": 945432
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "conley",
+  "fec_id": "H6NY17171",
+  "raised": 10706692,
+  "spent": 9758153,
+  "cash": 948540,
+  "through": "2026-10-14",
+  "pac_total": 355364,
+  "top_pacs": [
+   {
+    "name": "ZINC COLLECTIVE PAC",
+    "amount": 19833
+   },
+   {
+    "name": "VOTEVETS",
+    "amount": 10000
+   },
+   {
+    "name": "THE NEXT 50 PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 4050777,
+  "outside_against": 5242160,
+  "top_against": [
+   {
+    "name": "SAFETY & AFFORDABILITY PAC INC.",
+    "amount": 2858750
+   },
+   {
+    "name": "PROGRESSIVE CHAMPIONS PAC",
+    "amount": 1500000
+   },
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 379476
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "lawler",
+  "fec_id": "H2NY17162",
+  "raised": 10317627,
+  "spent": 8527472,
+  "cash": 1959524,
+  "through": "2026-10-14",
+  "pac_total": 2133871,
+  "top_pacs": [
+   {
+    "name": "NORPAC",
+    "amount": 10500
+   },
+   {
+    "name": "AMERICAN BANKERS ASSOCIATION PAC (BANKPAC)",
+    "amount": 10000
+   },
+   {
+    "name": "MANAGED FUNDS ASSOCIATION POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 4365937,
+  "outside_against": 4809332,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 2348370
+   },
+   {
+    "name": "LCV Victory Fund",
+    "amount": 1060192
+   },
+   {
+    "name": "EDF Action Votes",
+    "amount": 863354
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "poindexter",
+  "fec_id": "H6OH07168",
+  "raised": 3720342,
+  "spent": 2926666,
+  "cash": 793675,
+  "through": "2026-10-14",
+  "pac_total": 232350,
+  "top_pacs": [
+   {
+    "name": "SWING LEFT",
+    "amount": 16167
+   },
+   {
+    "name": "MACHINISTS NON PARTISAN POLITICAL LEAGUE OF THE INTERNATIONAL ASSOCIATION OF MACHINISTS & AEROSPACE WORKERS",
+    "amount": 10000
+   },
+   {
+    "name": "UAW - V - CAP (UAW VOLUNTARY COMMUNITY ACTION PROGRAM) 'INT'L UNION UNITED AUTOMOBILE AEROSPACE & AGRICULTURAL IMPLEMENT WORKERS OF AMERICA UAW",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 1504252,
+  "outside_against": 1030473,
+  "top_against": [
+   {
+    "name": "JOBS & PROSPERITY PAC",
+    "amount": 729142
+   },
+   {
+    "name": "America PAC",
+    "amount": 115087
+   },
+   {
+    "name": "CIVIC RENEWAL FUND INC.",
+    "amount": 94019
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "miller-max",
+  "fec_id": "H2OH16051",
+  "raised": 3324942,
+  "spent": 3363842,
+  "cash": 135629,
+  "through": "2026-10-14",
+  "pac_total": 732743,
+  "top_pacs": [
+   {
+    "name": "REPUBLICAN JEWISH COALITION POLITICAL ACTION COMMITTEE (RJC-PAC)",
+    "amount": 12000
+   },
+   {
+    "name": "NATIONAL MULTIFAMILY HOUSING COUNCIL AND REAL ESTATE TECHNOLOGY AND TRANSFORMATION CENTER POLITICAL ACTION COMMITTEE (NMHC PAC)",
+    "amount": 10000
+   },
+   {
+    "name": "NATIONAL ASSOCIATION OF REAL ESTATE INVESTMENT TRUSTS, INC. POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 715978,
+  "outside_against": 9936116,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 6830073
+   },
+   {
+    "name": "YOUR COMMUNITY PAC",
+    "amount": 1613850
+   },
+   {
+    "name": "Ready for the Fight PAC",
+    "amount": 727866
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "kaptur",
+  "fec_id": "H2OH09031",
+  "raised": 5910481,
+  "spent": 5661900,
+  "cash": 697508,
+  "through": "2026-10-14",
+  "pac_total": 1256392,
+  "top_pacs": [
+   {
+    "name": "BWX TECHNOLOGIES, INC POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   },
+   {
+    "name": "DEFEND THE VOTE",
+    "amount": 10000
+   },
+   {
+    "name": "GROWTH ENERGY PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 2586449,
+  "outside_against": 2622224,
+  "top_against": [
+   {
+    "name": "SAFETY & AFFORDABILITY PAC INC.",
+    "amount": 1051530
+   },
+   {
+    "name": "Club for Growth Action",
+    "amount": 706277
+   },
+   {
+    "name": "Americans for Prosperity Action, Inc. (AFP Action) DBA CVA Action and DBA LIBRE Action",
+    "amount": 330455
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "merrin",
+  "fec_id": "H4OH09169",
+  "raised": 2217821,
+  "spent": 1845006,
+  "cash": 449466,
+  "through": "2026-10-14",
+  "pac_total": 167499,
+  "top_pacs": [
+   {
+    "name": "AMERICAN REVIVAL PAC",
+    "amount": 10000
+   },
+   {
+    "name": "GLASS CITY PAC",
+    "amount": 6999
+   },
+   {
+    "name": "BREAD FINANCIAL HOLDINGS, INC. PAC (AKA BREAD FINANCIAL PAC)",
+    "amount": 5000
+   }
+  ],
+  "outside_for": 3514581,
+  "outside_against": 5602721,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 5193685
+   },
+   {
+    "name": "EDW Action Fund",
+    "amount": 347351
+   },
+   {
+    "name": "AMERICAN RESOLVE PAC INC.",
+    "amount": 57000
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "cognetti",
+  "fec_id": "H6PA08293",
+  "raised": 7502359,
+  "spent": 7258687,
+  "cash": 243672,
+  "through": "2026-10-14",
+  "pac_total": 520935,
+  "top_pacs": [
+   {
+    "name": "JSTREETPAC",
+    "amount": 12085
+   },
+   {
+    "name": "EMILYS LIST",
+    "amount": 10021
+   },
+   {
+    "name": "FAIR SHOT PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 1795207,
+  "outside_against": 4124181,
+  "top_against": [
+   {
+    "name": "SAFETY & AFFORDABILITY PAC INC.",
+    "amount": 2808332
+   },
+   {
+    "name": "REAL RESULTS PAC",
+    "amount": 382025
+   },
+   {
+    "name": "America PAC",
+    "amount": 334624
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "bresnahan",
+  "fec_id": "H4PA08124",
+  "raised": 6519139,
+  "spent": 5839568,
+  "cash": 732724,
+  "through": "2026-10-14",
+  "pac_total": 1490288,
+  "top_pacs": [
+   {
+    "name": "BENTLEY SYSTEMS, INCORPORATED FEDERAL PAC",
+    "amount": 24500
+   },
+   {
+    "name": "LABORERS' INTERNATIONAL UNION OF NORTH AMERICA (LIUNA) PAC",
+    "amount": 15000
+   },
+   {
+    "name": "AMERICAN HOSPITAL ASSOCIATION PAC",
+    "amount": 12500
+   }
+  ],
+  "outside_for": 1125531,
+  "outside_against": 8467047,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 4817026
+   },
+   {
+    "name": "Giffords PAC",
+    "amount": 887072
+   },
+   {
+    "name": "TOMORROW TOGETHER",
+    "amount": 843913
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "pulido",
+  "fec_id": "H6TX15246",
+  "raised": 6819247,
+  "spent": 5549792,
+  "cash": 1269454,
+  "through": "2026-10-14",
+  "pac_total": 309506,
+  "top_pacs": [
+   {
+    "name": "FAIR SHOT PAC",
+    "amount": 13456
+   },
+   {
+    "name": "SWING LEFT",
+    "amount": 11000
+   },
+   {
+    "name": "JUNTOS PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 4070142,
+  "outside_against": 8583264,
+  "top_against": [
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 6344776
+   },
+   {
+    "name": "SAFETY & AFFORDABILITY PAC INC.",
+    "amount": 1953610
+   },
+   {
+    "name": "America PAC",
+    "amount": 269313
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "de-la-cruz-monica",
+  "fec_id": "H0TX15124",
+  "raised": 6814267,
+  "spent": 7034425,
+  "cash": 393812,
+  "through": "2026-10-14",
+  "pac_total": 860703,
+  "top_pacs": [
+   {
+    "name": "AMERICAN BANKERS ASSOCIATION PAC (BANKPAC)",
+    "amount": 10000
+   },
+   {
+    "name": "NATIONAL MULTIFAMILY HOUSING COUNCIL AND REAL ESTATE TECHNOLOGY AND TRANSFORMATION CENTER POLITICAL ACTION COMMITTEE (NMHC PAC)",
+    "amount": 10000
+   },
+   {
+    "name": "HISPANIC LEADERSHIP TRUST",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 946578,
+  "outside_against": 9737120,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 6543418
+   },
+   {
+    "name": "BOLD America",
+    "amount": 1489736
+   },
+   {
+    "name": "EDF Action Votes",
+    "amount": 853839
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "garcia-johnny",
+  "fec_id": "H6TX35095",
+  "raised": 2201579,
+  "spent": 2052076,
+  "cash": 149503,
+  "through": "2026-10-14",
+  "pac_total": 299650,
+  "top_pacs": [
+   {
+    "name": "BLUE DOG POLITICAL ACTION COMMITTEE",
+    "amount": 12500
+   },
+   {
+    "name": "FAIR SHOT PAC",
+    "amount": 10000
+   },
+   {
+    "name": "INNOVATION FOR GOOD PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 7540948,
+  "outside_against": 8660003,
+  "top_against": [
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 8257750
+   },
+   {
+    "name": "America PAC",
+    "amount": 271163
+   },
+   {
+    "name": "LEAD LEFT PAC",
+    "amount": 113924
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "de-la-cruz-carlos",
+  "fec_id": "H6TX35087",
+  "raised": 2021118,
+  "spent": 1708510,
+  "cash": 312607,
+  "through": "2026-10-14",
+  "pac_total": 300500,
+  "top_pacs": [
+   {
+    "name": "SEAL PAC SUPPORTING ELECTING AMERICAN LEADERS PAC",
+    "amount": 15000
+   },
+   {
+    "name": "KEEP TEXAS TEXAS PAC",
+    "amount": 15000
+   },
+   {
+    "name": "AMERICAN REVIVAL PAC",
+    "amount": 15000
+   }
+  ],
+  "outside_for": 4420891,
+  "outside_against": 5334505,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 4689716
+   },
+   {
+    "name": "YOUR COMMUNITY PAC",
+    "amount": 502000
+   },
+   {
+    "name": "BOLD America",
+    "amount": 100720
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "taylor-shannon",
+  "fec_id": "H6VA01299",
+  "raised": 4607379,
+  "spent": 4008645,
+  "cash": 598734,
+  "through": "2026-10-14",
+  "pac_total": 408858,
+  "top_pacs": [
+   {
+    "name": "FAIR SHOT PAC",
+    "amount": 10000
+   },
+   {
+    "name": "EMILYS LIST",
+    "amount": 10000
+   },
+   {
+    "name": "DEFEND THE VOTE",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 2468455,
+  "outside_against": 632938,
+  "top_against": [
+   {
+    "name": "COMMONWEALTH ACTION PAC",
+    "amount": 215385
+   },
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 193060
+   },
+   {
+    "name": "MAGA INC.",
+    "amount": 119049
+   }
+  ],
+  "outside_through": "2026-10-29"
+ },
+ {
+  "id": "wittman",
+  "fec_id": "H8VA01147",
+  "raised": 5432689,
+  "spent": 6011223,
+  "cash": 797346,
+  "through": "2026-10-14",
+  "pac_total": 1307100,
+  "top_pacs": [
+   {
+    "name": "SEAL PAC SUPPORTING ELECTING AMERICAN LEADERS PAC",
+    "amount": 12500
+   },
+   {
+    "name": "DOMINION ENERGY, INC. POLITICAL ACTION COMMITTEE - DOMINION PAC",
+    "amount": 10000
+   },
+   {
+    "name": "ROLLS-ROYCE NORTH AMERICA HOLDINGS INC. PAC (ROLLS-ROYCE NORTH AMERICA PAC)",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 1139933,
+  "outside_against": 11231554,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 6597984
+   },
+   {
+    "name": "YOUR COMMUNITY PAC",
+    "amount": 1760326
+   },
+   {
+    "name": "LCV Victory Fund",
+    "amount": 1078298
+   }
+  ],
+  "outside_through": "2026-10-29"
+ }
+]
