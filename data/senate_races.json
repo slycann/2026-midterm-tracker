@@ -13,7 +13,7 @@
   "avg_margin": 2.2,
   "avg_label": "Talarico +2.2",
   "avg_source": "RealClearPolitics average (via Election Central, Oct 29)",
-  "other_ratings": "Inside Elections moved it to Toss-up on Oct 23.",
+  "other_ratings": "Inside Elections moved it from Toss-up to Tilt D on Oct 29.",
   "watch": "Paxton beat Sen. John Cornyn in the May runoff. Texas hasn’t elected a Democratic senator in more than 30 years; early voting has set midterm records and runs through Oct 30.",
   "cook_order": 4
  },
@@ -31,7 +31,7 @@
   "avg_margin": 2.6,
   "avg_label": "Brown +2.6",
   "avg_source": "RealClearPolitics average (via Election Central, Oct 29)",
-  "other_ratings": "",
+  "other_ratings": "Inside Elections moved it from Toss-up to Tilt D on Oct 29.",
   "watch": "Special election for the rest of JD Vance’s term. Brown, who lost his seat in 2024, has led most fall polls; Husted reported a record Q3 haul for an Ohio Republican Senate candidate.",
   "cook_order": 4
  },
@@ -85,7 +85,7 @@
   "avg_margin": -0.6,
   "avg_label": "Hinson +0.6",
   "avg_source": "RealClearPolitics average (via Election Central, Oct 29)",
-  "other_ratings": "",
+  "other_ratings": "Inside Elections moved it from Tilt R to Toss-up on Oct 29.",
   "watch": "Open seat after Sen. Joni Ernst’s retirement. Recent polls split; Trump was slated to rally for Hinson on Oct 22 and returns Nov 1.",
   "cook_order": 4
  },
@@ -121,7 +121,7 @@
   "avg_margin": 0.2,
   "avg_label": "Hamilton +0.2",
   "avg_source": "RealClearPolitics average (via Election Central, Oct 29)",
-  "other_ratings": "",
+  "other_ratings": "Inside Elections moved it from Tilt R to Toss-up on Oct 29.",
   "watch": "Kansas hasn’t elected a Democratic senator since 1932. Hamilton, a megachurch pastor, runs as a centrist. The RCP average moved to Hamilton on Oct 29.",
   "cook_order": 4
  },
@@ -139,7 +139,7 @@
   "avg_margin": null,
   "avg_label": "",
   "avg_source": "",
-  "other_ratings": "RealClearPolitics moved it back to Toss Up on Oct 25; Inside Elections rates it Lean R.",
+  "other_ratings": "RealClearPolitics moved it back to Toss Up on Oct 25; Inside Elections moved it from Lean R to Tilt R on Oct 29.",
   "watch": "Osborn is an independent. Raters disagree most on this race; a Republican-aligned poll shows Ricketts ahead while YouGov has Osborn up 1.",
   "cook_order": 6
  },
@@ -157,7 +157,7 @@
   "avg_margin": -2.4,
   "avg_label": "Graham +2.4",
   "avg_source": "RealClearPolitics average (via Election Central, Oct 29)",
-  "other_ratings": "Cook moved it from Likely R to Lean R on Oct 20; RealClearPolitics moved it to Toss Up on Oct 25.",
+  "other_ratings": "Cook moved it from Likely R to Lean R on Oct 20; RealClearPolitics moved it to Toss Up on Oct 25; Inside Elections moved it to Tilt R on Oct 29.",
   "watch": "Graham was appointed after the death of her brother, Sen. Lindsey Graham, and won the GOP runoff over Rep. Ralph Norman. Trump carried the state by 18 in 2024.",
   "cook_order": 5
  },
@@ -175,7 +175,7 @@
   "avg_margin": 8.2,
   "avg_label": "Ossoff +8.2",
   "avg_source": "RealClearPolitics average (via Election Central, Oct 29)",
-  "other_ratings": "RealClearPolitics moved it to Likely Dem on Oct 25.",
+  "other_ratings": "RealClearPolitics moved it to Likely Dem on Oct 25; Inside Elections moved it to Likely D on Oct 29.",
   "watch": "Early in the cycle Republicans saw it as one of their best pickup chances. Obama campaigns in metro Atlanta on Oct 28.",
   "cook_order": 2
  },
@@ -247,7 +247,7 @@
   "avg_margin": null,
   "avg_label": "",
   "avg_source": "",
-  "other_ratings": "Cook moved it from Solid R to Likely R on Oct 20; RealClearPolitics moved it from Safe to Likely GOP on Oct 24.",
+  "other_ratings": "Cook moved it from Solid R to Likely R on Oct 20; RealClearPolitics and Inside Elections now rate it Likely R.",
   "watch": "",
   "cook_order": 6
  },

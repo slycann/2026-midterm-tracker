@@ -160,5 +160,41 @@
   "headline": "Trump rallies for Husted; Speaker Johnson stumps for Merrin",
   "detail": "Trump held his third Ohio rally this month in Chillicothe on Wednesday. Johnson campaigned in Lucas County for Derek Merrin’s rematch with Marcy Kaptur.",
   "source": "Fox News, 13abc"
+ },
+ {
+  "id": "b19",
+  "date": "2026-10-30",
+  "order": 1,
+  "category": "Senate",
+  "headline": "CNN polls: Democrats ahead in Kansas, Maine, Texas and Michigan",
+  "detail": "Among likely voters (Oct 20–27): Hamilton 49–45, Jackson 49–45, Talarico 49–43, El-Sayed 49–42. Kansas and Maine are within the margin of error.",
+  "source": "CNN/SSRS via Fox News (Oct 29)"
+ },
+ {
+  "id": "b20",
+  "date": "2026-10-30",
+  "order": 2,
+  "category": "Senate",
+  "headline": "Inside Elections shifts nine Senate races toward Democrats",
+  "detail": "Ohio and Texas move to Tilt D; Iowa and Kansas to Toss-up; Nebraska and South Carolina to Tilt R; Georgia to Likely D; Louisiana and Mississippi to Likely R.",
+  "source": "Newsweek (Oct 29)"
+ },
+ {
+  "id": "b21",
+  "date": "2026-10-30",
+  "order": 3,
+  "category": "Senate",
+  "headline": "Justice Department widens its Alaska lawsuit",
+  "detail": "DOJ, which sued Oct 22 to block certification if Sullivan loses and votes for the second Sullivan could have decided it, filed an amended complaint. Alaska’s election officials, Peltola and the DSCC are asking the judge to dismiss it.",
+  "source": "CNBC (Oct 29), Alaska Public Media (Oct 27)"
+ },
+ {
+  "id": "b22",
+  "date": "2026-10-30",
+  "order": 4,
+  "category": "Turnout",
+  "headline": "Nearly 44 million early votes",
+  "detail": "NBC News counts more than 43.9 million mail and in-person early votes as of this morning, up about 4 million in a day. Turnout counts show who is voting, not how.",
+  "source": "NBC News (Oct 30)"
  }
 ]

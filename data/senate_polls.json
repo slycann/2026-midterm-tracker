@@ -1,5 +1,15 @@
 [
  {
+  "id": "p32",
+  "state": "TX",
+  "pollster": "CNN/SSRS",
+  "dates": "Oct 20–27",
+  "sample": "LV",
+  "dem_side_pct": 49,
+  "rep_pct": 43,
+  "margin": 6
+ },
+ {
   "id": "p1",
   "state": "TX",
   "pollster": "University of Houston Hobby School",
@@ -60,6 +70,16 @@
   "margin": 6
  },
  {
+  "id": "p31",
+  "state": "ME",
+  "pollster": "CNN/SSRS",
+  "dates": "Oct 20–27",
+  "sample": "LV",
+  "dem_side_pct": 49,
+  "rep_pct": 45,
+  "margin": 4
+ },
+ {
   "id": "p26",
   "state": "ME",
   "pollster": "Fox News",
@@ -88,16 +108,6 @@
   "dem_side_pct": 51,
   "rep_pct": 47,
   "margin": 4
- },
- {
-  "id": "p7",
-  "state": "ME",
-  "pollster": "CBS News",
-  "dates": "Released late Sep",
-  "sample": "",
-  "dem_side_pct": 50,
-  "rep_pct": 50,
-  "margin": 0
  },
  {
   "id": "p9",
@@ -150,6 +160,16 @@
   "margin": -2
  },
  {
+  "id": "p33",
+  "state": "MI",
+  "pollster": "CNN/SSRS",
+  "dates": "Oct 20–27",
+  "sample": "LV",
+  "dem_side_pct": 49,
+  "rep_pct": 42,
+  "margin": 7
+ },
+ {
   "id": "p27",
   "state": "MI",
   "pollster": "Glengariff Group for WDIV/Detroit News",
@@ -178,6 +198,16 @@
   "dem_side_pct": 46,
   "rep_pct": 44,
   "margin": 2
+ },
+ {
+  "id": "p30",
+  "state": "KS",
+  "pollster": "CNN/SSRS",
+  "dates": "Oct 20–27",
+  "sample": "LV",
+  "dem_side_pct": 49,
+  "rep_pct": 45,
+  "margin": 4
  },
  {
   "id": "p16",
