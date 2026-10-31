@@ -195,32 +195,6 @@
   "source_url": "https://news.ballotpedia.org/2026/08/18/forecasters-move-ohios-7th-congressional-district-to-toss-up-ahead-of-november-general-election/"
  },
  {
-  "id": "h16",
-  "district": "OH-09",
-  "pollster": "DCCC internal poll",
-  "sponsor": "D",
-  "dates": "Sep 22–23",
-  "sample": "LV",
-  "dem_pct": 48,
-  "rep_pct": 48,
-  "margin": 0,
-  "source": "USPollingData",
-  "source_url": "https://uspollingdata.com/races/house/oh-09/"
- },
- {
-  "id": "h17",
-  "district": "PA-08",
-  "pollster": "House Majority PAC",
-  "sponsor": "D",
-  "dates": "Late Jun",
-  "sample": "",
-  "dem_pct": 47,
-  "rep_pct": 45,
-  "margin": 2,
-  "source": "PollsMax",
-  "source_url": "https://www.pollsmax.com/2026-us-house/pennsylvania-8/"
- },
- {
   "id": "h18",
   "district": "TX-15",
   "pollster": "Texas Southern University",
@@ -245,5 +219,57 @@
   "margin": 4,
   "source": "Daily Signal",
   "source_url": "https://dailysignal.com/2026/10/18/rep-rob-wittman-makes-his-case-in-virginias-1st-congressional-district"
+ },
+ {
+  "id": "h20",
+  "district": "PA-01",
+  "pollster": "New York Times/Philadelphia Inquirer/Siena",
+  "sponsor": "",
+  "dates": "Oct 16–22",
+  "sample": "LV",
+  "dem_pct": 48,
+  "rep_pct": 46,
+  "margin": 2,
+  "source": "Philadelphia Inquirer",
+  "source_url": "https://inquirer.com/politics/election/bob-harvie-brian-fitzpatrick-congressional-poll-bucks-county-20261025.html"
+ },
+ {
+  "id": "h21",
+  "district": "SC-01",
+  "pollster": "GQR",
+  "sponsor": "D",
+  "dates": "Jul 22",
+  "sample": "",
+  "dem_pct": 48,
+  "rep_pct": 50,
+  "margin": -2,
+  "source": "PollsMax",
+  "source_url": "https://www.pollsmax.com/2026-us-house/south-carolina-1/"
+ },
+ {
+  "id": "h22",
+  "district": "CO-05",
+  "pollster": "Killin campaign poll",
+  "sponsor": "D",
+  "dates": "Released late Oct",
+  "sample": "",
+  "dem_pct": 46,
+  "rep_pct": 44,
+  "margin": 2,
+  "source": "Colorado Politics",
+  "source_url": "https://www.coloradopolitics.com/2026/10/25/crank-v-killin-election-could-be-closest-ever-result-in-5th-district/"
+ },
+ {
+  "id": "h23",
+  "district": "CO-05",
+  "pollster": "Global Strategy Group",
+  "sponsor": "D",
+  "dates": "Jul",
+  "sample": "",
+  "dem_pct": 44,
+  "rep_pct": 45,
+  "margin": -1,
+  "source": "Colorado Sun",
+  "source_url": "https://coloradosun.com/2026/07/28/jessica-killin-jeff-crank-polling/"
  }
 ]

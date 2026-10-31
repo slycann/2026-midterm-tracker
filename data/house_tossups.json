@@ -12,6 +12,18 @@
   "headline_date": "2026-10-21"
  },
  {
+  "district": "CO-05",
+  "state": "CO",
+  "held_by": "R",
+  "holder": "Jeff Crank (R)",
+  "dem": "Jessica Killin",
+  "rep": "Jeff Crank",
+  "note": "Moved from Lean R on Oct 30.",
+  "headline": "Colorado Politics says it could be the district’s closest race ever; Killin had raised $4.97M to Crank’s $2.78M by September.",
+  "headline_source": "Colorado Politics",
+  "headline_date": "2026-10-25"
+ },
+ {
   "district": "FL-14",
   "state": "FL",
   "held_by": "D",
@@ -144,28 +156,28 @@
   "headline_date": "2026-10-28"
  },
  {
-  "district": "OH-09",
-  "state": "OH",
-  "held_by": "D",
-  "holder": "Marcy Kaptur (D)",
-  "dem": "Marcy Kaptur",
-  "rep": "Derek Merrin",
-  "note": "",
-  "headline": "House Speaker Mike Johnson rallied for Merrin in Lucas County; a DCCC poll had the rematch tied at 48%.",
-  "headline_source": "13abc",
-  "headline_date": "2026-10-29"
- },
- {
-  "district": "PA-08",
+  "district": "PA-01",
   "state": "PA",
   "held_by": "R",
-  "holder": "Rob Bresnahan (R)",
-  "dem": "Paige Cognetti",
-  "rep": "Rob Bresnahan",
-  "note": "",
-  "headline": "One of the priciest toss-ups: about $28M in ads booked, with Cognetti’s side outspending Bresnahan’s.",
-  "headline_source": "WVIA",
-  "headline_date": "2026-10-27"
+  "holder": "Brian Fitzpatrick (R)",
+  "dem": "Bob Harvie",
+  "rep": "Brian Fitzpatrick",
+  "note": "Moved from Lean R on Oct 30.",
+  "headline": "A NYT/Inquirer/Siena poll has Harvie up 48–46; voters favor Fitzpatrick on character and Harvie on cost of living.",
+  "headline_source": "Philadelphia Inquirer",
+  "headline_date": "2026-10-25"
+ },
+ {
+  "district": "SC-01",
+  "state": "SC",
+  "held_by": "R",
+  "holder": "Open (Mace)",
+  "dem": "Nancy Lacore",
+  "rep": "Jenny Costa Honeycutt",
+  "note": "Moved from Lean R on Oct 30.",
+  "headline": "Debating data centers and guns, Lacore said Honeycutt’s tech stocks are a conflict; Honeycutt called that a lie.",
+  "headline_source": "Live 5 News, Post and Courier",
+  "headline_date": "2026-10-16"
  },
  {
   "district": "TX-15",

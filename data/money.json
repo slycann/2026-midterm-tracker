@@ -21,8 +21,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 36076745,
-  "outside_against": 219682571,
+  "outside_for": 37226496,
+  "outside_against": 220006584,
   "top_against": [
    {
     "name": "TEXAS PAC",
@@ -30,14 +30,14 @@
    },
    {
     "name": "America PAC",
-    "amount": 40489593
+    "amount": 40813606
    },
    {
     "name": "MAGA INC.",
     "amount": 30117991
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "paxton",
@@ -61,8 +61,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 96767147,
-  "outside_against": 100020729,
+  "outside_for": 97039035,
+  "outside_against": 100178207,
   "top_against": [
    {
     "name": "Lone Star Rising PAC",
@@ -77,7 +77,7 @@
     "amount": 19428285
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "brown-sherrod",
@@ -101,8 +101,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 24298926,
-  "outside_against": 187059346,
+  "outside_for": 25010596,
+  "outside_against": 187417208,
   "top_against": [
    {
     "name": "SLF PAC",
@@ -110,14 +110,14 @@
    },
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 20797571
+    "amount": 21055571
    },
    {
     "name": "DEFEND AMERICAN JOBS",
     "amount": 19706265
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "husted",
@@ -141,12 +141,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 69902086,
-  "outside_against": 128327334,
+  "outside_for": 70419061,
+  "outside_against": 128389622,
   "top_against": [
    {
     "name": "WinSenate",
-    "amount": 77812005
+    "amount": 77846324
    },
    {
     "name": "Duty and Country",
@@ -157,7 +157,7 @@
     "amount": 8778686
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "jackson-troy",
@@ -181,12 +181,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 11354966,
-  "outside_against": 74828812,
+  "outside_for": 11365010,
+  "outside_against": 75575560,
   "top_against": [
    {
     "name": "SLF PAC",
-    "amount": 36840846
+    "amount": 37413288
    },
    {
     "name": "PINE TREE RESULTS PAC",
@@ -197,7 +197,7 @@
     "amount": 9910757
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "collins-susan",
@@ -221,12 +221,12 @@
     "amount": 12000
    }
   ],
-  "outside_for": 8092966,
-  "outside_against": 37827676,
+  "outside_for": 8482250,
+  "outside_against": 38440608,
   "top_against": [
    {
     "name": "WinSenate",
-    "amount": 32153793
+    "amount": 32735306
    },
    {
     "name": "Planned Parenthood Votes",
@@ -237,7 +237,7 @@
     "amount": 1019470
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "peltola",
@@ -261,23 +261,23 @@
     "amount": 10000
    }
   ],
-  "outside_for": 10783479,
-  "outside_against": 41787014,
+  "outside_for": 10830759,
+  "outside_against": 41867141,
   "top_against": [
    {
     "name": "SLF PAC",
-    "amount": 17602215
+    "amount": 17604644
    },
    {
     "name": "LAST FRONTIER PAC",
-    "amount": 10283218
+    "amount": 10295057
    },
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 5600832
+    "amount": 5606392
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "sullivan-dan",
@@ -301,8 +301,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 11372885,
-  "outside_against": 38882096,
+  "outside_for": 11451741,
+  "outside_against": 38892596,
   "top_against": [
    {
     "name": "North Star",
@@ -314,10 +314,10 @@
    },
    {
     "name": "WinSenate",
-    "amount": 4704372
+    "amount": 4713372
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "turek",
@@ -341,12 +341,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 42103977,
-  "outside_against": 76337947,
+  "outside_for": 43116243,
+  "outside_against": 76890870,
   "top_against": [
    {
     "name": "SLF PAC",
-    "amount": 47855393
+    "amount": 48216017
    },
    {
     "name": "FIGHT ON IOWA",
@@ -354,10 +354,10 @@
    },
    {
     "name": "Americans for Prosperity Action, Inc. (AFP Action) DBA CVA Action and DBA LIBRE Action",
-    "amount": 6144712
+    "amount": 6252717
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "hinson",
@@ -381,12 +381,12 @@
     "amount": 15000
    }
   ],
-  "outside_for": 18358890,
-  "outside_against": 65710778,
+  "outside_for": 18692316,
+  "outside_against": 65770109,
   "top_against": [
    {
     "name": "WinSenate",
-    "amount": 39384815
+    "amount": 39425192
    },
    {
     "name": "VoteVets",
@@ -397,7 +397,7 @@
     "amount": 4259746
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "el-sayed",
@@ -421,8 +421,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 37206421,
-  "outside_against": 147437944,
+  "outside_for": 38557165,
+  "outside_against": 153046509,
   "top_against": [
    {
     "name": "SLF PAC",
@@ -434,10 +434,10 @@
    },
    {
     "name": "UNITED DEMOCRACY PROJECT (UDP)",
-    "amount": 20829603
+    "amount": 20903438
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "rogers-mike",
@@ -461,12 +461,12 @@
     "amount": 11121
    }
   ],
-  "outside_for": 50135107,
-  "outside_against": 52862253,
+  "outside_for": 50752758,
+  "outside_against": 54204640,
   "top_against": [
    {
     "name": "WinSenate",
-    "amount": 32722916
+    "amount": 33993628
    },
    {
     "name": "Lower Costs Now",
@@ -477,7 +477,7 @@
     "amount": 4592976
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "hamilton-adam",
@@ -501,23 +501,23 @@
     "amount": 10000
    }
   ],
-  "outside_for": 10637472,
-  "outside_against": 30409580,
+  "outside_for": 10652964,
+  "outside_against": 31906190,
   "top_against": [
    {
     "name": "SLF PAC",
-    "amount": 15229220
+    "amount": 16192284
    },
    {
     "name": "MAIN STREET FUND",
-    "amount": 4364123
+    "amount": 4373356
    },
    {
     "name": "Club for Growth Action",
     "amount": 2456460
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "marshall-roger",
@@ -541,8 +541,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 3113112,
-  "outside_against": 45787761,
+  "outside_for": 3307327,
+  "outside_against": 45913611,
   "top_against": [
    {
     "name": "PEOPLE OVER POLITICS ACTION FUND",
@@ -550,14 +550,14 @@
    },
    {
     "name": "WinSenate",
-    "amount": 13994878
+    "amount": 14029004
    },
    {
     "name": "THE 1861 INITIATIVE",
     "amount": 7851031
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "villegas",
@@ -581,7 +581,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4542701,
+  "outside_for": 4554793,
   "outside_against": 2951693,
   "top_against": [
    {
@@ -597,7 +597,7 @@
     "amount": 600000
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "valadao",
@@ -621,8 +621,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 976114,
-  "outside_against": 14365582,
+  "outside_for": 995865,
+  "outside_against": 14378679,
   "top_against": [
    {
     "name": "HMP",
@@ -637,7 +637,7 @@
     "amount": 1100738
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "castor",
@@ -661,12 +661,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4094128,
-  "outside_against": 13481346,
+  "outside_for": 4099515,
+  "outside_against": 13483346,
   "top_against": [
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 12438489
+    "amount": 12440489
    },
    {
     "name": "Club for Growth Action",
@@ -677,7 +677,7 @@
     "amount": 257529
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "beltran",
@@ -701,8 +701,8 @@
     "amount": 5000
    }
   ],
-  "outside_for": 1305698,
-  "outside_against": 12348991,
+  "outside_for": 1307698,
+  "outside_against": 12354378,
   "top_against": [
    {
     "name": "HMP",
@@ -717,7 +717,7 @@
     "amount": 500000
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "dandiya",
@@ -741,12 +741,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 1227567,
-  "outside_against": 9648612,
+  "outside_for": 1244260,
+  "outside_against": 10078612,
   "top_against": [
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 9118143
+    "amount": 9548143
    },
    {
     "name": "Stronger America Together",
@@ -757,7 +757,7 @@
     "amount": 87249
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "askar",
@@ -782,7 +782,7 @@
    }
   ],
   "outside_for": 750090,
-  "outside_against": 758806,
+  "outside_against": 775499,
   "top_against": [
    {
     "name": "Club for Growth Action",
@@ -791,9 +791,13 @@
    {
     "name": "RISING TIDE COLLECTIVE",
     "amount": 54000
+   },
+   {
+    "name": "Building Together",
+    "amount": 16693
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "james-lindsay",
@@ -817,12 +821,12 @@
     "amount": 10108
    }
   ],
-  "outside_for": 3239193,
-  "outside_against": 5145358,
+  "outside_for": 3249254,
+  "outside_against": 5157761,
   "top_against": [
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 3973519
+    "amount": 3985921
    },
    {
     "name": "CLF",
@@ -833,7 +837,7 @@
     "amount": 255574
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "mitchell-joe",
@@ -857,8 +861,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 685110,
-  "outside_against": 7460183,
+  "outside_for": 692443,
+  "outside_against": 7482129,
   "top_against": [
    {
     "name": "HMP",
@@ -873,7 +877,7 @@
     "amount": 958083
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "dembo",
@@ -897,12 +901,12 @@
     "amount": 5000
    }
   ],
-  "outside_for": 1737330,
-  "outside_against": 3352013,
+  "outside_for": 1757036,
+  "outside_against": 3352713,
   "top_against": [
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 2489849
+    "amount": 2490549
    },
    {
     "name": "CONSERVATIVES FOR AMERICAN EXCELLENCE INC.",
@@ -913,7 +917,7 @@
     "amount": 78876
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "alvarado",
@@ -937,8 +941,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 3974269,
-  "outside_against": 4489888,
+  "outside_for": 3974969,
+  "outside_against": 4519328,
   "top_against": [
    {
     "name": "HMP",
@@ -953,7 +957,7 @@
     "amount": 600000
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "mccann",
@@ -977,8 +981,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 946689,
-  "outside_against": 7589891,
+  "outside_for": 959399,
+  "outside_against": 7591694,
   "top_against": [
    {
     "name": "NO GOING BACK PAC INC.",
@@ -993,7 +997,7 @@
     "amount": 363000
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "huizenga",
@@ -1017,8 +1021,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 2329845,
-  "outside_against": 11495958,
+  "outside_for": 2330797,
+  "outside_against": 11506566,
   "top_against": [
    {
     "name": "HMP",
@@ -1033,7 +1037,7 @@
     "amount": 843602
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "lawrence-william",
@@ -1057,7 +1061,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4204403,
+  "outside_for": 4367745,
   "outside_against": 10991024,
   "top_against": [
    {
@@ -1073,7 +1077,7 @@
     "amount": 909204
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "barrett-tom",
@@ -1097,8 +1101,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 2021591,
-  "outside_against": 15941851,
+  "outside_for": 2022953,
+  "outside_against": 15953652,
   "top_against": [
    {
     "name": "HMP",
@@ -1113,7 +1117,7 @@
     "amount": 525630
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "hines",
@@ -1137,7 +1141,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 3078563,
+  "outside_for": 3238389,
   "outside_against": 1958123,
   "top_against": [
    {
@@ -1153,7 +1157,7 @@
     "amount": 215250
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "bouchard-jr",
@@ -1177,8 +1181,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 958462,
-  "outside_against": 14304740,
+  "outside_for": 959444,
+  "outside_against": 14322405,
   "top_against": [
    {
     "name": "HMP",
@@ -1193,7 +1197,7 @@
     "amount": 587985
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "forstag",
@@ -1217,12 +1221,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 1768579,
-  "outside_against": 7997216,
+  "outside_for": 1802049,
+  "outside_against": 7997656,
   "top_against": [
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 7586177
+    "amount": 7586617
    },
    {
     "name": "Americans for Prosperity Action, Inc. (AFP Action) DBA CVA Action and DBA LIBRE Action",
@@ -1233,7 +1237,7 @@
     "amount": 91462
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "flint",
@@ -1257,12 +1261,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4256578,
-  "outside_against": 8636874,
+  "outside_for": 4262018,
+  "outside_against": 8665634,
   "top_against": [
    {
     "name": "MONTANA VOTERS PAC",
-    "amount": 3715923
+    "amount": 3716242
    },
    {
     "name": "HMP",
@@ -1273,7 +1277,7 @@
     "amount": 793390
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "davis-don",
@@ -1297,7 +1301,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 5075210,
+  "outside_for": 5094588,
   "outside_against": 7235679,
   "top_against": [
    {
@@ -1313,7 +1317,7 @@
     "amount": 280118
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "buckhout",
@@ -1337,8 +1341,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 2586473,
-  "outside_against": 17748013,
+  "outside_for": 2611565,
+  "outside_against": 17760070,
   "top_against": [
    {
     "name": "HMP",
@@ -1353,7 +1357,7 @@
     "amount": 945432
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "conley",
@@ -1377,8 +1381,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4050777,
-  "outside_against": 5242160,
+  "outside_for": 4224688,
+  "outside_against": 5242489,
   "top_against": [
    {
     "name": "SAFETY & AFFORDABILITY PAC INC.",
@@ -1390,10 +1394,10 @@
    },
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 379476
+    "amount": 379806
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "lawler",
@@ -1417,8 +1421,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4365937,
-  "outside_against": 4809332,
+  "outside_for": 4388800,
+  "outside_against": 4853796,
   "top_against": [
    {
     "name": "HMP",
@@ -1433,7 +1437,7 @@
     "amount": 863354
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "poindexter",
@@ -1457,12 +1461,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 1504252,
-  "outside_against": 1030473,
+  "outside_for": 1522980,
+  "outside_against": 1085667,
   "top_against": [
    {
     "name": "JOBS & PROSPERITY PAC",
-    "amount": 729142
+    "amount": 784336
    },
    {
     "name": "America PAC",
@@ -1473,7 +1477,7 @@
     "amount": 94019
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "miller-max",
@@ -1498,7 +1502,7 @@
    }
   ],
   "outside_for": 715978,
-  "outside_against": 9936116,
+  "outside_against": 9966842,
   "top_against": [
    {
     "name": "HMP",
@@ -1513,167 +1517,7 @@
     "amount": 727866
    }
   ],
-  "outside_through": "2026-10-29"
- },
- {
-  "id": "kaptur",
-  "fec_id": "H2OH09031",
-  "raised": 5910481,
-  "spent": 5661900,
-  "cash": 697508,
-  "through": "2026-10-14",
-  "pac_total": 1256392,
-  "top_pacs": [
-   {
-    "name": "BWX TECHNOLOGIES, INC POLITICAL ACTION COMMITTEE",
-    "amount": 10000
-   },
-   {
-    "name": "DEFEND THE VOTE",
-    "amount": 10000
-   },
-   {
-    "name": "GROWTH ENERGY PAC",
-    "amount": 10000
-   }
-  ],
-  "outside_for": 2586449,
-  "outside_against": 2622224,
-  "top_against": [
-   {
-    "name": "SAFETY & AFFORDABILITY PAC INC.",
-    "amount": 1051530
-   },
-   {
-    "name": "Club for Growth Action",
-    "amount": 706277
-   },
-   {
-    "name": "Americans for Prosperity Action, Inc. (AFP Action) DBA CVA Action and DBA LIBRE Action",
-    "amount": 330455
-   }
-  ],
-  "outside_through": "2026-10-29"
- },
- {
-  "id": "merrin",
-  "fec_id": "H4OH09169",
-  "raised": 2217821,
-  "spent": 1845006,
-  "cash": 449466,
-  "through": "2026-10-14",
-  "pac_total": 167499,
-  "top_pacs": [
-   {
-    "name": "AMERICAN REVIVAL PAC",
-    "amount": 10000
-   },
-   {
-    "name": "GLASS CITY PAC",
-    "amount": 6999
-   },
-   {
-    "name": "BREAD FINANCIAL HOLDINGS, INC. PAC (AKA BREAD FINANCIAL PAC)",
-    "amount": 5000
-   }
-  ],
-  "outside_for": 3514581,
-  "outside_against": 5602721,
-  "top_against": [
-   {
-    "name": "HMP",
-    "amount": 5193685
-   },
-   {
-    "name": "EDW Action Fund",
-    "amount": 347351
-   },
-   {
-    "name": "AMERICAN RESOLVE PAC INC.",
-    "amount": 57000
-   }
-  ],
-  "outside_through": "2026-10-29"
- },
- {
-  "id": "cognetti",
-  "fec_id": "H6PA08293",
-  "raised": 7502359,
-  "spent": 7258687,
-  "cash": 243672,
-  "through": "2026-10-14",
-  "pac_total": 520935,
-  "top_pacs": [
-   {
-    "name": "JSTREETPAC",
-    "amount": 12085
-   },
-   {
-    "name": "EMILYS LIST",
-    "amount": 10021
-   },
-   {
-    "name": "FAIR SHOT PAC",
-    "amount": 10000
-   }
-  ],
-  "outside_for": 1795207,
-  "outside_against": 4124181,
-  "top_against": [
-   {
-    "name": "SAFETY & AFFORDABILITY PAC INC.",
-    "amount": 2808332
-   },
-   {
-    "name": "REAL RESULTS PAC",
-    "amount": 382025
-   },
-   {
-    "name": "America PAC",
-    "amount": 334624
-   }
-  ],
-  "outside_through": "2026-10-29"
- },
- {
-  "id": "bresnahan",
-  "fec_id": "H4PA08124",
-  "raised": 6519139,
-  "spent": 5839568,
-  "cash": 732724,
-  "through": "2026-10-14",
-  "pac_total": 1490288,
-  "top_pacs": [
-   {
-    "name": "BENTLEY SYSTEMS, INCORPORATED FEDERAL PAC",
-    "amount": 24500
-   },
-   {
-    "name": "LABORERS' INTERNATIONAL UNION OF NORTH AMERICA (LIUNA) PAC",
-    "amount": 15000
-   },
-   {
-    "name": "AMERICAN HOSPITAL ASSOCIATION PAC",
-    "amount": 12500
-   }
-  ],
-  "outside_for": 1125531,
-  "outside_against": 8467047,
-  "top_against": [
-   {
-    "name": "HMP",
-    "amount": 4817026
-   },
-   {
-    "name": "Giffords PAC",
-    "amount": 887072
-   },
-   {
-    "name": "TOMORROW TOGETHER",
-    "amount": 843913
-   }
-  ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "pulido",
@@ -1697,8 +1541,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4070142,
-  "outside_against": 8583264,
+  "outside_for": 4141382,
+  "outside_against": 8588581,
   "top_against": [
    {
     "name": "NO GOING BACK PAC INC.",
@@ -1710,10 +1554,10 @@
    },
    {
     "name": "America PAC",
-    "amount": 269313
+    "amount": 274630
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "de-la-cruz-monica",
@@ -1737,8 +1581,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 946578,
-  "outside_against": 9737120,
+  "outside_for": 954619,
+  "outside_against": 9742660,
   "top_against": [
    {
     "name": "HMP",
@@ -1753,7 +1597,7 @@
     "amount": 853839
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "garcia-johnny",
@@ -1777,7 +1621,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 7540948,
+  "outside_for": 7660844,
   "outside_against": 8660003,
   "top_against": [
    {
@@ -1793,7 +1637,7 @@
     "amount": 113924
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "de-la-cruz-carlos",
@@ -1818,7 +1662,7 @@
    }
   ],
   "outside_for": 4420891,
-  "outside_against": 5334505,
+  "outside_against": 5341900,
   "top_against": [
    {
     "name": "HMP",
@@ -1833,7 +1677,7 @@
     "amount": 100720
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "taylor-shannon",
@@ -1857,8 +1701,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 2468455,
-  "outside_against": 632938,
+  "outside_for": 2573831,
+  "outside_against": 635035,
   "top_against": [
    {
     "name": "COMMONWEALTH ACTION PAC",
@@ -1866,14 +1710,14 @@
    },
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 193060
+    "amount": 195158
    },
    {
     "name": "MAGA INC.",
     "amount": 119049
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
  },
  {
   "id": "wittman",
@@ -1897,8 +1741,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 1139933,
-  "outside_against": 11231554,
+  "outside_for": 1141082,
+  "outside_against": 11248063,
   "top_against": [
    {
     "name": "HMP",
@@ -1913,6 +1757,246 @@
     "amount": 1078298
    }
   ],
-  "outside_through": "2026-10-29"
+  "outside_through": "2026-10-31"
+ },
+ {
+  "id": "harvie",
+  "fec_id": "H6PA01181",
+  "raised": 3167942,
+  "spent": 2758530,
+  "cash": 409413,
+  "through": "2026-10-14",
+  "pac_total": 179500,
+  "top_pacs": [
+   {
+    "name": "FAIR SHOT PAC",
+    "amount": 10000
+   },
+   {
+    "name": "SD PAC",
+    "amount": 10000
+   },
+   {
+    "name": "FLIP THE CONGRESS PAC",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 775516,
+  "outside_against": 2439031,
+  "top_against": [
+   {
+    "name": "Defending America PAC",
+    "amount": 1480509
+   },
+   {
+    "name": "RJC Victory Fund",
+    "amount": 383500
+   },
+   {
+    "name": "STRATEGIC MAJORITY PAC",
+    "amount": 310306
+   }
+  ],
+  "outside_through": "2026-10-31"
+ },
+ {
+  "id": "fitzpatrick",
+  "fec_id": "H6PA08277",
+  "raised": 8021376,
+  "spent": 11734809,
+  "cash": 709097,
+  "through": "2026-10-14",
+  "pac_total": 2416205,
+  "top_pacs": [
+   {
+    "name": "NATIONAL ACTIVE AND RETIRED FEDERAL EMPLOYEES ASSOCIATION POLITICAL ACTION COM (NARFE-PAC)",
+    "amount": 12500
+   },
+   {
+    "name": "EMPLOYEE OWNED S CORPORATIONS OF AMERICA PAC (ESCA PAC)",
+    "amount": 10000
+   },
+   {
+    "name": "AMERICAN ACADEMY OF DERMATOLOGY ASSOCIATION POLITICAL ACTION COMMITTEE (SKINPAC)",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 1447997,
+  "outside_against": 9433639,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 8358011
+   },
+   {
+    "name": "YOUR COMMUNITY PAC",
+    "amount": 998650
+   },
+   {
+    "name": "Losers and Suckers Vote",
+    "amount": 30930
+   }
+  ],
+  "outside_through": "2026-10-31"
+ },
+ {
+  "id": "lacore",
+  "fec_id": "H6SC01359",
+  "raised": 4865630,
+  "spent": 4690325,
+  "cash": 175304,
+  "through": "2026-10-14",
+  "pac_total": 131415,
+  "top_pacs": [
+   {
+    "name": "VOTEVETS",
+    "amount": 15000
+   },
+   {
+    "name": "EMILYS LIST",
+    "amount": 14365
+   },
+   {
+    "name": "MOMS FED UP",
+    "amount": 7500
+   }
+  ],
+  "outside_for": 1212730,
+  "outside_against": 3331314,
+  "top_against": [
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 1887501
+   },
+   {
+    "name": "THANK YOU FOR YOUR ATTENTION TO THIS MATTER PAC",
+    "amount": 842667
+   },
+   {
+    "name": "WFW ACTION FUND INC",
+    "amount": 271058
+   }
+  ],
+  "outside_through": "2026-10-31"
+ },
+ {
+  "id": "honeycutt",
+  "fec_id": "H6SC01334",
+  "raised": 1291996,
+  "spent": 983978,
+  "cash": 308018,
+  "through": "2026-10-14",
+  "pac_total": 184500,
+  "top_pacs": [
+   {
+    "name": "VALUE IN ELECTING WOMEN POLITICAL ACTION COMMITTEE",
+    "amount": 15000
+   },
+   {
+    "name": "THE EYE OF THE TIGER POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   },
+   {
+    "name": "AMERICAN ASSOCIATION FOR JUSTICE POLITICAL ACTION COMMITTEE (AAJ PAC)",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 3308360,
+  "outside_against": 3556822,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 1593435
+   },
+   {
+    "name": "VoteVets",
+    "amount": 999414
+   },
+   {
+    "name": "American Democracy Project",
+    "amount": 350000
+   }
+  ],
+  "outside_through": "2026-10-31"
+ },
+ {
+  "id": "killin",
+  "fec_id": "H6CO05324",
+  "raised": 5593463,
+  "spent": 5085735,
+  "cash": 507728,
+  "through": "2026-10-14",
+  "pac_total": 334029,
+  "top_pacs": [
+   {
+    "name": "FAIR SHOT PAC",
+    "amount": 13456
+   },
+   {
+    "name": "VOTEVETS",
+    "amount": 10000
+   },
+   {
+    "name": "EMILYS LIST",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 191028,
+  "outside_against": 4181174,
+  "top_against": [
+   {
+    "name": "NO GOING BACK PAC INC.",
+    "amount": 2607994
+   },
+   {
+    "name": "CONSERVATIVES FOR AMERICAN EXCELLENCE INC.",
+    "amount": 1024801
+   },
+   {
+    "name": "Americans for Prosperity Action, Inc. (AFP Action) DBA CVA Action and DBA LIBRE Action",
+    "amount": 373430
+   }
+  ],
+  "outside_through": "2026-10-31"
+ },
+ {
+  "id": "crank",
+  "fec_id": "H6CO05142",
+  "raised": 2872434,
+  "spent": 2396152,
+  "cash": 542836,
+  "through": "2026-10-14",
+  "pac_total": 664500,
+  "top_pacs": [
+   {
+    "name": "PARSONS CORPORATION POLITICAL ACTION COMMITTEE",
+    "amount": 10000
+   },
+   {
+    "name": "SPACE EXPLORATION TECHNOLOGIES CORP. PAC",
+    "amount": 10000
+   },
+   {
+    "name": "KOCH, INC. POLITICAL ACTION COMMITTEE (KOCHPAC)",
+    "amount": 10000
+   }
+  ],
+  "outside_for": 1542900,
+  "outside_against": 2483300,
+  "top_against": [
+   {
+    "name": "HMP",
+    "amount": 1288745
+   },
+   {
+    "name": "Women Vote",
+    "amount": 479135
+   },
+   {
+    "name": "AB PAC",
+    "amount": 400873
+   }
+  ],
+  "outside_through": "2026-10-31"
  }
 ]

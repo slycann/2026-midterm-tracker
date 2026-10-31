@@ -11,12 +11,12 @@
  },
  {
   "rating": "Lean D",
-  "seats": 16,
+  "seats": 18,
   "cook_order": 3
  },
  {
   "rating": "Toss Up",
-  "seats": 17,
+  "seats": 18,
   "cook_order": 4
  },
  {
@@ -26,7 +26,7 @@
  },
  {
   "rating": "Likely R",
-  "seats": 13,
+  "seats": 10,
   "cook_order": 6
  },
  {

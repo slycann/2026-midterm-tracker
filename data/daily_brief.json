@@ -196,5 +196,50 @@
   "headline": "Nearly 44 million early votes",
   "detail": "NBC News counts more than 43.9 million mail and in-person early votes as of this morning, up about 4 million in a day. Turnout counts show who is voting, not how.",
   "source": "NBC News (Oct 30)"
+ },
+ {
+  "id": "b23",
+  "date": "2026-10-31",
+  "order": 1,
+  "category": "House",
+  "headline": "Cook moves a dozen more House races toward Democrats",
+  "detail": "Its final ratings project a Democratic gain of 12 to 25 seats. OH-09 and PA-08 move to Lean D; PA-01, SC-01 and CO-05 become toss-ups.",
+  "source": "Cook Political Report, USA Today (Oct 30)"
+ },
+ {
+  "id": "b24",
+  "date": "2026-10-31",
+  "order": 2,
+  "category": "Senate",
+  "headline": "Cook shifts Nebraska and Florida toward Democrats",
+  "detail": "Nebraska moves from Likely R to Lean R and Florida from Solid R to Likely R. Cook’s seven toss-ups are unchanged.",
+  "source": "Cook Political Report (Oct 30)"
+ },
+ {
+  "id": "b25",
+  "date": "2026-10-31",
+  "order": 3,
+  "category": "Senate",
+  "headline": "Hamilton’s Kansas lead grows in the average",
+  "detail": "RealClearPolitics now has Hamilton +2.6, El-Sayed +3.5 and Flanagan +5.8; Talarico’s Texas lead slipped to +1.8 and Graham’s South Carolina lead is +2.7.",
+  "source": "Election Central (Oct 31)"
+ },
+ {
+  "id": "b26",
+  "date": "2026-10-31",
+  "order": 4,
+  "category": "House",
+  "headline": "Siena poll has Harvie narrowly ahead of Fitzpatrick",
+  "detail": "Harvie leads 48–46 among likely voters in PA-01 (Oct 16–22), within the margin of error.",
+  "source": "Philadelphia Inquirer (Oct 25)"
+ },
+ {
+  "id": "b27",
+  "date": "2026-10-31",
+  "order": 5,
+  "category": "Turnout",
+  "headline": "Nearly 48.5 million early votes",
+  "detail": "NBC News counts more than 48.4 million mail and in-person early votes as of this morning. Turnout counts show who is voting, not how.",
+  "source": "NBC News (Oct 31)"
  }
 ]
