@@ -70,6 +70,16 @@
   "margin": 6
  },
  {
+  "id": "p34",
+  "state": "ME",
+  "pollster": "Marist",
+  "dates": "Oct 22–25",
+  "sample": "LV",
+  "dem_side_pct": 49,
+  "rep_pct": 47,
+  "margin": 2
+ },
+ {
   "id": "p31",
   "state": "ME",
   "pollster": "CNN/SSRS",
@@ -98,16 +108,6 @@
   "dem_side_pct": 49,
   "rep_pct": 47,
   "margin": 2
- },
- {
-  "id": "p6",
-  "state": "ME",
-  "pollster": "Marist",
-  "dates": "Oct 1–4",
-  "sample": "RV",
-  "dem_side_pct": 51,
-  "rep_pct": 47,
-  "margin": 4
  },
  {
   "id": "p9",

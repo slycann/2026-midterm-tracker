@@ -271,5 +271,18 @@
   "margin": -1,
   "source": "Colorado Sun",
   "source_url": "https://coloradosun.com/2026/07/28/jessica-killin-jeff-crank-polling/"
+ },
+ {
+  "id": "h24",
+  "district": "TX-35",
+  "pollster": "New York Times",
+  "sponsor": "",
+  "dates": "Oct",
+  "sample": "",
+  "dem_pct": 47,
+  "rep_pct": 48,
+  "margin": -1,
+  "source": "Daily Wire, citing the New York Times",
+  "source_url": "https://www.dailywire.com/news/435-house-races-will-be-decided-tuesday-here-are-the-dozen-you-need-to-know-about"
  }
 ]

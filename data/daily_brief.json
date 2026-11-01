@@ -241,5 +241,59 @@
   "headline": "Nearly 48.5 million early votes",
   "detail": "NBC News counts more than 48.4 million mail and in-person early votes as of this morning. Turnout counts show who is voting, not how.",
   "source": "NBC News (Oct 31)"
+ },
+ {
+  "id": "b28",
+  "date": "2026-11-01",
+  "order": 1,
+  "category": "Campaign trail",
+  "headline": "Trump adds rallies in Iowa and Kansas today",
+  "detail": "He reversed course to campaign in both states Sunday, Iowa first. Hinson leads the Iowa average by 0.5; Hamilton leads in Kansas by 2.6.",
+  "source": "CBS News, Election Central (Nov 1)"
+ },
+ {
+  "id": "b29",
+  "date": "2026-11-01",
+  "order": 2,
+  "category": "Senate",
+  "headline": "Texas average tightens to Talarico +1.4",
+  "detail": "Sen. Ted Cruz warned on his podcast that Republicans “could lose Texas,” pointing to early Democratic turnout. Talarico and Paxton both campaigned in Houston Saturday.",
+  "source": "Election Central (Nov 1), CBS News (Oct 31)"
+ },
+ {
+  "id": "b30",
+  "date": "2026-11-01",
+  "order": 3,
+  "category": "Senate",
+  "headline": "Alaska: DOJ asks to set aside ballots ranking the second Sullivan",
+  "detail": "The state’s attorney general says the suit has “no legal basis.” The FBI has contacted donors to Daniel J. Sullivan; Peltola denies knowing about his recruitment.",
+  "source": "CBS News (Oct 31)"
+ },
+ {
+  "id": "b31",
+  "date": "2026-11-01",
+  "order": 4,
+  "category": "Senate",
+  "headline": "Maine: Marist has Jackson up 2; RCP moves Nebraska to Lean R",
+  "detail": "Marist’s likely voters (Oct 22–25) favor Jackson 49–47, and his average edged up to +1.7. RealClearPolitics moved Nebraska from Toss Up to Leans Republican on Oct 31.",
+  "source": "Marist, Election Central (Nov 1)"
+ },
+ {
+  "id": "b32",
+  "date": "2026-11-01",
+  "order": 5,
+  "category": "Turnout",
+  "headline": "More than 52 million early votes",
+  "detail": "NBC News counts 52.2 million mail and in-person early votes as of this morning. Turnout counts show who is voting, not how.",
+  "source": "NBC News (Nov 1)"
+ },
+ {
+  "id": "b33",
+  "date": "2026-11-01",
+  "order": 6,
+  "category": "National",
+  "headline": "Courts block DOJ demand to set aside California ballots",
+  "detail": "A federal judge ordered the Justice Department to stop demanding that about 20,000 mail ballots be separated, and the 9th Circuit ruled 2–1 against it.",
+  "source": "CBS News (Oct 30)"
  }
 ]
