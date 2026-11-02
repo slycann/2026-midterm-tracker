@@ -6,7 +6,7 @@
   "spent": 136427055,
   "cash": 9922857,
   "through": "2026-10-14",
-  "pac_total": 389115,
+  "pac_total": 394115,
   "top_pacs": [
    {
     "name": "ADVANCING DEMOCRACY AND MOBILIZATION PAC",
@@ -21,8 +21,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 38733348,
-  "outside_against": 220352609,
+  "outside_for": 38890019,
+  "outside_against": 220474102,
   "top_against": [
    {
     "name": "TEXAS PAC",
@@ -37,7 +37,7 @@
     "amount": 30117991
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "paxton",
@@ -46,7 +46,7 @@
   "spent": 17543066,
   "cash": 4784408,
   "through": "2026-10-14",
-  "pac_total": 386532,
+  "pac_total": 390032,
   "top_pacs": [
    {
     "name": "NRSC",
@@ -61,8 +61,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 97050454,
-  "outside_against": 100435497,
+  "outside_for": 97238207,
+  "outside_against": 100570466,
   "top_against": [
    {
     "name": "Lone Star Rising PAC",
@@ -77,7 +77,7 @@
     "amount": 19428285
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "brown-sherrod",
@@ -86,7 +86,7 @@
   "spent": 63956397,
   "cash": 4452803,
   "through": "2026-10-14",
-  "pac_total": 221637,
+  "pac_total": 231637,
   "top_pacs": [
    {
     "name": "ADVANCING DEMOCRACY AND MOBILIZATION PAC",
@@ -101,12 +101,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 26391846,
-  "outside_against": 187456636,
+  "outside_for": 26497414,
+  "outside_against": 188219766,
   "top_against": [
    {
     "name": "SLF PAC",
-    "amount": 92579987
+    "amount": 93187187
    },
    {
     "name": "NO GOING BACK PAC INC.",
@@ -117,7 +117,7 @@
     "amount": 19706265
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "husted",
@@ -126,7 +126,7 @@
   "spent": 15655689,
   "cash": 4239097,
   "through": "2026-10-22",
-  "pac_total": 2710844,
+  "pac_total": 2731844,
   "top_pacs": [
    {
     "name": "NRSC",
@@ -141,12 +141,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 70430256,
-  "outside_against": 128421057,
+  "outside_for": 70664386,
+  "outside_against": 128922146,
   "top_against": [
    {
     "name": "WinSenate",
-    "amount": 77846324
+    "amount": 78346324
    },
    {
     "name": "Duty and Country",
@@ -157,7 +157,7 @@
     "amount": 8799686
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "jackson-troy",
@@ -166,7 +166,7 @@
   "spent": 25276003,
   "cash": 1596871,
   "through": "2026-10-14",
-  "pac_total": 243625,
+  "pac_total": 246125,
   "top_pacs": [
    {
     "name": "AMERICAN ASSOCIATION FOR JUSTICE POLITICAL ACTION COMMITTEE (AAJ PAC)",
@@ -181,8 +181,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 13710501,
-  "outside_against": 75578241,
+  "outside_for": 13716917,
+  "outside_against": 75601889,
   "top_against": [
    {
     "name": "SLF PAC",
@@ -197,7 +197,7 @@
     "amount": 9910757
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "collins-susan",
@@ -206,7 +206,7 @@
   "spent": 22351644,
   "cash": 2689883,
   "through": "2026-10-14",
-  "pac_total": 2530879,
+  "pac_total": 2549479,
   "top_pacs": [
    {
     "name": "NRSC",
@@ -221,7 +221,7 @@
     "amount": 12000
    }
   ],
-  "outside_for": 8482250,
+  "outside_for": 8499192,
   "outside_against": 38441108,
   "top_against": [
    {
@@ -237,7 +237,7 @@
     "amount": 1019470
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "peltola",
@@ -246,7 +246,7 @@
   "spent": 32785383,
   "cash": 4102126,
   "through": "2026-10-14",
-  "pac_total": 678075,
+  "pac_total": 685575,
   "top_pacs": [
    {
     "name": "EMILYS LIST",
@@ -262,11 +262,11 @@
    }
   ],
   "outside_for": 10965759,
-  "outside_against": 42330801,
+  "outside_against": 42332250,
   "top_against": [
    {
     "name": "SLF PAC",
-    "amount": 17606602
+    "amount": 17608052
    },
    {
     "name": "LAST FRONTIER PAC",
@@ -277,7 +277,7 @@
     "amount": 5606392
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "sullivan-dan",
@@ -286,7 +286,7 @@
   "spent": 10759421,
   "cash": 2839758,
   "through": "2026-10-14",
-  "pac_total": 2271224,
+  "pac_total": 2287182,
   "top_pacs": [
    {
     "name": "NRSC",
@@ -301,7 +301,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 11488316,
+  "outside_for": 11510890,
   "outside_against": 38927523,
   "top_against": [
    {
@@ -317,7 +317,7 @@
     "amount": 4713372
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "turek",
@@ -326,7 +326,7 @@
   "spent": 21217670,
   "cash": 3072851,
   "through": "2026-10-14",
-  "pac_total": 498981,
+  "pac_total": 503981,
   "top_pacs": [
    {
     "name": "DSCC",
@@ -341,12 +341,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 43852818,
-  "outside_against": 77035403,
+  "outside_for": 43921712,
+  "outside_against": 77562856,
   "top_against": [
    {
     "name": "SLF PAC",
-    "amount": 48219733
+    "amount": 48730309
    },
    {
     "name": "FIGHT ON IOWA",
@@ -357,7 +357,7 @@
     "amount": 6252717
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "hinson",
@@ -366,7 +366,7 @@
   "spent": 13903059,
   "cash": 2172989,
   "through": "2026-10-14",
-  "pac_total": 1550500,
+  "pac_total": 1559633,
   "top_pacs": [
    {
     "name": "NRSC",
@@ -381,12 +381,12 @@
     "amount": 15000
    }
   ],
-  "outside_for": 18741857,
-  "outside_against": 65875012,
+  "outside_for": 18830031,
+  "outside_against": 69415276,
   "top_against": [
    {
     "name": "WinSenate",
-    "amount": 39427192
+    "amount": 42427192
    },
    {
     "name": "VoteVets",
@@ -397,7 +397,7 @@
     "amount": 4259746
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "el-sayed",
@@ -406,7 +406,7 @@
   "spent": 51096843,
   "cash": 2734029,
   "through": "2026-10-14",
-  "pac_total": 297242,
+  "pac_total": 309742,
   "top_pacs": [
    {
     "name": "DSCC",
@@ -421,8 +421,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 39637336,
-  "outside_against": 153051921,
+  "outside_for": 39732913,
+  "outside_against": 153353421,
   "top_against": [
    {
     "name": "SLF PAC",
@@ -437,7 +437,7 @@
     "amount": 20903438
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "rogers-mike",
@@ -446,7 +446,7 @@
   "spent": 19369637,
   "cash": 3902506,
   "through": "2026-10-22",
-  "pac_total": 1110961,
+  "pac_total": 1124561,
   "top_pacs": [
    {
     "name": "NRSC",
@@ -461,8 +461,8 @@
     "amount": 11121
    }
   ],
-  "outside_for": 50776960,
-  "outside_against": 54266340,
+  "outside_for": 50826960,
+  "outside_against": 54268840,
   "top_against": [
    {
     "name": "WinSenate",
@@ -477,7 +477,7 @@
     "amount": 4592976
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "hamilton-adam",
@@ -517,7 +517,7 @@
     "amount": 2456460
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "marshall-roger",
@@ -526,7 +526,7 @@
   "spent": 6245276,
   "cash": 809806,
   "through": "2026-10-14",
-  "pac_total": 1700044,
+  "pac_total": 1712144,
   "top_pacs": [
    {
     "name": "NRSC",
@@ -541,8 +541,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 3334865,
-  "outside_against": 46490120,
+  "outside_for": 3361976,
+  "outside_against": 46648780,
   "top_against": [
    {
     "name": "PEOPLE OVER POLITICS ACTION FUND",
@@ -550,14 +550,14 @@
    },
    {
     "name": "WinSenate",
-    "amount": 14029004
+    "amount": 14054464
    },
    {
     "name": "THE 1861 INITIATIVE",
     "amount": 7851031
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "villegas",
@@ -566,7 +566,7 @@
   "spent": 4979678,
   "cash": 962352,
   "through": "2026-10-14",
-  "pac_total": 304122,
+  "pac_total": 320122,
   "top_pacs": [
    {
     "name": "ZINC COLLECTIVE PAC",
@@ -581,7 +581,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4564793,
+  "outside_for": 4568359,
   "outside_against": 2951693,
   "top_against": [
    {
@@ -597,7 +597,7 @@
     "amount": 600000
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "valadao",
@@ -606,7 +606,7 @@
   "spent": 4659208,
   "cash": 1711651,
   "through": "2026-10-14",
-  "pac_total": 2066896,
+  "pac_total": 2084396,
   "top_pacs": [
    {
     "name": "WATERPAC - NATIONAL RURAL WATER ASSOCIATION POLITICAL COMMITTEE",
@@ -637,7 +637,7 @@
     "amount": 1100738
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "castor",
@@ -646,7 +646,7 @@
   "spent": 4579832,
   "cash": 577435,
   "through": "2026-10-14",
-  "pac_total": 1091375,
+  "pac_total": 1104375,
   "top_pacs": [
    {
     "name": "SWING LEFT",
@@ -661,7 +661,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4101603,
+  "outside_for": 4101748,
   "outside_against": 13483346,
   "top_against": [
    {
@@ -677,7 +677,7 @@
     "amount": 257529
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "beltran",
@@ -686,23 +686,23 @@
   "spent": 999910,
   "cash": 1731518,
   "through": "2026-10-14",
-  "pac_total": 26000,
+  "pac_total": 41000,
   "top_pacs": [
    {
+    "name": "NRCC",
+    "amount": 5000
+   },
+   {
+    "name": "HOUSE CONSERVATIVES FUND",
+    "amount": 5000
+   },
+   {
     "name": "SEAL PAC SUPPORTING ELECTING AMERICAN LEADERS PAC",
-    "amount": 5000
-   },
-   {
-    "name": "CONSERVATIVE OPPORTUNITY LEADERSHIP AND ENTERPRISE PAC",
-    "amount": 5000
-   },
-   {
-    "name": "HUCK PAC FOR AMERICA",
     "amount": 5000
    }
   ],
   "outside_for": 1307698,
-  "outside_against": 12364571,
+  "outside_against": 12367468,
   "top_against": [
    {
     "name": "HMP",
@@ -717,7 +717,7 @@
     "amount": 500000
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "dandiya",
@@ -726,7 +726,7 @@
   "spent": 3884717,
   "cash": 735105,
   "through": "2026-10-14",
-  "pac_total": 145000,
+  "pac_total": 151000,
   "top_pacs": [
    {
     "name": "EMILYS LIST",
@@ -741,7 +741,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 1269129,
+  "outside_for": 1269948,
   "outside_against": 10078612,
   "top_against": [
    {
@@ -757,7 +757,7 @@
     "amount": 87249
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "askar",
@@ -766,18 +766,18 @@
   "spent": 5527093,
   "cash": 1891162,
   "through": "2026-10-14",
-  "pac_total": 31500,
+  "pac_total": 41500,
   "top_pacs": [
+   {
+    "name": "NRCC",
+    "amount": 5000
+   },
    {
     "name": "SEAL PAC SUPPORTING ELECTING AMERICAN LEADERS PAC",
     "amount": 5000
    },
    {
-    "name": "LETS GET TO WORK PAC",
-    "amount": 5000
-   },
-   {
-    "name": "CONSERVATIVE OPPORTUNITY LEADERSHIP AND ENTERPRISE PAC",
+    "name": "CLF",
     "amount": 5000
    }
   ],
@@ -797,7 +797,7 @@
     "amount": 16693
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "james-lindsay",
@@ -806,7 +806,7 @@
   "spent": 3652041,
   "cash": 265953,
   "through": "2026-10-14",
-  "pac_total": 304391,
+  "pac_total": 308391,
   "top_pacs": [
    {
     "name": "SWING LEFT",
@@ -821,7 +821,7 @@
     "amount": 10108
    }
   ],
-  "outside_for": 3499254,
+  "outside_for": 3499311,
   "outside_against": 5157761,
   "top_against": [
    {
@@ -837,7 +837,7 @@
     "amount": 255574
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "mitchell-joe",
@@ -846,7 +846,7 @@
   "spent": 2370535,
   "cash": 545534,
   "through": "2026-10-14",
-  "pac_total": 455350,
+  "pac_total": 467350,
   "top_pacs": [
    {
     "name": "ELECTING MAJORITY MAKING EFFECTIVE REPUBLICANS PAC",
@@ -861,8 +861,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 692443,
-  "outside_against": 7494639,
+  "outside_for": 698279,
+  "outside_against": 7506171,
   "top_against": [
    {
     "name": "HMP",
@@ -877,7 +877,7 @@
     "amount": 958083
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "dembo",
@@ -886,7 +886,7 @@
   "spent": 2585132,
   "cash": 620330,
   "through": "2026-10-14",
-  "pac_total": 119750,
+  "pac_total": 122250,
   "top_pacs": [
    {
     "name": "VOTEVETS",
@@ -901,7 +901,7 @@
     "amount": 5000
    }
   ],
-  "outside_for": 1757666,
+  "outside_for": 1759219,
   "outside_against": 3352713,
   "top_against": [
    {
@@ -917,7 +917,7 @@
     "amount": 78876
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "alvarado",
@@ -926,7 +926,7 @@
   "spent": 2126558,
   "cash": 180812,
   "through": "2026-10-14",
-  "pac_total": 359201,
+  "pac_total": 381201,
   "top_pacs": [
    {
     "name": "NORPAC",
@@ -942,7 +942,7 @@
    }
   ],
   "outside_for": 3974969,
-  "outside_against": 4528684,
+  "outside_against": 4536618,
   "top_against": [
    {
     "name": "HMP",
@@ -957,7 +957,7 @@
     "amount": 600000
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "mccann",
@@ -966,7 +966,7 @@
   "spent": 3664711,
   "cash": 1034442,
   "through": "2026-10-14",
-  "pac_total": 394656,
+  "pac_total": 409656,
   "top_pacs": [
    {
     "name": "SWING LEFT",
@@ -981,7 +981,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 965529,
+  "outside_for": 985529,
   "outside_against": 7593497,
   "top_against": [
    {
@@ -997,7 +997,7 @@
     "amount": 363000
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "huizenga",
@@ -1006,7 +1006,7 @@
   "spent": 5277593,
   "cash": 394222,
   "through": "2026-10-14",
-  "pac_total": 1727903,
+  "pac_total": 1750903,
   "top_pacs": [
    {
     "name": "MORTGAGE BANKERS ASSOCIATION POLITICAL ACTION COMMITTEE (MORPAC)",
@@ -1022,7 +1022,7 @@
    }
   ],
   "outside_for": 2331667,
-  "outside_against": 11514052,
+  "outside_against": 11530036,
   "top_against": [
    {
     "name": "HMP",
@@ -1037,7 +1037,7 @@
     "amount": 843602
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "lawrence-william",
@@ -1046,7 +1046,7 @@
   "spent": 3531075,
   "cash": 628966,
   "through": "2026-10-14",
-  "pac_total": 110016,
+  "pac_total": 125016,
   "top_pacs": [
    {
     "name": "WORKING FAMILIES PARTY PAC",
@@ -1061,7 +1061,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4556028,
+  "outside_for": 4577546,
   "outside_against": 10991024,
   "top_against": [
    {
@@ -1077,7 +1077,7 @@
     "amount": 909204
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "barrett-tom",
@@ -1086,8 +1086,12 @@
   "spent": 7221105,
   "cash": 1039763,
   "through": "2026-10-14",
-  "pac_total": 1160848,
+  "pac_total": 1181848,
   "top_pacs": [
+   {
+    "name": "NRCC",
+    "amount": 10000
+   },
    {
     "name": "DELTA AIR LINES PAC",
     "amount": 10000
@@ -1095,14 +1099,10 @@
    {
     "name": "DTE ENERGY COMPANY POLITICAL ACTION COMMITTEE",
     "amount": 10000
-   },
-   {
-    "name": "AMERICAN REVIVAL PAC",
-    "amount": 10000
    }
   ],
   "outside_for": 2023741,
-  "outside_against": 15961255,
+  "outside_against": 15984442,
   "top_against": [
    {
     "name": "HMP",
@@ -1117,7 +1117,7 @@
     "amount": 525630
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "hines",
@@ -1126,7 +1126,7 @@
   "spent": 3152065,
   "cash": 1007628,
   "through": "2026-10-14",
-  "pac_total": 198427,
+  "pac_total": 206927,
   "top_pacs": [
    {
     "name": "SWING LEFT",
@@ -1141,7 +1141,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 3418556,
+  "outside_for": 3438556,
   "outside_against": 1958123,
   "top_against": [
    {
@@ -1157,7 +1157,7 @@
     "amount": 215250
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "bouchard-jr",
@@ -1166,7 +1166,7 @@
   "spent": 1310790,
   "cash": 1573470,
   "through": "2026-10-14",
-  "pac_total": 187500,
+  "pac_total": 203500,
   "top_pacs": [
    {
     "name": "SEAL PAC SUPPORTING ELECTING AMERICAN LEADERS PAC",
@@ -1182,7 +1182,7 @@
    }
   ],
   "outside_for": 959816,
-  "outside_against": 14322955,
+  "outside_against": 14329154,
   "top_against": [
    {
     "name": "HMP",
@@ -1197,7 +1197,7 @@
     "amount": 587985
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "forstag",
@@ -1206,7 +1206,7 @@
   "spent": 3585985,
   "cash": 726126,
   "through": "2026-10-14",
-  "pac_total": 237825,
+  "pac_total": 251325,
   "top_pacs": [
    {
     "name": "ZINC COLLECTIVE PAC",
@@ -1221,7 +1221,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 1802049,
+  "outside_for": 1937350,
   "outside_against": 7997656,
   "top_against": [
    {
@@ -1237,7 +1237,7 @@
     "amount": 91462
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "flint",
@@ -1246,7 +1246,7 @@
   "spent": 2447986,
   "cash": 408153,
   "through": "2026-10-14",
-  "pac_total": 427710,
+  "pac_total": 442210,
   "top_pacs": [
    {
     "name": "SEND IN THE SEAL PAC",
@@ -1262,7 +1262,7 @@
    }
   ],
   "outside_for": 4263545,
-  "outside_against": 8677999,
+  "outside_against": 8710705,
   "top_against": [
    {
     "name": "MONTANA VOTERS PAC",
@@ -1277,7 +1277,7 @@
     "amount": 793390
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "davis-don",
@@ -1286,7 +1286,7 @@
   "spent": 5250506,
   "cash": 825818,
   "through": "2026-10-14",
-  "pac_total": 1660580,
+  "pac_total": 1673080,
   "top_pacs": [
    {
     "name": "PATRIOT PAC",
@@ -1317,7 +1317,7 @@
     "amount": 280118
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "buckhout",
@@ -1326,7 +1326,7 @@
   "spent": 3376140,
   "cash": 1437901,
   "through": "2026-10-14",
-  "pac_total": 422845,
+  "pac_total": 427845,
   "top_pacs": [
    {
     "name": "BUCKEYE LIBERTY POLITICAL ACTION COMMITTEE",
@@ -1341,8 +1341,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 2614478,
-  "outside_against": 17822657,
+  "outside_for": 2616311,
+  "outside_against": 17830655,
   "top_against": [
    {
     "name": "HMP",
@@ -1357,7 +1357,7 @@
     "amount": 945432
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "conley",
@@ -1366,7 +1366,7 @@
   "spent": 9758153,
   "cash": 948540,
   "through": "2026-10-14",
-  "pac_total": 355364,
+  "pac_total": 363864,
   "top_pacs": [
    {
     "name": "ZINC COLLECTIVE PAC",
@@ -1381,7 +1381,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4258603,
+  "outside_for": 4261206,
   "outside_against": 5242979,
   "top_against": [
    {
@@ -1397,7 +1397,7 @@
     "amount": 380296
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "lawler",
@@ -1406,7 +1406,7 @@
   "spent": 8527472,
   "cash": 1959524,
   "through": "2026-10-14",
-  "pac_total": 2133871,
+  "pac_total": 2165871,
   "top_pacs": [
    {
     "name": "NORPAC",
@@ -1422,7 +1422,7 @@
    }
   ],
   "outside_for": 4389289,
-  "outside_against": 4857996,
+  "outside_against": 4870158,
   "top_against": [
    {
     "name": "HMP",
@@ -1437,7 +1437,7 @@
     "amount": 863354
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "poindexter",
@@ -1446,7 +1446,7 @@
   "spent": 2926666,
   "cash": 793675,
   "through": "2026-10-14",
-  "pac_total": 232350,
+  "pac_total": 239350,
   "top_pacs": [
    {
     "name": "SWING LEFT",
@@ -1461,7 +1461,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 1524124,
+  "outside_for": 1530237,
   "outside_against": 1085667,
   "top_against": [
    {
@@ -1477,7 +1477,7 @@
     "amount": 94019
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "miller-max",
@@ -1517,7 +1517,7 @@
     "amount": 727866
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "pulido",
@@ -1526,7 +1526,7 @@
   "spent": 5549792,
   "cash": 1269454,
   "through": "2026-10-14",
-  "pac_total": 309506,
+  "pac_total": 315506,
   "top_pacs": [
    {
     "name": "FAIR SHOT PAC",
@@ -1541,7 +1541,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4144082,
+  "outside_for": 4145159,
   "outside_against": 8588581,
   "top_against": [
    {
@@ -1557,7 +1557,7 @@
     "amount": 274630
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "de-la-cruz-monica",
@@ -1566,7 +1566,7 @@
   "spent": 7034425,
   "cash": 393812,
   "through": "2026-10-14",
-  "pac_total": 860703,
+  "pac_total": 865203,
   "top_pacs": [
    {
     "name": "AMERICAN BANKERS ASSOCIATION PAC (BANKPAC)",
@@ -1582,7 +1582,7 @@
    }
   ],
   "outside_for": 954619,
-  "outside_against": 9745961,
+  "outside_against": 9750858,
   "top_against": [
    {
     "name": "HMP",
@@ -1597,7 +1597,7 @@
     "amount": 853839
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "garcia-johnny",
@@ -1606,7 +1606,7 @@
   "spent": 2052076,
   "cash": 149503,
   "through": "2026-10-14",
-  "pac_total": 299650,
+  "pac_total": 309650,
   "top_pacs": [
    {
     "name": "BLUE DOG POLITICAL ACTION COMMITTEE",
@@ -1637,7 +1637,7 @@
     "amount": 113924
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "de-la-cruz-carlos",
@@ -1646,7 +1646,7 @@
   "spent": 1708510,
   "cash": 312607,
   "through": "2026-10-14",
-  "pac_total": 300500,
+  "pac_total": 314500,
   "top_pacs": [
    {
     "name": "SEAL PAC SUPPORTING ELECTING AMERICAN LEADERS PAC",
@@ -1677,7 +1677,7 @@
     "amount": 100720
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "taylor-shannon",
@@ -1686,7 +1686,7 @@
   "spent": 4008645,
   "cash": 598734,
   "through": "2026-10-14",
-  "pac_total": 408858,
+  "pac_total": 414658,
   "top_pacs": [
    {
     "name": "FAIR SHOT PAC",
@@ -1701,7 +1701,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 2573831,
+  "outside_for": 2579389,
   "outside_against": 635035,
   "top_against": [
    {
@@ -1717,7 +1717,7 @@
     "amount": 119049
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "wittman",
@@ -1726,7 +1726,7 @@
   "spent": 6011223,
   "cash": 797346,
   "through": "2026-10-14",
-  "pac_total": 1307100,
+  "pac_total": 1316100,
   "top_pacs": [
    {
     "name": "SEAL PAC SUPPORTING ELECTING AMERICAN LEADERS PAC",
@@ -1742,7 +1742,7 @@
    }
   ],
   "outside_for": 1141082,
-  "outside_against": 11251856,
+  "outside_against": 11258586,
   "top_against": [
    {
     "name": "HMP",
@@ -1757,7 +1757,7 @@
     "amount": 1078298
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "harvie",
@@ -1766,7 +1766,7 @@
   "spent": 2758530,
   "cash": 409413,
   "through": "2026-10-14",
-  "pac_total": 179500,
+  "pac_total": 184500,
   "top_pacs": [
    {
     "name": "FAIR SHOT PAC",
@@ -1797,7 +1797,7 @@
     "amount": 310306
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "fitzpatrick",
@@ -1806,23 +1806,23 @@
   "spent": 11734809,
   "cash": 709097,
   "through": "2026-10-14",
-  "pac_total": 2416205,
+  "pac_total": 2439705,
   "top_pacs": [
    {
     "name": "NATIONAL ACTIVE AND RETIRED FEDERAL EMPLOYEES ASSOCIATION POLITICAL ACTION COM (NARFE-PAC)",
     "amount": 12500
    },
    {
-    "name": "EMPLOYEE OWNED S CORPORATIONS OF AMERICA PAC (ESCA PAC)",
-    "amount": 10000
+    "name": "AMERICAN ISRAEL PUBLIC AFFAIRS COMMITTEE POLITICAL ACTION COMMITTEE",
+    "amount": 10494
    },
    {
-    "name": "AMERICAN ACADEMY OF DERMATOLOGY ASSOCIATION POLITICAL ACTION COMMITTEE (SKINPAC)",
+    "name": "EMPLOYEE OWNED S CORPORATIONS OF AMERICA PAC (ESCA PAC)",
     "amount": 10000
    }
   ],
   "outside_for": 1447997,
-  "outside_against": 9437312,
+  "outside_against": 9449303,
   "top_against": [
    {
     "name": "HMP",
@@ -1837,7 +1837,7 @@
     "amount": 30930
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "lacore",
@@ -1877,7 +1877,7 @@
     "amount": 276008
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "honeycutt",
@@ -1886,7 +1886,7 @@
   "spent": 983978,
   "cash": 308018,
   "through": "2026-10-14",
-  "pac_total": 184500,
+  "pac_total": 202500,
   "top_pacs": [
    {
     "name": "VALUE IN ELECTING WOMEN POLITICAL ACTION COMMITTEE",
@@ -1902,7 +1902,7 @@
    }
   ],
   "outside_for": 3313310,
-  "outside_against": 3572936,
+  "outside_against": 3588124,
   "top_against": [
    {
     "name": "HMP",
@@ -1917,7 +1917,7 @@
     "amount": 350000
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "killin",
@@ -1926,7 +1926,7 @@
   "spent": 5085735,
   "cash": 507728,
   "through": "2026-10-14",
-  "pac_total": 334029,
+  "pac_total": 340029,
   "top_pacs": [
    {
     "name": "FAIR SHOT PAC",
@@ -1941,7 +1941,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 191028,
+  "outside_for": 192039,
   "outside_against": 4181174,
   "top_against": [
    {
@@ -1957,7 +1957,7 @@
     "amount": 373430
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  },
  {
   "id": "crank",
@@ -1966,7 +1966,7 @@
   "spent": 2396152,
   "cash": 542836,
   "through": "2026-10-14",
-  "pac_total": 664500,
+  "pac_total": 670500,
   "top_pacs": [
    {
     "name": "PARSONS CORPORATION POLITICAL ACTION COMMITTEE",
@@ -1982,7 +1982,7 @@
    }
   ],
   "outside_for": 1542900,
-  "outside_against": 2495046,
+  "outside_against": 2497349,
   "top_against": [
    {
     "name": "HMP",
@@ -1997,6 +1997,6 @@
     "amount": 400873
    }
   ],
-  "outside_through": "2026-10-31"
+  "outside_through": "2026-11-01"
  }
 ]

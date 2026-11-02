@@ -1,5 +1,25 @@
 [
  {
+  "id": "p35",
+  "state": "TX",
+  "pollster": "New York Times/Siena",
+  "dates": "Released Nov 1",
+  "sample": "LV",
+  "dem_side_pct": 50,
+  "rep_pct": 43,
+  "margin": 7
+ },
+ {
+  "id": "p36",
+  "state": "TX",
+  "pollster": "Quantus Insights",
+  "dates": "Oct 26–28",
+  "sample": "LV",
+  "dem_side_pct": 48,
+  "rep_pct": 49,
+  "margin": -1
+ },
+ {
   "id": "p32",
   "state": "TX",
   "pollster": "CNN/SSRS",
@@ -20,14 +40,14 @@
   "margin": 2
  },
  {
-  "id": "p2",
-  "state": "TX",
-  "pollster": "Texas Southern University",
-  "dates": "Sep 15–19",
+  "id": "p37",
+  "state": "OH",
+  "pollster": "New York Times/Siena",
+  "dates": "Released Nov 1",
   "sample": "LV",
-  "dem_side_pct": 47,
-  "rep_pct": 46,
-  "margin": 1
+  "dem_side_pct": 49,
+  "rep_pct": 44,
+  "margin": 5
  },
  {
   "id": "p29",
@@ -60,13 +80,13 @@
   "margin": 5
  },
  {
-  "id": "p5",
-  "state": "OH",
-  "pollster": "CNN/SSRS",
-  "dates": "Sep 29–Oct 5",
+  "id": "p38",
+  "state": "ME",
+  "pollster": "New York Times/Siena",
+  "dates": "Released Nov 1",
   "sample": "LV",
-  "dem_side_pct": 49,
-  "rep_pct": 43,
+  "dem_side_pct": 51,
+  "rep_pct": 45,
   "margin": 6
  },
  {
@@ -100,13 +120,13 @@
   "margin": 0
  },
  {
-  "id": "p25",
-  "state": "ME",
-  "pollster": "Suffolk University",
-  "dates": "Oct 8–11",
+  "id": "p39",
+  "state": "AK",
+  "pollster": "New York Times/Siena",
+  "dates": "Released Nov 1",
   "sample": "LV",
-  "dem_side_pct": 49,
-  "rep_pct": 47,
+  "dem_side_pct": 48,
+  "rep_pct": 46,
   "margin": 2
  },
  {
@@ -128,6 +148,16 @@
   "dem_side_pct": 47,
   "rep_pct": 45,
   "margin": 2
+ },
+ {
+  "id": "p40",
+  "state": "IA",
+  "pollster": "New York Times/Siena",
+  "dates": "Released Nov 1",
+  "sample": "LV",
+  "dem_side_pct": 48,
+  "rep_pct": 47,
+  "margin": 1
  },
  {
   "id": "p11",
@@ -160,6 +190,26 @@
   "margin": -2
  },
  {
+  "id": "p41",
+  "state": "MI",
+  "pollster": "New York Times/Siena",
+  "dates": "Released Nov 1",
+  "sample": "LV",
+  "dem_side_pct": 53,
+  "rep_pct": 42,
+  "margin": 11
+ },
+ {
+  "id": "p42",
+  "state": "MI",
+  "pollster": "Mitchell Research",
+  "dates": "Oct 26–27",
+  "sample": "LV",
+  "dem_side_pct": 51,
+  "rep_pct": 44,
+  "margin": 7
+ },
+ {
   "id": "p33",
   "state": "MI",
   "pollster": "CNN/SSRS",
@@ -180,24 +230,34 @@
   "margin": 6
  },
  {
-  "id": "p14",
-  "state": "MI",
-  "pollster": "Marist",
-  "dates": "Oct 15–18",
+  "id": "p43",
+  "state": "KS",
+  "pollster": "New York Times/Siena",
+  "dates": "Released Nov 1",
   "sample": "LV",
-  "dem_side_pct": 50,
-  "rep_pct": 48,
-  "margin": 2
+  "dem_side_pct": 49,
+  "rep_pct": 44,
+  "margin": 5
  },
  {
-  "id": "p15",
-  "state": "MI",
-  "pollster": "Rasmussen Reports",
-  "dates": "Oct 12–14",
+  "id": "p44",
+  "state": "KS",
+  "pollster": "Emerson College",
+  "dates": "Oct 26–28",
   "sample": "LV",
-  "dem_side_pct": 46,
-  "rep_pct": 44,
-  "margin": 2
+  "dem_side_pct": 49,
+  "rep_pct": 45,
+  "margin": 4
+ },
+ {
+  "id": "p45",
+  "state": "KS",
+  "pollster": "Washington Post–George Mason",
+  "dates": "Oct 22–26",
+  "sample": "LV",
+  "dem_side_pct": 52,
+  "rep_pct": 43,
+  "margin": 9
  },
  {
   "id": "p30",
@@ -208,26 +268,6 @@
   "dem_side_pct": 49,
   "rep_pct": 45,
   "margin": 4
- },
- {
-  "id": "p16",
-  "state": "KS",
-  "pollster": "Emerson College",
-  "dates": "Sep 15–16",
-  "sample": "LV",
-  "dem_side_pct": 45,
-  "rep_pct": 43,
-  "margin": 2
- },
- {
-  "id": "p17",
-  "state": "KS",
-  "pollster": "co/efficient",
-  "dates": "Sep 8–10",
-  "sample": "LV",
-  "dem_side_pct": 44,
-  "rep_pct": 49,
-  "margin": -5
  },
  {
   "id": "p18",

@@ -295,5 +295,59 @@
   "headline": "Courts block DOJ demand to set aside California ballots",
   "detail": "A federal judge ordered the Justice Department to stop demanding that about 20,000 mail ballots be separated, and the 9th Circuit ruled 2–1 against it.",
   "source": "CBS News (Oct 30)"
+ },
+ {
+  "id": "b34",
+  "date": "2026-11-02",
+  "order": 1,
+  "category": "Polls",
+  "headline": "Final Times/Siena polls: Democrats ahead in all seven toss-ups",
+  "detail": "El-Sayed leads by 11 in Michigan and Talarico by 7 in Texas; Jackson is up 6 in Maine and Brown and Hamilton 5 each. Peltola (+2) and Turek (+1) are within the margin of error.",
+  "source": "Siena Research Institute"
+ },
+ {
+  "id": "b35",
+  "date": "2026-11-02",
+  "order": 2,
+  "category": "Senate",
+  "headline": "Michigan: Haley Stevens endorses Republican Mike Rogers",
+  "detail": "The Democratic congresswoman, who lost the primary to El-Sayed, said his campaign told her she wasn’t welcome. Schumer called it a betrayal; El-Sayed says he raised more than $2.4 million the same day.",
+  "source": "CBS News, NBC News"
+ },
+ {
+  "id": "b36",
+  "date": "2026-11-02",
+  "order": 3,
+  "category": "Senate",
+  "headline": "Kansas: two more polls have Hamilton ahead as Trump holds his last rally there",
+  "detail": "Emerson has Hamilton up 49–45 and a Washington Post–George Mason poll 52–43, though the Post cautioned Marshall may be underestimated. Trump’s 28th and final rally was in Salina on Sunday.",
+  "source": "Emerson College, Newsweek, NBC News"
+ },
+ {
+  "id": "b37",
+  "date": "2026-11-02",
+  "order": 4,
+  "category": "Senate",
+  "headline": "Averages widen for Democrats; one Texas poll has Paxton ahead",
+  "detail": "RealClearPolitics now has Michigan at El-Sayed +5.3, Kansas Hamilton +3.6, Maine Jackson +3.3 and Texas Talarico +2.5; Iowa narrowed to Hinson +0.3. A Quantus Insights poll (Oct 26–28) has Paxton up 48.7–47.6.",
+  "source": "Election Central, FOX 26 Houston"
+ },
+ {
+  "id": "b38",
+  "date": "2026-11-02",
+  "order": 5,
+  "category": "Courts",
+  "headline": "Judge dismisses Justice Department suit over Alaska Senate race",
+  "detail": "U.S. District Judge Sharon Gleason ruled the department lacked standing to try to block certification of the race.",
+  "source": "CBS News"
+ },
+ {
+  "id": "b39",
+  "date": "2026-11-02",
+  "order": 6,
+  "category": "Turnout",
+  "headline": "More than 55.5 million early votes",
+  "detail": "NBC News counted 55.6 million mail and early in-person ballots nationwide by Monday morning, up from 52.2 million a day earlier.",
+  "source": "NBC News early-vote tracker"
  }
 ]
