@@ -73,6 +73,10 @@ The Senate and House tabs show toss-up matchups with a headshot and one short fa
 - **No free photo:** use a portrait from the candidate's campaign website (the owner approved this): `photo_credit` "Campaign photo", `photo_source` the page it came from. Only if there's none, leave the photo fields empty; the page shows initials.
 - **Facts:** one true, interesting fact of 110 characters or less, with a link to the source (usually the person's Wikipedia article, or the district's section of the 2026 House elections article when they have no article).
 
+## Link preview image
+
+`img/og-preview.png` is the 1200×630 picture WhatsApp, iMessage, Slack and X show when someone shares the link (set by the `og:image` tags in `index.html`). It's a snapshot of the top of the Today tab, taken on Nov 2, 2026. It isn't part of the daily update, because apps cache a link's preview the first time it's shared, so a daily image would mostly go unseen. To rebuild it, start the preview server below and run `scripts/og-preview.sh`, then look at the result.
+
 ## Preview
 
 `python3 -m http.server 8000`, then open http://localhost:8000. Opening `index.html` directly from Finder won't load the data.
