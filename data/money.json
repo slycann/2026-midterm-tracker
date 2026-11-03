@@ -21,7 +21,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 38890019,
+  "outside_for": 39435305,
   "outside_against": 220474102,
   "top_against": [
    {
@@ -37,7 +37,7 @@
     "amount": 30117991
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "paxton",
@@ -61,8 +61,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 97238207,
-  "outside_against": 100570466,
+  "outside_for": 97373207,
+  "outside_against": 100640797,
   "top_against": [
    {
     "name": "Lone Star Rising PAC",
@@ -77,7 +77,7 @@
     "amount": 19428285
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "brown-sherrod",
@@ -101,8 +101,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 26497414,
-  "outside_against": 188219766,
+  "outside_for": 26774648,
+  "outside_against": 188316260,
   "top_against": [
    {
     "name": "SLF PAC",
@@ -117,7 +117,7 @@
     "amount": 19706265
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "husted",
@@ -141,7 +141,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 70664386,
+  "outside_for": 70727262,
   "outside_against": 128922146,
   "top_against": [
    {
@@ -157,7 +157,7 @@
     "amount": 8799686
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "jackson-troy",
@@ -181,12 +181,12 @@
     "amount": 10000
    }
   ],
-  "outside_for": 13716917,
-  "outside_against": 75601889,
+  "outside_for": 13734692,
+  "outside_against": 76085889,
   "top_against": [
    {
     "name": "SLF PAC",
-    "amount": 37415969
+    "amount": 37899969
    },
    {
     "name": "PINE TREE RESULTS PAC",
@@ -197,7 +197,7 @@
     "amount": 9910757
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "collins-susan",
@@ -221,8 +221,8 @@
     "amount": 12000
    }
   ],
-  "outside_for": 8499192,
-  "outside_against": 38441108,
+  "outside_for": 8526171,
+  "outside_against": 38442168,
   "top_against": [
    {
     "name": "WinSenate",
@@ -237,7 +237,7 @@
     "amount": 1019470
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "peltola",
@@ -261,8 +261,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 10965759,
-  "outside_against": 42332250,
+  "outside_for": 10968524,
+  "outside_against": 42335750,
   "top_against": [
    {
     "name": "SLF PAC",
@@ -277,7 +277,7 @@
     "amount": 5606392
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "sullivan-dan",
@@ -301,8 +301,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 11510890,
-  "outside_against": 38927523,
+  "outside_for": 11532981,
+  "outside_against": 38927603,
   "top_against": [
    {
     "name": "North Star",
@@ -317,7 +317,7 @@
     "amount": 4713372
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "turek",
@@ -341,8 +341,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 43921712,
-  "outside_against": 77562856,
+  "outside_for": 44049821,
+  "outside_against": 77563739,
   "top_against": [
    {
     "name": "SLF PAC",
@@ -357,7 +357,7 @@
     "amount": 6252717
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "hinson",
@@ -382,11 +382,11 @@
    }
   ],
   "outside_for": 18830031,
-  "outside_against": 69415276,
+  "outside_against": 69793955,
   "top_against": [
    {
     "name": "WinSenate",
-    "amount": 42427192
+    "amount": 42487192
    },
    {
     "name": "VoteVets",
@@ -397,7 +397,7 @@
     "amount": 4259746
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "el-sayed",
@@ -421,8 +421,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 39732913,
-  "outside_against": 153353421,
+  "outside_for": 39784957,
+  "outside_against": 153486636,
   "top_against": [
    {
     "name": "SLF PAC",
@@ -430,14 +430,14 @@
    },
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 27416821
+    "amount": 27461681
    },
    {
     "name": "UNITED DEMOCRACY PROJECT (UDP)",
     "amount": 20903438
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "rogers-mike",
@@ -461,8 +461,8 @@
     "amount": 11121
    }
   ],
-  "outside_for": 50826960,
-  "outside_against": 54268840,
+  "outside_for": 51223164,
+  "outside_against": 54269599,
   "top_against": [
    {
     "name": "WinSenate",
@@ -477,7 +477,7 @@
     "amount": 4592976
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "hamilton-adam",
@@ -501,8 +501,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 11448350,
-  "outside_against": 31906190,
+  "outside_for": 11985531,
+  "outside_against": 31938190,
   "top_against": [
    {
     "name": "SLF PAC",
@@ -517,7 +517,7 @@
     "amount": 2456460
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "marshall-roger",
@@ -542,7 +542,7 @@
    }
   ],
   "outside_for": 3361976,
-  "outside_against": 46648780,
+  "outside_against": 47177830,
   "top_against": [
    {
     "name": "PEOPLE OVER POLITICS ACTION FUND",
@@ -557,7 +557,7 @@
     "amount": 7851031
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "villegas",
@@ -581,7 +581,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4568359,
+  "outside_for": 4576162,
   "outside_against": 2951693,
   "top_against": [
    {
@@ -597,7 +597,7 @@
     "amount": 600000
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "valadao",
@@ -637,7 +637,7 @@
     "amount": 1100738
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "castor",
@@ -677,7 +677,7 @@
     "amount": 257529
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "beltran",
@@ -702,7 +702,7 @@
    }
   ],
   "outside_for": 1307698,
-  "outside_against": 12367468,
+  "outside_against": 12370996,
   "top_against": [
    {
     "name": "HMP",
@@ -717,7 +717,7 @@
     "amount": 500000
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "dandiya",
@@ -757,7 +757,7 @@
     "amount": 87249
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "askar",
@@ -797,7 +797,7 @@
     "amount": 16693
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "james-lindsay",
@@ -822,7 +822,7 @@
    }
   ],
   "outside_for": 3499311,
-  "outside_against": 5157761,
+  "outside_against": 5158557,
   "top_against": [
    {
     "name": "NO GOING BACK PAC INC.",
@@ -837,7 +837,7 @@
     "amount": 255574
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "mitchell-joe",
@@ -862,7 +862,7 @@
    }
   ],
   "outside_for": 698279,
-  "outside_against": 7506171,
+  "outside_against": 7517956,
   "top_against": [
    {
     "name": "HMP",
@@ -877,7 +877,7 @@
     "amount": 958083
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "dembo",
@@ -901,7 +901,7 @@
     "amount": 5000
    }
   ],
-  "outside_for": 1759219,
+  "outside_for": 1770128,
   "outside_against": 3352713,
   "top_against": [
    {
@@ -917,7 +917,7 @@
     "amount": 78876
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "alvarado",
@@ -942,7 +942,7 @@
    }
   ],
   "outside_for": 3974969,
-  "outside_against": 4536618,
+  "outside_against": 4544766,
   "top_against": [
    {
     "name": "HMP",
@@ -957,7 +957,7 @@
     "amount": 600000
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "mccann",
@@ -997,7 +997,7 @@
     "amount": 363000
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "huizenga",
@@ -1022,7 +1022,7 @@
    }
   ],
   "outside_for": 2331667,
-  "outside_against": 11530036,
+  "outside_against": 11542823,
   "top_against": [
    {
     "name": "HMP",
@@ -1037,7 +1037,7 @@
     "amount": 843602
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "lawrence-william",
@@ -1061,7 +1061,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4577546,
+  "outside_for": 4603952,
   "outside_against": 10991024,
   "top_against": [
    {
@@ -1077,7 +1077,7 @@
     "amount": 909204
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "barrett-tom",
@@ -1102,7 +1102,7 @@
    }
   ],
   "outside_for": 2023741,
-  "outside_against": 15984442,
+  "outside_against": 16003750,
   "top_against": [
    {
     "name": "HMP",
@@ -1117,7 +1117,7 @@
     "amount": 525630
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "hines",
@@ -1141,7 +1141,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 3438556,
+  "outside_for": 3440244,
   "outside_against": 1958123,
   "top_against": [
    {
@@ -1157,7 +1157,7 @@
     "amount": 215250
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "bouchard-jr",
@@ -1182,7 +1182,7 @@
    }
   ],
   "outside_for": 959816,
-  "outside_against": 14329154,
+  "outside_against": 14331575,
   "top_against": [
    {
     "name": "HMP",
@@ -1197,7 +1197,7 @@
     "amount": 587985
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "forstag",
@@ -1221,8 +1221,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 1937350,
-  "outside_against": 7997656,
+  "outside_for": 1939224,
+  "outside_against": 7997861,
   "top_against": [
    {
     "name": "NO GOING BACK PAC INC.",
@@ -1237,7 +1237,7 @@
     "amount": 91462
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "flint",
@@ -1262,7 +1262,7 @@
    }
   ],
   "outside_for": 4263545,
-  "outside_against": 8710705,
+  "outside_against": 8718945,
   "top_against": [
    {
     "name": "MONTANA VOTERS PAC",
@@ -1277,7 +1277,7 @@
     "amount": 793390
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "davis-don",
@@ -1301,8 +1301,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 5097088,
-  "outside_against": 7235679,
+  "outside_for": 5097806,
+  "outside_against": 7335679,
   "top_against": [
    {
     "name": "SAFETY & AFFORDABILITY PAC INC.",
@@ -1310,14 +1310,14 @@
    },
    {
     "name": "RESTORATION OF AMERICA PAC",
-    "amount": 672287
+    "amount": 772287
    },
    {
     "name": "NO GOING BACK PAC INC.",
     "amount": 280118
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "buckhout",
@@ -1341,8 +1341,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 2616311,
-  "outside_against": 17830655,
+  "outside_for": 2618565,
+  "outside_against": 17839327,
   "top_against": [
    {
     "name": "HMP",
@@ -1357,7 +1357,7 @@
     "amount": 945432
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "conley",
@@ -1381,8 +1381,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4261206,
-  "outside_against": 5242979,
+  "outside_for": 4314752,
+  "outside_against": 5244603,
   "top_against": [
    {
     "name": "SAFETY & AFFORDABILITY PAC INC.",
@@ -1394,10 +1394,10 @@
    },
    {
     "name": "NO GOING BACK PAC INC.",
-    "amount": 380296
+    "amount": 381920
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "lawler",
@@ -1421,8 +1421,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 4389289,
-  "outside_against": 4870158,
+  "outside_for": 4394161,
+  "outside_against": 4881497,
   "top_against": [
    {
     "name": "HMP",
@@ -1437,7 +1437,7 @@
     "amount": 863354
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "poindexter",
@@ -1461,7 +1461,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 1530237,
+  "outside_for": 1530966,
   "outside_against": 1085667,
   "top_against": [
    {
@@ -1477,7 +1477,7 @@
     "amount": 94019
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "miller-max",
@@ -1517,7 +1517,7 @@
     "amount": 727866
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "pulido",
@@ -1557,7 +1557,7 @@
     "amount": 274630
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "de-la-cruz-monica",
@@ -1582,7 +1582,7 @@
    }
   ],
   "outside_for": 954619,
-  "outside_against": 9750858,
+  "outside_against": 9766706,
   "top_against": [
    {
     "name": "HMP",
@@ -1597,7 +1597,7 @@
     "amount": 853839
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "garcia-johnny",
@@ -1637,7 +1637,7 @@
     "amount": 113924
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "de-la-cruz-carlos",
@@ -1677,7 +1677,7 @@
     "amount": 100720
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "taylor-shannon",
@@ -1717,7 +1717,7 @@
     "amount": 119049
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "wittman",
@@ -1741,8 +1741,8 @@
     "amount": 10000
    }
   ],
-  "outside_for": 1141082,
-  "outside_against": 11258586,
+  "outside_for": 1179542,
+  "outside_against": 11274201,
   "top_against": [
    {
     "name": "HMP",
@@ -1757,7 +1757,7 @@
     "amount": 1078298
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "harvie",
@@ -1781,7 +1781,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 779953,
+  "outside_for": 781035,
   "outside_against": 2439031,
   "top_against": [
    {
@@ -1797,7 +1797,7 @@
     "amount": 310306
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "fitzpatrick",
@@ -1822,7 +1822,7 @@
    }
   ],
   "outside_for": 1447997,
-  "outside_against": 9449303,
+  "outside_against": 9464518,
   "top_against": [
    {
     "name": "HMP",
@@ -1837,7 +1837,7 @@
     "amount": 30930
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "lacore",
@@ -1861,7 +1861,7 @@
     "amount": 7500
    }
   ],
-  "outside_for": 1212730,
+  "outside_for": 1212951,
   "outside_against": 3336264,
   "top_against": [
    {
@@ -1877,7 +1877,7 @@
     "amount": 276008
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "honeycutt",
@@ -1902,7 +1902,7 @@
    }
   ],
   "outside_for": 3313310,
-  "outside_against": 3588124,
+  "outside_against": 3607843,
   "top_against": [
    {
     "name": "HMP",
@@ -1917,7 +1917,7 @@
     "amount": 350000
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "killin",
@@ -1941,7 +1941,7 @@
     "amount": 10000
    }
   ],
-  "outside_for": 192039,
+  "outside_for": 192221,
   "outside_against": 4181174,
   "top_against": [
    {
@@ -1957,7 +1957,7 @@
     "amount": 373430
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  },
  {
   "id": "crank",
@@ -1982,7 +1982,7 @@
    }
   ],
   "outside_for": 1542900,
-  "outside_against": 2497349,
+  "outside_against": 2500403,
   "top_against": [
    {
     "name": "HMP",
@@ -1997,6 +1997,6 @@
     "amount": 400873
    }
   ],
-  "outside_through": "2026-11-01"
+  "outside_through": "2026-11-02"
  }
 ]

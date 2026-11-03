@@ -349,5 +349,50 @@
   "headline": "More than 55.5 million early votes",
   "detail": "NBC News counted 55.6 million mail and early in-person ballots nationwide by Monday morning, up from 52.2 million a day earlier.",
   "source": "NBC News early-vote tracker"
+ },
+ {
+  "id": "b40",
+  "date": "2026-11-03",
+  "order": 1,
+  "category": "Campaign trail",
+  "headline": "Election Day: polls are open",
+  "detail": "Polls opened early Tuesday on the East Coast and open at 10 a.m. ET in California. The first close at 6 p.m. ET in parts of Kentucky and Indiana.",
+  "source": "Fox News"
+ },
+ {
+  "id": "b41",
+  "date": "2026-11-03",
+  "order": 2,
+  "category": "Senate",
+  "headline": "Final averages: Iowa tied, Kansas and Maine widen; Nebraska back to Toss Up",
+  "detail": "RealClearPolitics ends at Hamilton +4.1 in Kansas, Jackson +3.6 in Maine and Talarico +2.6 in Texas; Iowa is tied and Alaska is Peltola +1.0. It moved Nebraska back to Toss Up on Nov 2, with Ricketts up 3.7 on Osborn.",
+  "source": "Election Central"
+ },
+ {
+  "id": "b42",
+  "date": "2026-11-03",
+  "order": 3,
+  "category": "Turnout",
+  "headline": "More than 57.5 million early votes",
+  "detail": "NBC News counted 57.5 million mail and early in-person ballots by Tuesday morning, close to the 2022 total of more than 58 million.",
+  "source": "NBC News early-vote tracker, ABC7 New York"
+ },
+ {
+  "id": "b43",
+  "date": "2026-11-03",
+  "order": 4,
+  "category": "Courts",
+  "headline": "Judge limits who can serve as Justice Department poll monitors",
+  "detail": "Judge Reggie Walton denied the NAACP’s broader bid to curb the roughly 1,000 monitors but ordered that they not be sworn officers with arrest powers. The department has appealed the dismissal of its Alaska suit.",
+  "source": "Fox News, ABC7 New York"
+ },
+ {
+  "id": "b44",
+  "date": "2026-11-03",
+  "order": 5,
+  "category": "Campaign trail",
+  "headline": "Flooding moves polling places in Florida; scanner trouble in Westchester",
+  "detail": "Voters in seven Florida counties, including Palm Beach, are being sent to temporary sites. In Westchester County, N.Y., part of which is in NY-17, some machines couldn’t scan ballots because of a ballot-paper problem.",
+  "source": "Fox News, ABC7 New York"
  }
 ]
