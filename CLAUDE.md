@@ -2,7 +2,11 @@
 
 A static web page (`index.html`) that reads JSON files from `data/`. There is no build step and no server code. Every figure on the page comes from a file in `data/`, so a daily update means editing those files.
 
-## Daily update
+## Status: finished
+
+The daily updates ended on Nov 4, 2026, with a final update that added the Results tab, and the scheduled task that ran them is turned off. Don't run another daily update unless the owner asks for one. If they ask to refresh the results, update `results_chambers.json` and `results_races.json` (and the matching result sentences in `senate_races.json` notes and `house_tossups.json` headlines) from a named source, then validate, render and publish as below.
+
+## Daily update (no longer run)
 
 When asked to "run the daily update" (or `/daily-update`):
 
@@ -58,6 +62,8 @@ When asked to "run the daily update" (or `/daily-update`):
 | `odds_history.json` | Day | `date`, `both`, `senate`, `house` (chances from 0 to 1), `note`. Written by `scripts/odds.py --record`; don't edit by hand. |
 | `house_polls.json` | House toss-up poll | `id`, `district`, `pollster`, `sponsor` (D/R/""), `dates`, `sample`, `dem_pct`, `rep_pct`, `margin` (= dem_pct − rep_pct), `source`, `source_url` |
 | `money.json` | Toss-up candidate | Written by `scripts/money.py` from FEC bulk data; don't edit by hand. `raised`, `spent`, `cash`, `through`, `pac_total`, `top_pacs`, `outside_for`, `outside_against`, `top_against`, `outside_through` |
+| `results_chambers.json` | Chamber | Results tab. `d_won`, `r_won`, `uncalled`, `uncalled_list`, `d_estimate` (source's projected final Democratic seats, or null), `net`, `control` (D/R/""), `as_of`, `as_of_time`, `source`, `source_url`; and the tracker's final projection: `proj_date`, `proj_median`, `proj_lo`, `proj_hi` (8-in-10 range), `proj_polls` (Senate only). Fill the projection from `python3 scripts/odds.py --data <that day's data> --seats`. |
+| `results_races.json` | Senate race or House toss-up | Results tab. `chamber`, `race` (state or district), `dem`, `dem_party`, `rep` (must match the race files), `dem_pct`, `rep_pct`, `counted` (% of expected vote), `status` ("projected"/"not called"), `winner` (D/R/I, or "" if not called), `flip`, `note` |
 | `candidates.json` | Toss-up candidate | `id` (slug, also the photo's file name), `chamber` (Senate/House), `race` (state code for Senate, district for House), `party` (D/R/I), `name` (must match the race files exactly), `photo` (`img/candidates/<id>.jpg` or ""), `photo_credit` ("Artist (license)"), `photo_source` (Commons file page), `fact`, `fact_source`, `fact_url`, `fec_id` (FEC candidate ID; find it at fec.gov/data) |
 
 Seat math on the page is computed from `senate_races.json`, `house_ratings.json` and `chamber_baseline.json`; don't hard-code totals anywhere.

@@ -2,6 +2,8 @@
 
 A one-page tracker for the key 2026 Senate and House races: a state map, race ratings, recent polls, a daily news brief, upcoming dates, and an Odds tab with the chance Democrats win both chambers (computed from the ratings and polling averages; the tab explains how). It's a static site, so any static host can serve it.
 
+The tracker ran daily from Oct 27 to Nov 4, 2026, and is no longer updated. Its Results tab shows how the races landed (NBC News projections as of Nov 4) next to its final projections from the morning of Election Day.
+
 ```
 index.html            the page
 data/*.json           everything the page shows (edit these to update it)
@@ -35,7 +37,7 @@ Publishing Pages from a private repo requires a paid GitHub plan. The `.nojekyll
 
 Other hosts work the same way: Cloudflare Pages or Netlify (connect the repo, no build command, output directory `/`), or an S3 bucket behind CloudFront if you want it in your own AWS account with a custom domain.
 
-## Daily update with Claude Code
+## Daily update with Claude Code (ended Nov 4, 2026)
 
 ```bash
 cd 2026-midterm-tracker

@@ -410,7 +410,7 @@
   "order": 2,
   "category": "House",
   "headline": "Democrats win the House",
-  "detail": "By Wednesday morning NBC News had 231 seats projected for Democrats and 144 for Republicans, with 60 uncalled; its estimate is 258 Democratic seats. CBS News projected control at 10:15 p.m. ET.",
+  "detail": "By Wednesday evening NBC News had 242 seats projected for Democrats and 151 for Republicans, with 42 uncalled; it estimates Democrats will finish with 259. Democrats flipped 35 seats and Republicans 1. CBS News projected control at 10:15 p.m. ET Tuesday.",
   "source": "NBC News, CBS News"
  },
  {
@@ -418,8 +418,8 @@
   "date": "2026-11-04",
   "order": 3,
   "category": "House",
-  "headline": "Democrats lead in all 18 House toss-ups",
-  "detail": "NBC News projects Democrats in 10 of them, including flips in PA-01, OH-07, TX-15, VA-01, KY-06 and IA-02, and Democrats lead the other eight, including NY-17, where about 61% is counted.",
+  "headline": "Democrats sweep the House toss-ups",
+  "detail": "NBC News projects Democrats in 14 of the 18, including flips in CA-22, IA-02, KY-06, MI-04, MI-07, MI-10, OH-07, PA-01, TX-15 and VA-01. They lead the other four: CO-05, MT-01, NY-17 and SC-01.",
   "source": "NBC News"
  },
  {
@@ -428,7 +428,7 @@
   "order": 4,
   "category": "Senate",
   "headline": "Still counting: Alaska and Mississippi",
-  "detail": "Peltola leads Sullivan 48.2% to 47.9% with 74% counted. In Mississippi, Democrat Scott Colom and Sen. Cindy Hyde-Smith are each at 48.9% with 96% counted. Moody leads in Florida.",
+  "detail": "Peltola leads Sullivan 48.2% to 47.9% with 74% counted. In Mississippi, Democrat Scott Colom leads Sen. Cindy Hyde-Smith 49.0% to 48.9% with 96% counted. Moody leads in Florida with 99% counted; NBC hasn’t projected it.",
   "source": "NBC News"
  },
  {
@@ -439,5 +439,14 @@
   "headline": "Trump says he’ll accept the results",
   "detail": "He said he was “a little bit surprised,” blamed Republican candidates and said he’d use his veto. Collins conceded and Paxton congratulated Talarico; Rogers hadn’t conceded in Michigan.",
   "source": "CBS News"
+ },
+ {
+  "id": "b50",
+  "date": "2026-11-04",
+  "order": 6,
+  "category": "National",
+  "headline": "Final update: see the Results tab",
+  "detail": "This is the tracker’s last update. The new Results tab compares its final projections with how the races landed. Races still being counted won’t be updated here.",
+  "source": "NBC News"
  }
 ]

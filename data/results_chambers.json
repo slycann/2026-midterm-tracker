@@ -1,0 +1,40 @@
+[
+ {
+  "chamber": "Senate",
+  "d_won": 54,
+  "r_won": 44,
+  "uncalled": 2,
+  "uncalled_list": "Alaska and Mississippi",
+  "d_estimate": null,
+  "net": "Democrats gained 7 seats",
+  "control": "D",
+  "as_of": "2026-11-04",
+  "as_of_time": "6:38 p.m. ET",
+  "source": "NBC News",
+  "source_url": "https://www.nbcnews.com/politics/2026-elections/senate-results",
+  "proj_date": "2026-11-03",
+  "proj_median": 51,
+  "proj_lo": 48,
+  "proj_hi": 54,
+  "proj_polls": 53
+ },
+ {
+  "chamber": "House",
+  "d_won": 242,
+  "r_won": 151,
+  "uncalled": 42,
+  "uncalled_list": "",
+  "d_estimate": 259,
+  "net": "Democrats flipped 35 seats and Republicans 1",
+  "control": "D",
+  "as_of": "2026-11-04",
+  "as_of_time": "6:38 p.m. ET",
+  "source": "NBC News",
+  "source_url": "https://www.nbcnews.com/politics/2026-elections/house-results",
+  "proj_date": "2026-11-03",
+  "proj_median": 231,
+  "proj_lo": 219,
+  "proj_hi": 242,
+  "proj_polls": null
+ }
+]

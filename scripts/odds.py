@@ -7,6 +7,7 @@ one, change the other. Run from the project root:
   python3 scripts/odds.py                     print today's numbers
   python3 scripts/odds.py --record 2026-10-29 add or replace that day's row in the history
   python3 scripts/odds.py --data DIR          read the data files from DIR instead of data/
+  python3 scripts/odds.py --seats             also print each chamber's projected Democratic seats (median, 8-in-10 range)
 """
 import argparse
 import json
@@ -59,12 +60,53 @@ def compute(data):
             "senate": round(grid_average(sen), 4), "house": round(grid_average(hou), 4)}
 
 
+def seats_by_nation(means, base):
+    """Each chamber's seat-count distribution (Democratic seats), averaged over the nationwide-error grid."""
+    tot = [0.0] * (len(means) + 1)
+    for z, w in GRID:
+        pmf = [1.0] + [0.0] * len(means)
+        for i, m in enumerate(means):
+            p = norm_cdf((m + SD_NATION * z) / SD_RACE)
+            for k in range(i, -1, -1):
+                pmf[k + 1] += pmf[k] * p
+                pmf[k] *= 1 - p
+        for k, v in enumerate(pmf):
+            tot[k] += w * v
+    W = sum(w for _, w in GRID)
+    out, c = {}, 0
+    for k, v in enumerate(tot):
+        c += v / W
+        for q, name in ((0.1, "lo"), (0.5, "median"), (0.9, "hi")):
+            if name not in out and c >= q:
+                out[name] = base + k
+    return out
+
+
+def seats(data):
+    """The model's seat projection per chamber: median and the range it gave an 8-in-10 chance."""
+    load = lambda n: json.loads((data / f"{n}.json").read_text(encoding="utf-8"))
+    races, ratings = load("senate_races"), load("house_ratings")
+    base = {r["chamber"]: r for r in load("chamber_baseline")}
+    senate_means = [((r["avg_margin"] + RATING_MARGIN[r["cook"]]) / 2 if r["avg_margin"] not in (None, "") else RATING_MARGIN[r["cook"]])
+                    for r in races if r["dem_side_party"] != "I"]
+    house_means = [RATING_MARGIN[r["rating"]] for r in ratings for _ in range(int(r["seats"]))]
+    s = seats_by_nation(senate_means, int(base["Senate"]["d_not_up"]))
+    # The polls' count: races the Democrat leads in the polling average, or by rating where there's none.
+    s["polls"] = int(base["Senate"]["d_not_up"]) + sum(
+        1 for r in races if r["dem_side_party"] != "I"
+        and (r["avg_margin"] if r["avg_margin"] not in (None, "") else RATING_MARGIN[r["cook"]]) > 0)
+    return {"Senate": s, "House": seats_by_nation(house_means, int(base["House"]["d_not_up"]))}
+
+
 def main():
     root = Path(__file__).resolve().parent.parent
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", type=Path, default=root / "data")
     ap.add_argument("--record", metavar="YYYY-MM-DD")
+    ap.add_argument("--seats", action="store_true", help="also print each chamber's projected Democratic seats as JSON")
     args = ap.parse_args()
+    if args.seats:
+        print(json.dumps(seats(args.data)))
     odds = compute(args.data)
     print(f"Both {odds['both']:.1%}  Senate {odds['senate']:.1%}  House {odds['house']:.1%}")
     if args.record:

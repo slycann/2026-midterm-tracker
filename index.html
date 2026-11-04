@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2026 Midterms Tracker</title>
-<meta name="description" content="Key 2026 Senate and House races: ratings, polls, a state map and a daily news brief.">
+<meta name="description" content="Final results of the key 2026 Senate and House races next to the tracker’s projections, plus the ratings, polls, map and daily brief that led up to them.">
 <meta property="og:title" content="2026 Midterms Tracker">
-<meta property="og:description" content="Key 2026 Senate and House races: ratings, polls, a state map and a daily news brief.">
+<meta property="og:description" content="Final results of the key 2026 Senate and House races next to the tracker’s projections, plus the ratings, polls, map and daily brief that led up to them.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://slycann.github.io/2026-midterm-tracker/">
 <meta property="og:image" content="https://slycann.github.io/2026-midterm-tracker/img/og-preview.png">
@@ -87,6 +87,8 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .mt-legend { display: flex; flex-wrap: wrap; gap: var(--gap-xs) var(--gap-md); margin-top: var(--gap-md); font-size: var(--fs-caption); color: var(--color-fg-muted); }
 .mt-key { display: inline-flex; align-items: center; gap: var(--gap-xs); font-variant-numeric: tabular-nums; }
 .mt-sw { width: .75rem; height: .75rem; border-radius: 3px; display: inline-block; flex: none; }
+.mt-sw.is-round { border-radius: 50%; }
+.mt-key-glyph { color: var(--color-fg); font-size: .85rem; line-height: 1; }
 .mt-sw-none { background: var(--color-bg); border: 1px solid var(--color-border-line); }
 .mt-detail { margin-top: var(--gap-md); border-top: 1px solid var(--color-border-line); padding-top: var(--gap-md); font-size: var(--fs-body); }
 .mt-hint { color: var(--color-fg-muted); font-size: var(--fs-caption); margin: 0; }
@@ -142,6 +144,21 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .mt-tip-k { color: var(--text-secondary); }
 .mt-fail { display: flex; align-items: center; justify-content: center; gap: var(--gap-xs); min-height: inherit; color: var(--color-fg-muted); font-size: var(--fs-caption); }
 .mt-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); display: inline-block; }
+.mt-res-head { font-family: var(--font-serif); font-weight: 400; font-size: var(--fs-title); line-height: 1.15; margin: 0 0 var(--gap-xs); }
+.mt-res-figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: var(--gap-lg); margin-top: var(--gap-md); }
+.mt-res-fig { border-top: 4px solid var(--res-party, var(--color-border-line)); padding-top: var(--gap-sm); display: grid; gap: 4px; }
+.mt-res-fig[data-party="D"] { --res-party: var(--odds-dem); }
+.mt-res-fig[data-party="R"] { --res-party: var(--odds-rep); }
+.mt-res-k { font-size: var(--fs-caption); color: var(--color-fg-muted); }
+.mt-res-n { font-family: var(--font-sans); font-weight: var(--fw-medium); font-size: clamp(2.5rem, 9vw, 3.5rem); line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.mt-res-n small { font-size: 0.45em; font-weight: 400; color: var(--color-fg-muted); letter-spacing: 0; margin-left: 0.25em; }
+.mt-restable td:first-child { white-space: normal; min-width: 9rem; }
+.mt-res-foot { margin-top: var(--gap-sm); }
+.mt-res-cell span { display: block; white-space: nowrap; }
+#ressen-table td:nth-child(4), #reshouse-table td:nth-child(3), #resproj-table td:nth-child(4), #resproj-table td:nth-child(3) { min-width: 8.5rem; }
+#reshouse-table td:nth-child(4) { min-width: 11rem; }
+#resmiss-legend { margin-bottom: var(--gap-md); }
+.mt-take-result { font-weight: var(--fw-medium); }
 .mt-seatfigs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap-sm); }
 .mt-seatfigs .mt-fig-k { font-size: var(--fs-caption); color: var(--color-fg-muted); }
 .mt-odds-card { display: grid; justify-items: center; text-align: center; gap: var(--gap-xs); padding-block: var(--gap-xl); }
@@ -233,7 +250,8 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
   </header>
 
   <nav class="mt-tabs" role="tablist" aria-label="Tracker sections">
-    <button class="mt-tab" role="tab" data-tab="today" aria-selected="true">Today</button>
+    <button class="mt-tab" role="tab" data-tab="results" aria-selected="true">Results</button>
+    <button class="mt-tab" role="tab" data-tab="today" aria-selected="false">Today</button>
     <button class="mt-tab" role="tab" data-tab="senate" aria-selected="false">Senate</button>
     <button class="mt-tab" role="tab" data-tab="house" aria-selected="false">House</button>
     <button class="mt-tab" role="tab" data-tab="national" aria-selected="false">National</button>
@@ -241,7 +259,44 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <button class="mt-tab" role="tab" data-tab="odds" aria-selected="false">Odds</button>
   </nav>
 
-  <section class="mt-page mt-stack" id="today">
+  <section class="mt-page mt-stack" id="results">
+    <div class="mt-card" id="res-card" aria-live="polite"></div>
+    <div class="mt-card" id="resproj-card">
+      <h2>How the tracker’s projections did</h2>
+      <p class="mt-note">Each projection as it stood on the morning of Election Day, next to the result so far.</p>
+      <div class="mt-tablewrap">
+        <table class="mt-table mt-restable" id="resproj-table" data-source="results_chambers odds_history control_math">
+          <thead><tr><th>Projection</th><th>Final call, Nov 3</th><th>Result</th><th>How it did</th></tr></thead>
+          <tbody id="resproj-body"></tbody>
+        </table>
+      </div>
+      <p class="mt-note mt-res-foot" id="resproj-foot"></p>
+    </div>
+    <div class="mt-card" id="resmiss-card">
+      <h2>Senate: final polling average vs. result</h2>
+      <p class="mt-note">The diamond is the final RealClearPolitics average on Nov 3; the dot is the result so far. Right of “Even” means the Democrat (in Nebraska, independent Dan Osborn) is ahead.</p>
+      <div class="mt-strip" id="resmiss-box" data-source="results_races senate_races"></div>
+      <div class="mt-legend" id="resmiss-legend"></div>
+      <div class="mt-tablewrap">
+        <table class="mt-table mt-hide5" id="ressen-table" data-source="results_races senate_races" data-row-key="race">
+          <thead><tr><th>State</th><th>Result</th><th>Final average</th><th>Status</th><th>Cook rating</th></tr></thead>
+          <tbody id="ressen-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mt-card" id="reshouse-card">
+      <h2>House toss-ups: how they landed</h2>
+      <p class="mt-note">The 18 districts Cook rated Toss Up going into Election Day.</p>
+      <div class="mt-tablewrap">
+        <table class="mt-table" id="reshouse-table" data-source="results_races house_tossups" data-row-key="race">
+          <thead><tr><th>District</th><th>Result</th><th>Status</th><th>Last poll before the election</th></tr></thead>
+          <tbody id="reshouse-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-page mt-stack" id="today" hidden>
     <div class="mt-card" id="map-card">
       <div class="mt-cardhead">
         <h2 id="map-title">Senate races by rating</h2>
@@ -593,6 +648,15 @@ const T = (() => {
     if (s.d_needs > 0 && s.r_needs > 0) a.append('Democrats need ', n(s, 'd_needs'), ' of them for a majority; Republicans need ', n(s, 'r_needs'), ' to keep control.');
     else if (s.d_needs === 0) a.append('That is enough for a Democratic majority without the toss-ups.');
     else a.append('That is enough for Republicans to keep control without the toss-ups.');
+    const rc = rows('results_chambers');
+    if (rc && rc.length) {
+      const rs = rc.find((r) => r.chamber === 'Senate'), rh = rc.find((r) => r.chamber === 'House');
+      const res = el('span', 'mt-take-line mt-take-result');
+      res.append('Result: Democrats won the Senate (', mark(el('b', 'mt-num', String(rs.d_won)), 'results_chambers', 'd_won', 'chamber=Senate'),
+        ' seats so far) and the House (', mark(el('b', 'mt-num', String(rh.d_won)), 'results_chambers', 'd_won', 'chamber=House'),
+        ' so far), per ' + rs.source + ' projections. The ratings below are where things stood before the vote.');
+      box.append(res);
+    }
     const b = el('span', 'mt-take-line');
     b.append('House: Democrats are favored in ', n(h, 'd_favored'), ' seats and Republicans in ', n(h, 'r_favored'), ', with ', n(h, 'tossups'), ' toss-ups; ', n(h, 'd_control'), ' is a majority.');
     box.append(a, b);
@@ -602,7 +666,7 @@ const T = (() => {
     up.replaceChildren();
     if (br && br.length) {
       const latest = br.reduce((m, r) => (r.date > m.date ? r : m), br[0]);
-      up.append('Updated ', mark(el('span', null, longFmt(parseDay(latest.date))), 'daily_brief', 'date', 'id=' + latest.id), '. Ratings from the Cook Political Report unless noted; every poll names its pollster.');
+      up.append(rows('results_chambers') ? 'Final update ' : 'Updated ', mark(el('span', null, longFmt(parseDay(latest.date))), 'daily_brief', 'date', 'id=' + latest.id), '. Ratings from the Cook Political Report unless noted; every poll names its pollster.');
     }
   }
 
@@ -1129,6 +1193,11 @@ const T = (() => {
     const tag = el('p', 'mt-odds-tag');
     tag.append(el('span', 'mt-odds-dot'), b.label);
     box.append(el('h2', null, 'Chance Democrats win both the House and the Senate'), num, tag);
+    const rc = rows('results_chambers');
+    if (rc && rc.length && rc.every((r) => r.control === 'D')) {
+      box.append(el('p', 'mt-odds-delta', 'Final estimate before the polls closed on Nov 3. Result: Democrats won both chambers.'));
+      return;
+    }
     const prev = previousOdds();
     if (prev) {
       const d = (p - prev.both) * 100, line = el('p', 'mt-odds-delta');
@@ -1286,10 +1355,164 @@ const T = (() => {
     detail.append(grid, el('p', 'mt-note mt-money-foot', 'Individuals can give a campaign at most $3,500 per election, so the largest single donors are PACs and party committees; outside groups have no limit.'));
   }
 
-  const PAGES = ['today', 'senate', 'house', 'national', 'money', 'odds'];
-  let current = 'today';
+  // ---- Results: how the races landed, next to the tracker's final (Nov 3) projections ----
+  const CH_WORD = { D: 'Democrats', R: 'Republicans' };
+  const resMargin = (x) => Number(x.dem_pct) - Number(x.rep_pct);
+  // A result line such as "Talarico 55.1, Paxton 43.0", leader first.
+  const resLine = (x) => {
+    const a = [surname(x.dem), Number(x.dem_pct)], b = [surname(x.rep), Number(x.rep_pct)];
+    const [w, l] = a[1] >= b[1] ? [a, b] : [b, a];
+    return w[0] + ' ' + w[1].toFixed(1) + ', ' + l[0] + ' ' + l[1].toFixed(1);
+  };
+  // The same result as a table cell: one candidate per line, leader first.
+  const resCell = (x, w) => {
+    const td = mark(el('td', 'mt-res-cell'), 'results_races', 'dem_pct', w);
+    resLine(x).split(', ').forEach((part) => td.append(el('span', null, part)));
+    return td;
+  };
+  const resStatus = (x) => (x.status === 'projected'
+    ? 'Projected' + (x.flip ? ' ' + (x.winner === 'D' ? 'Democratic' : x.winner === 'R' ? 'Republican' : 'independent') + ' gain' : '')
+    : 'Not called, ' + Math.round(Number(x.counted)) + '% counted') + (x.note ? '. ' + x.note : '');
+
+  function renderResults() {
+    const rc = rows('results_chambers'), rr = rows('results_races');
+    const card = $('#res-card'), pbody = $('#resproj-body'), foot = $('#resproj-foot');
+    card.replaceChildren(); pbody.replaceChildren(); foot.replaceChildren();
+    if (!rc || !rr) {
+      const bad = anyFailed('results_chambers', 'results_races');
+      card.append(bad ? failLine() : el('div', 'is-loading', '—'));
+      return;
+    }
+    const s = rc.find((r) => r.chamber === 'Senate'), h = rc.find((r) => r.chamber === 'House');
+    const both = s.control && s.control === h.control;
+    card.append(el('h2', 'mt-res-head', both ? CH_WORD[s.control] + ' won the House and the Senate'
+      : [s, h].filter((r) => r.control).map((r) => CH_WORD[r.control] + ' won the ' + r.chamber).join('; ') || 'Results'));
+    const asof = el('p', 'mt-note');
+    const src = el('a', null, s.source); src.href = s.source_url;
+    asof.append('Projections by ', src, ' as of ', dayFmt(parseDay(s.as_of)), ', ', s.as_of_time, '. Races still being counted can change the final totals; this page is no longer updated.');
+    card.append(asof);
+    const figs = el('div', 'mt-res-figs');
+    [s, h].forEach((r) => {
+      const f = el('div', 'mt-res-fig'); f.dataset.party = r.control;
+      const n = el('div', 'mt-res-n');
+      n.append(mark(el('span', null, String(r.d_won)), 'results_chambers', 'd_won', 'chamber=' + r.chamber), '–',
+        mark(el('span', null, String(r.r_won)), 'results_chambers', 'r_won', 'chamber=' + r.chamber), el('small', null, 'so far'));
+      const sub = [r.uncalled + ' uncalled' + (r.uncalled_list ? ': ' + r.uncalled_list : '') + '.'];
+      if (r.d_estimate) sub.push(r.source + ' estimates Democrats will finish with ' + r.d_estimate + '.');
+      if (r.net) sub.push(r.net + '.');
+      f.append(el('span', 'mt-res-k', r.chamber + ' seats, Democrats–Republicans'), n, el('span', 'mt-fig-m', sub.join(' ')));
+      figs.append(f);
+    });
+    card.append(figs);
+
+    // The projections table. The model's seat numbers come from scripts/odds.py --seats on the Nov 3 data.
+    const hist = rows('odds_history') || [], cm = rows('control_math'), races = rows('senate_races') || [];
+    const final = hist.find((r) => r.date === s.proj_date);
+    const range = (r, n) => (n > r.proj_hi ? 'Above its range' : n === r.proj_hi ? 'At the top of its range' : n >= r.proj_lo ? 'Within its range' : 'Below its range');
+    const tossOf = (ch) => rr.filter((x) => x.chamber === ch && (ch === 'House' || (races.find((r) => r.state === x.race) || {}).cook === 'Toss Up'));
+    const tally = (list) => {
+      const won = list.filter((x) => x.status === 'projected' && x.winner === 'D').length;
+      const lost = list.filter((x) => x.status === 'projected' && x.winner !== 'D').length;
+      const lead = list.filter((x) => x.status !== 'projected' && resMargin(x) > 0).length;
+      const trail = list.filter((x) => x.status !== 'projected' && resMargin(x) <= 0).length;
+      return [won && 'Democrats won ' + won, lost && 'lost ' + lost, lead && 'lead ' + lead + ' still being counted', trail && 'trail ' + trail].filter(Boolean).join(', ') + '.';
+    };
+    const sd = cm && cm.find((r) => r.chamber === 'Senate'), hd = cm && cm.find((r) => r.chamber === 'House');
+    const projRows = [
+      ['Chance Democrats win both chambers (Odds tab)', final ? (Number(final.both) * 100).toFixed(1) + '%' : '—', both && s.control === 'D' ? 'Democrats won both' : '—', both && s.control === 'D' ? 'Right call' : '—'],
+      ['Senate seats, model', s.proj_median + ' (8 in 10 chance of ' + s.proj_lo + '–' + s.proj_hi + ')', s.d_won + ' so far, ' + s.uncalled + ' uncalled', range(s, s.d_won)],
+      ['Senate seats, polling leaders', s.proj_polls + ' (races the Democrat led in the final averages)', s.d_won + ' so far, ' + s.uncalled + ' uncalled', s.d_won >= s.proj_polls ? 'Democrats did better' : 'Democrats did worse'],
+      ['Senate toss-ups (Cook)', sd ? sd.tossups + ' races; Democrats favored in ' + sd.d_favored + ' seats' : '—', tally(tossOf('Senate')), ''],
+      ['House seats, model', h.proj_median + ' (8 in 10 chance of ' + h.proj_lo + '–' + h.proj_hi + ')', h.d_won + ' so far' + (h.d_estimate ? '; ' + h.d_estimate + ' estimated' : ''), range(h, h.d_estimate || h.d_won)],
+      ['House toss-ups (Cook)', hd ? hd.tossups + ' districts; Democrats favored in ' + hd.d_favored + ' seats' : '—', tally(tossOf('House')), ''],
+    ];
+    projRows.forEach((cells) => { const tr = el('tr'); cells.forEach((c) => tr.append(el('td', null, c))); pbody.append(tr); });
+
+    // How far the final Senate averages were off, from the count so far.
+    const withAvg = rr.filter((x) => x.chamber === 'Senate').map((x) => ({ x, r: races.find((r) => r.state === x.race) }))
+      .filter((o) => o.r && o.r.avg_margin != null && o.r.avg_margin !== '');
+    if (withAvg.length) {
+      const diffs = withAvg.map((o) => resMargin(o.x) - Number(o.r.avg_margin));
+      const ahead = diffs.filter((d) => d > 0).length, mean = d3.mean(diffs);
+      const upset = withAvg.filter((o) => Number(o.r.avg_margin) !== 0 && Math.sign(resMargin(o.x)) !== Math.sign(Number(o.r.avg_margin)));
+      let t = 'In the ' + withAvg.length + ' Senate races with a final polling average, the Democratic side ran ahead of it in ' + ahead + ', by ' + Math.abs(mean).toFixed(1) + ' points on average' + (mean < 0 ? ' behind' : '') + '. ';
+      t += upset.length ? (upset.length === 1 ? 'One polling leader lost or trails: ' : upset.length + ' polling leaders lost or trail: ') + upset.map((o) => o.r.name + ' (' + o.r.avg_label + ')').join(', ') + '. ' : 'Every polling leader won or leads. ';
+      t += 'The model assumed a typical nationwide polling miss of about 3 points; this one was larger and favored Democrats, which is why the seat counts landed at or above its ranges.';
+      foot.append(t);
+    }
+    renderResMiss(rr, races);
+    renderResTables(rr, races);
+  }
+
+  // Dumbbell chart: each Senate race's final average (diamond) and its result so far (dot).
+  function renderResMiss(rr, races) {
+    const box = $('#resmiss-box'), leg = $('#resmiss-legend');
+    const list = rr.filter((x) => x.chamber === 'Senate').map((x) => ({ x, r: races.find((r) => r.state === x.race), m: resMargin(x) }))
+      .filter((o) => o.r && o.r.avg_margin != null && o.r.avg_margin !== '').sort((a, b) => b.m - a.m);
+    leg.replaceChildren();
+    box.classList.remove('is-loading');
+    if (!list.length) { box.replaceChildren(); return; }
+    const W = box.clientWidth || 320, rowH = 30, top = 6, axisH = 26;
+    const svg = d3.create('svg').attr('width', '100%');
+    box.replaceChildren(svg.node());
+    let labW = 0;
+    list.forEach((o) => { const t = svg.append('text').attr('class', 'mt-lab').text(o.r.name); labW = Math.max(labW, t.node().getComputedTextLength()); t.remove(); });
+    const left = Math.ceil(labW) + 14, right = 18;
+    const vals = list.flatMap((o) => [o.m, Number(o.r.avg_margin)]);
+    const lo = Math.min(-10, Math.floor(d3.min(vals) - 2)), hi = Math.max(10, Math.ceil(d3.max(vals) + 2));
+    const x = d3.scaleLinear([lo, hi], [left, W - right]);
+    const H = top + list.length * rowH + axisH, plotBottom = top + list.length * rowH;
+    svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H).attr('role', 'img').attr('aria-label', 'Final Senate polling averages compared with results');
+    const step = (W - right - left) / ((hi - lo) / 5) < 46 ? 10 : 5;
+    const ticks = d3.range(Math.ceil(lo / step) * step, hi + 0.001, step);
+    svg.append('g').selectAll('line').data(ticks).join('line')
+      .attr('x1', (v) => x(v)).attr('x2', (v) => x(v)).attr('y1', top).attr('y2', plotBottom)
+      .style('stroke', (v) => (v === 0 ? 'var(--chart-reference)' : 'var(--chart-grid)')).style('stroke-width', (v) => (v === 0 ? 1.5 : 1));
+    svg.append('g').selectAll('text').data(ticks).join('text').attr('class', 'mt-tick')
+      .attr('x', (v) => x(v)).attr('y', plotBottom + 17).attr('text-anchor', 'middle').text((v) => (v === 0 ? 'Even' : (v > 0 ? 'D +' : 'R +') + Math.abs(v)));
+    const tip = tipIn(box);
+    list.forEach((o, i) => {
+      const cy = top + i * rowH + rowH / 2, a = Number(o.r.avg_margin), row = svg.append('g');
+      row.append('text').attr('class', 'mt-lab').attr('x', left - 10).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').text(o.r.name);
+      row.append('line').attr('x1', x(a)).attr('x2', x(o.m)).attr('y1', cy).attr('y2', cy).style('stroke', 'var(--color-fg-muted)').style('stroke-width', 2);
+      row.append('path').attr('class', 'mt-pt').attr('d', d3.symbol(d3.symbolDiamond, 110)()).attr('transform', `translate(${x(a)},${cy})`)
+        .style('fill', 'var(--color-fg)').style('stroke', 'var(--color-panel)').style('stroke-width', 1.5)
+        .on('pointerenter click', () => tip.show([o.r.name + ': final average', o.r.avg_label], x(a), cy)).on('pointerleave', () => tip.hide());
+      row.append('circle').attr('class', 'mt-pt').attr('cx', x(o.m)).attr('cy', cy).attr('r', 6)
+        .style('fill', sideColor(o.m, o.x.dem_party)).style('stroke', 'var(--color-panel)').style('stroke-width', 2)
+        .on('pointerenter click', () => tip.show([o.r.name + ': ' + (o.x.status === 'projected' ? 'result' : 'count so far'), resLine(o.x), resStatus(o.x)], x(o.m), cy))
+        .on('pointerleave', () => tip.hide());
+    });
+    const k1 = el('span', 'mt-key'); k1.append(el('span', 'mt-key-glyph', '◆'), 'Final polling average, Nov 3');
+    leg.append(k1, key(SIDE.D, 'Result, Democrat ahead', 'is-round'));
+    if (list.some((o) => o.x.dem_party === 'I' && o.m > 0)) leg.append(key(SIDE.I, 'Result, independent ahead', 'is-round'));
+    leg.append(key(SIDE.R, 'Result, Republican ahead', 'is-round'));
+  }
+
+  function renderResTables(rr, races) {
+    const sbody = $('#ressen-body'), hbody = $('#reshouse-body');
+    sbody.replaceChildren(); hbody.replaceChildren();
+    const order = (a, b) => resMargin(b) - resMargin(a);
+    rr.filter((x) => x.chamber === 'Senate').sort(order).forEach((x) => {
+      const r = races.find((y) => y.state === x.race) || {}, w = 'race=' + x.race, tr = el('tr');
+      tr.append(el('td', null, r.name || x.race), resCell(x, w),
+        el('td', null, r.avg_label || '—'), el('td', null, resStatus(x)), el('td', null, r.cook || ''));
+      sbody.append(tr);
+    });
+    rr.filter((x) => x.chamber === 'House').sort((a, b) => a.race.localeCompare(b.race)).forEach((x) => {
+      const w = 'race=' + x.race, tr = el('tr'), t = { district: x.race, dem: x.dem, rep: x.rep }, lead = housePollLead(t);
+      const poll = el('td');
+      if (lead) poll.append(el('span', null, lead.text), el('span', 'mt-latest-src', lead.by)); else poll.textContent = 'None';
+      tr.append(el('td', null, x.race), resCell(x, w), el('td', null, resStatus(x)), poll);
+      hbody.append(tr);
+    });
+  }
+
+  const PAGES = ['results', 'today', 'senate', 'house', 'national', 'money', 'odds'];
+  let current = 'results';
   function render() {
     renderHeader();
+    if (current === 'results') renderResults();
     if (current === 'today') { renderMap(); renderBrief(); renderDates(); }
     if (current === 'senate') { renderSenateTossups(); renderSeatMath(); renderStrip(); renderRaces(); renderSafe(); }
     if (current === 'house') { renderHouseTossups(); renderHouseBar(); renderTossups(); }
@@ -1300,7 +1523,7 @@ const T = (() => {
     fillStatic();
   }
   function show(id) {
-    current = PAGES.includes(id) ? id : 'today';
+    current = PAGES.includes(id) ? id : 'results';
     PAGES.forEach((p) => { document.getElementById(p).hidden = p !== current; });
     document.querySelectorAll('.mt-tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === current)));
     T.setLink(current);
@@ -1312,7 +1535,7 @@ const T = (() => {
   const named = location.hash.slice(1);
   if (PAGES.includes(named)) show(named);
 })();
-T.load(['senate_races', 'senate_polls', 'us_tiles', 'chamber_baseline', 'house_ratings', 'house_tossups', 'national_polls', 'early_vote', 'daily_brief', 'key_dates', 'candidates', 'odds_history', 'house_polls', 'money']);
+T.load(['senate_races', 'senate_polls', 'us_tiles', 'chamber_baseline', 'house_ratings', 'house_tossups', 'national_polls', 'early_vote', 'daily_brief', 'key_dates', 'candidates', 'odds_history', 'house_polls', 'money', 'results_chambers', 'results_races']);
 </script>
 </body>
 </html>

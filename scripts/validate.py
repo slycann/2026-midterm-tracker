@@ -207,6 +207,49 @@ for t in tu:
     want("House", t.get("district"), "D", t.get("dem"))
     want("House", t.get("district"), "R", t.get("rep"))
 
+# Election results (the Results tab).
+rc = load("results_chambers")
+need("results_chambers", rc, ["chamber", "d_won", "r_won", "uncalled", "uncalled_list", "d_estimate", "net", "control", "as_of", "as_of_time",
+                              "source", "source_url", "proj_date", "proj_median", "proj_lo", "proj_hi", "proj_polls"])
+for r in rc:
+    ch = r.get("chamber")
+    b = next((x for x in base if x.get("chamber") == ch), None)
+    if not b:
+        err(f"results_chambers.json: unknown chamber '{ch}'")
+        continue
+    nums = [r.get(k) for k in ("d_won", "r_won", "uncalled")]
+    if not all(isinstance(v, int) for v in nums):
+        err(f"results_chambers.json {ch}: d_won, r_won and uncalled must be whole numbers")
+    elif sum(nums) > int(b["total"]):
+        err(f"results_chambers.json {ch}: d_won + r_won + uncalled is more than {b['total']} seats")
+    if r.get("control") not in ("D", "R", ""):
+        err(f"results_chambers.json {ch}: control must be 'D', 'R' or ''")
+    if not (isinstance(r.get("proj_lo"), int) and isinstance(r.get("proj_hi"), int) and r["proj_lo"] <= r.get("proj_median", -1) <= r["proj_hi"]):
+        err(f"results_chambers.json {ch}: proj_lo <= proj_median <= proj_hi (from scripts/odds.py --seats)")
+    for k in ("as_of", "proj_date"):
+        if not DAY.match(str(r.get(k, ""))):
+            err(f"results_chambers.json {ch}: {k} must be YYYY-MM-DD")
+rr = load("results_races")
+need("results_races", rr, ["chamber", "race", "dem", "dem_party", "rep", "dem_pct", "rep_pct", "counted", "status", "winner", "flip", "note"])
+race_names = {("Senate", r.get("state")): (r.get("dem_side"), r.get("rep")) for r in races}
+race_names.update({("House", t.get("district")): (t.get("dem"), t.get("rep")) for t in tu})
+for r in rr:
+    k = (r.get("chamber"), r.get("race"))
+    if k not in race_names:
+        err(f"results_races.json {k}: not a Senate race or House toss-up in the data")
+    elif race_names[k] != (r.get("dem"), r.get("rep")):
+        err(f"results_races.json {k}: candidate names don't match the race files")
+    if not all(isinstance(r.get(f), (int, float)) for f in ("dem_pct", "rep_pct", "counted")):
+        err(f"results_races.json {k}: dem_pct, rep_pct and counted must be numbers")
+    elif r["dem_pct"] + r["rep_pct"] > 100 or not 0 < r["counted"] <= 100:
+        err(f"results_races.json {k}: percentages out of range")
+    if r.get("status") not in ("projected", "not called"):
+        err(f"results_races.json {k}: status must be 'projected' or 'not called'")
+    if (r.get("status") == "projected") != (r.get("winner") in ("D", "R", "I")):
+        err(f"results_races.json {k}: a projected race needs a winner (D/R/I); an uncalled one needs winner ''")
+if len({(r.get("chamber"), r.get("race")) for r in rr}) != len(rr):
+    err("results_races.json: a race is listed twice")
+
 if errors:
     print(f"{len(errors)} problem(s) found:")
     for e in errors:
