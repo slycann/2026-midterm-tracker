@@ -394,5 +394,50 @@
   "headline": "Flooding moves polling places in Florida; scanner trouble in Westchester",
   "detail": "Voters in seven Florida counties, including Palm Beach, are being sent to temporary sites. In Westchester County, N.Y., part of which is in NY-17, some machines couldn’t scan ballots because of a ballot-paper problem.",
   "source": "Fox News, ABC7 New York"
+ },
+ {
+  "id": "b45",
+  "date": "2026-11-04",
+  "order": 1,
+  "category": "Senate",
+  "headline": "Democrats win the Senate",
+  "detail": "NBC News has Democrats at 54 seats with Alaska and Mississippi uncalled. They gained North Carolina, Texas, Kansas, Ohio, Iowa, South Carolina and Maine, and held Michigan; CBS News projected control at 11:35 p.m. ET.",
+  "source": "NBC News, CBS News"
+ },
+ {
+  "id": "b46",
+  "date": "2026-11-04",
+  "order": 2,
+  "category": "House",
+  "headline": "Democrats win the House",
+  "detail": "By Wednesday morning NBC News had 231 seats projected for Democrats and 144 for Republicans, with 60 uncalled; its estimate is 258 Democratic seats. CBS News projected control at 10:15 p.m. ET.",
+  "source": "NBC News, CBS News"
+ },
+ {
+  "id": "b47",
+  "date": "2026-11-04",
+  "order": 3,
+  "category": "House",
+  "headline": "Democrats lead in all 18 House toss-ups",
+  "detail": "NBC News projects Democrats in 10 of them, including flips in PA-01, OH-07, TX-15, VA-01, KY-06 and IA-02, and Democrats lead the other eight, including NY-17, where about 61% is counted.",
+  "source": "NBC News"
+ },
+ {
+  "id": "b48",
+  "date": "2026-11-04",
+  "order": 4,
+  "category": "Senate",
+  "headline": "Still counting: Alaska and Mississippi",
+  "detail": "Peltola leads Sullivan 48.2% to 47.9% with 74% counted. In Mississippi, Democrat Scott Colom and Sen. Cindy Hyde-Smith are each at 48.9% with 96% counted. Moody leads in Florida.",
+  "source": "NBC News"
+ },
+ {
+  "id": "b49",
+  "date": "2026-11-04",
+  "order": 5,
+  "category": "Campaign trail",
+  "headline": "Trump says he’ll accept the results",
+  "detail": "He said he was “a little bit surprised,” blamed Republican candidates and said he’d use his veto. Collins conceded and Paxton congratulated Talarico; Rogers hadn’t conceded in Michigan.",
+  "source": "CBS News"
  }
 ]
